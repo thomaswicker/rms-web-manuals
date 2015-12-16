@@ -136,7 +136,7 @@ APPLICATION CSS FOR RMS MANUALS
 .web-manual-label {
   position: fixed;
   top: .2rem;
-  left: 43%;
+  left: 40%;
   padding: 0rem 1rem 0rem 1rem;
   font-size: 1.4rem;
   color: white;
@@ -146,18 +146,18 @@ APPLICATION CSS FOR RMS MANUALS
     color: #42aae0; }
   @media (min-width: 1201px) and (max-width: 1400px) {
     .web-manual-label {
-      position: static;
-      float: left;
-      width: auto;
+      position: fixed;
+      top: .2rem;
+      left: 35%;
+      padding: 0rem 1rem 0rem 1rem;
       font-size: 1.2rem; } }
   @media (min-width: 993px) and (max-width: 1200px) {
     .web-manual-label {
-      position: static;
-      float: left;
-      width: auto;
-      padding: .4rem 1rem 0rem 1rem;
-      font-size: 1.2rem;
-      color: black; } }
+      position: fixed;
+      top: .2rem;
+      left: 27%;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1.2rem; } }
   @media (min-width: 768px) and (max-width: 992px) {
     .web-manual-label {
       position: static;
@@ -528,3 +528,9 @@ APPLICATION CSS FOR RMS MANUALS
     list-style-type: none !important; }
     .left-off-canvas-menu ul li {
       margin-left: 0rem !important; }
+
+.toggle-topbar a {
+  font-family: arial; }
+
+.topbar.expanded {
+  z-index: 100000000001 !important; }
