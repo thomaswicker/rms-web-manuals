@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+	 Design by Free CSS Templates
+	 http://www.freecsstemplates.org
+	 Released for free under a Creative Commons Attribution 2.5 License
+	 
+	 Name       : Programme     
+	 Description: A two-column, fixed-width design with dark color scheme.
+	 Version    : 1.0
+	 Released   : 20100707
+	 
+	 -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+				var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+				if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="http://www.rms.biz/products/sinfonia/">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li class="current_page_item"><a href="quickstart.html">Quick Start</a></li>
+         
+         <li><a href="interfaceediting.html">Interface and Editing</a></li>
+          
+          <li><a href="advanced.html">Advanced</a></li>
+           <li><a href="customization.html">Customization</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Quick Start</a></h2>
+              <div class="entry">
+            <h3 class="title"><a name="setupwizard" id="setupwizard"></a>Setup Wizard</h3>
+           <p> The Setup Wizard will run automatically the first time you launch Sinfonia. It will detect and allow you to select your MIDI input and audio output devices. For more information on the Setup Wizard, click <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/customization.html#setupwizard">here</a>.</p>
+                <h3 class="title"><a name="defaultwindows" id="defaultwindows"></a>Default Windows</h3>
+                <p>The first time you launch the program, you will see a screen with four windows:</p>
+                <ul>
+                  <li>Transport</li>
+                  <li>Rhythm</li>
+                  <li>Keyboard</li>
+                 
+                  <li>Song</li>
+            
+                  </li>
+                </ul>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">Default Windows</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/v2DefaultScreen.png" alt="" width="500" height="366" /></td>
+                  </tr>
+                </table>
+                <p>This is just a small subset of the available Sinfonia windows. It's enough to get you going. It also illustrates one of the design principles: you will most likely use Sinfonia in an orchestra pit environment, often on a laptop with limited screen real-estate. The idea is to call upon windows only when you really need them and otherwise hide them so they don't clutter your screen.</p>
+                <p>The four windows we established in this default view represent one opinion on the core items people would want to see while performing. But of course, depending on your taste and the way you like to work, you might prefer to see a different layout.</p>
+                <ul>
+                  <li>To open a window, select menu Windows → Show/Hide Windows.</li>
+                  <li>To close a window, click the x in its upper left corner - or select menu Windows → Show/Hide Windows.</li>
+                <li>Drag the windows to position them anywhere on your screen.</li>
+                  <li>Most windows can also be resized using the resize handle in the lower right corner.              </li>
+                </ul>
+                <h2 class="title">Basics</h2>
+                <h3 class="title">&nbsp;</h3>
+                <h3 class="title"><a name="transport" id="transport"></a>Transport</h3>
+                <p>If you want to want to hear music fast and just want a quick, no frills performance, you can use the Transport window as you would most music devices (with the benefit of a few extra bells and whistles).</p>
+                <table class="figure" width="454">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">Transport</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="images/v2Transportco2.png" alt="" width="446" height="164" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Click the Go triangle to set the music in motion. The Stop square will stop playback.</p>
+                <h3 class="title"><a name="playingsinfonia" id="playingsinfonia"></a>Playing Sinfonia</h3>
+                <p>The Transport window is good for quick tests, but we hope you will use that sparingly. Sinfonia® is actually an instrument, meant to be <i>played</i> in real time. It is not intended as a playback device like a CD or MP3 player. The true benefit of Sinfonia is that you can move with the ebb and flow of the performance, reacting to every situation, from a subtly lengthened pause to an extreme stage mishap. To get the most out of its expressive potential. you should play Sinfonia® live at all times.</p>
+                <p>You may find it helpful to print out a set of keyboard labels to indicate which keys are mapped to which Sinfonia® functions. You can download a set of labels <a href="http://www.realtimemusicsolutions.com/documents/kb_labels.pdf">here</a>.</p>
+                <p>The most basic way to play Sinfonia® is through the Play keys. By tapping the Play keys at your desired tempo, as you would a piano, you propel the song according to your individual interpretation. The process is analogous to conducting in the traditional sense; as you beat time, Sinfonia® responds. You can speed up and slow down to follow the performance. You can create deep rubato passages or taut accelerandos. 'Playing' is the essential way to breathe life into Sinfonia®.</p>
+                <p>So for starters, try using the Play keys to perform some songs. By default, you'll see several Play keys assigned in the Keyboard window. These are designated by the pointed finger icon.</p>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">Play Keys</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/v2PlayKeysco.png" alt="xxxxx" /></td>
+                  </tr>
+                </table>
+                <p>Play the rhythm notated in the Rhythm window. Notice how a blue highlight and cursor progresses to indicate where you are in the score.</p>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">Rhythm Window</p></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top"><img src="images/v2Rhythm.png" alt="xxxxx" /></td>
+                  </tr>
+                </table>
+                <p>Many functions in Sinfonia can also be controlled from the QWERTY Keyboard. Try  playing some more from your space bar. This is also worth noting as a backup technique. If something were to go wrong with your MIDI keyboard during to performance (i.e. someone accidentally kicks out the cord), you could quickly switch over to the space bar to carry on with the show.              </p>
+                <h3 class="title"><a name="simplenavigation" id="simplenavigation"></a>Simple Navigation</h3>
+                <p>The Songs window displays your tracklist for the currently loaded show. You can jump to various songs within the show by clicking on them with the mouse, or by using the Page Down/Page Up keys on your QWERTY keyboard. </p>
+                <p>To jump to a specific spot within a song, you can simply type in the measure number on your QWERTY keyboard. Hit return once to &quot;arm&quot; the relocation, and once more to activate it. (This is done to make relocations during live performances easier and more effective). </p>
+                <h3 class="title"><a name="goplaycruise" id="goplaycruise"></a>Go, Play, and Cruise</h3>
+                <p>Sinfonia® has three basic play modes: Go, Play, and Cruise.</p>
+                <p><img src="images/v2CPGco.png" alt="" width="83" height="238" /></p>
+                <p><strong>Go</strong>: &quot;Go&quot; will perform the song at the pre-programmed tempo. Please note, this is <strong>not</strong> the recommended way to use Sinfonia®, but is included as a matter of convenience.</p>
+                <p><strong>Play</strong>: When you &quot;play&quot; Sinfonia®, tempo changes are immediate and you can start and stop on a dime, just like you would if you were playing any other musical instrument.</p>
+                <p><strong>Cruise</strong>: &quot;Cruise&quot; is sort of a hybrid of &quot;Go&quot; and &quot;Play&quot;. You still manipulate the tempo in real-time, but a cruise tempo is established with each tap. As such, you may not have as much control over big changes in the way you do with &quot;play&quot; mode (you can think of it in terms or turning a big a ship). But &quot;cruise&quot; mode can be useful for long stretches of songs where the tempo is not going to change drastically. Simply tap out the tempo using the &quot;Play&quot; keys, and switch to &quot;Cruise&quot; once the tempo is set. As you can to tap the &quot;cruise&quot; key(s), the tempo is adjusted. When you lift off &quot;cruise&quot;, Sinfonia® will now continue along in the set tempo until you start using the &quot;Play&quot; keys again.</p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Quick Start</h2>
+                  <ul>
+                  <li><a href=#setupwizard>Setup Wizard</a></li>
+                    <li><a href="#defaultwindows">Default Windows</a></li>
+                 <li><a href="#transport">Transport</a></li>
+                    <li><a href="#playingsinfonia">Playing Sinfonia</a></li>
+                    <li><a href="#simplenavigation">Simple Navigation</a></li>
+                    <li><a href="#goplaycruise">Go, Play, and Cruise</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.rms.biz/contact/">Contact Us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

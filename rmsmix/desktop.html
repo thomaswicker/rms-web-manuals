@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Mix - Desktop</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="http://www.rms.biz/products/sinfonia/">RMS Mix&reg;</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li class="current_page_item"><a href="desktop.html">Desktop</a></li>
+          <li><a href="mobile.html">Mobile</a></li>  
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">  
+  <div id="page">
+    <div id="page-bgtop">
+      <div id="page-bgbtm">
+        <div id="content">
+          <div class="post">
+            <h2 class="title"><a href="#">RMS Mix® - Desktop</a></h2>
+            <div class="entry">
+              <p>RMS Mix® is designed specifically for ease of use. The interface is streamlined to give you the simplest method of playing your show, while still allowing for more complex editing if you have the need. (Please note that editing a show requires the use of either Sinfonia® or RMS Coach® software.)</p>
+              <h3 class="title"><a name="trialvfull" id="trialvfull"></a>Trial vs. Full version</h3>
+              <p><img src="images/ss-purchaseorauth.png" width="500" height="71" alt="purchase" /></p>
+              <p>The trial version is a fully featured application that allows you to experiment with how RMS Mix® works.  This version gives you full access to the first few songs in the show.  If you decide that RMS Mix® works for you, then you will be able to purchase and authenticate the full version through the program itself, without any additional downloads.</p>
+              <p>The full version of RMS Mix® is only available to individuals and organizations that have acquired the license for a specific show through the appropriate licensing organization (MTI, R&amp;H, etc). In order to purchase the unlock code for the full version, you will need to license the production through the licensing organization.  The license will run for a particular length of time, depending upon the arrangement you have made with the licensing organization. At the end of your license, RMS Mix® will notify you that your license has expired.</p>
+              <p>Note: there is no limit to the time you can use RMS Mix® before your performances. So provided you have a valid performance license, you could rehearse with RMS Mix® for as long as you are likely to need it. A few weeks, a month, a year – it's up to you.</p>
+              <h3 class="title"><a name="purchasing" id="purchasing"></a>Purchasing the Full Version</h3>
+              <p>When you click on the Purchase button, you will be taken to a screen where you will be asked to fill out the appropriate information.  Enter your name, organization, desired show, email address, and location.  Important:  if you have not already licensed the show through the appropriate organization, you will not be able to purchase the full version of RMS Mix®.</p>
+              <p><img src="images/ss-userinfo.png" width="500" height="476" alt="userinfo" /></p>
+              <p>If there is an Internet connection issue, then you may receive an error screen. If you then hit &quot;Okay&quot;, a file will be created on your desktop called 'rms_authentication.txt'. You can email that file to info@rms.biz from a computer with an Internet connection to continue with the purchase request.</p>
+              <p>Once RMS receives your request, we will check to make sure you have licensed the show for production.  Once we have confirmed your license, we will email you a link to an electronic invoice that can be paid online via credit card or e-check. We can also accept paper checks. Please note that we do not accept payment via purchase order. After the payment has been processed, you will be emailed an unlock code.</p>
+              <h4 class="title"><a name="authentication" id="authentication"></a>Authentication</h4>
+              <p>To fully authorize RMS Mix, you will need to use either the QR code provided to the original purchaser, or the order number.</p>
+              <p>1. Launch RMS Mix®</p>
+              <p>2. Under the 'Tools' menu, choose 'Show Management'</p>
+              <p>3. Click the '+' button</p>
+              <p><img src="images/ss-auth1.png" width="500" height="344" alt="auth1" /></p>
+              <p>4. Enter your name and email (if you have done this previously during an authentication request, this step may be skipped)</p>
+              <p>5. Click 'Import a QR image', and browse to the directory where you saved the QR image sent by RMS.</p>
+              <p><img src="images/ss-auth2.png" width="500" height="353" alt="auth2" /></p>
+              <p>6. If you don't have a QR image, click on the text at the bottom of the window.</p>
+              <p>7. On the following screen, enter the order number for your specific production (SNF or CHF followed by 6 digits).</p>
+              <p><img src="images/ss-auth3.png" width="500" height="353" alt="auth3" /></p>
+              <p>Your copy of RMS Mix® should now be ready to use! If you have any questions or difficulties with this process, feel free to contact us at 212.620.0774 or online at <a href="http://www.rms.biz/contact/">http://www.rms.biz/contact/</a></p>
+              <h4 class="title"><a name="additionalinstallations" id="additionalinstallations"></a>Additional Installations</h4>
+              <p>RMS Mix® can be installed on as many computers as necessary for the duration of your license. This means that each actor or member of the production team can have their own copy of the program to practice with.</p>
+              <p>To install on additional computers, your cast or production team will need the QR code sent to you by RMS when you purchased the program (or the order number for your production). </p>
+              <h4 class="title"><a name="expirationoflicense" id="expirationoflicense"></a>Expiration of License</h4>
+              <p>Licenses for a shows are time based.  If you attempt to launch RMS Mix® after this period, you will be notified of this with a dialogue box.</p>
+              <p>If you wish to extend the length of the license, or feel that there is a mistake, then please call us at 212-620-0774 and we will be happy to assist you.</p>
+              <h3 class="title"><a name="showmanagement" id="showmanagement"></a>Show Management</h3>
+              <p>If you are using RMS Coach® or Sinfonia®, with RMS Mix®, you can  export songs from one of those programs to play in RMS Mix®. It is even possible to have multiple versions of the show to play (for example, if you need songs in different keys depending on who is singing them).</p>
+              <p>There is also a catalogue of pre-programmed &quot;by the book&quot; commercial titles available. To download these, select 'Get Shows' under the 'Tools' menu. RMS Mix® will exit and the RMS Show Delivery program will launch. You see a list of available shows to download. Highlight the one you would like and hit 'Continue'.</p>
+              <p><img src="images/ss-showdelivery1.png" width="500" height="518" alt="sd1" /></p>
+              <p>The show will then proceed to download. Please note that this may take some time depending on the speed of your internet connection.</p>
+              <p><img src="images/ss-showdelivery2.png" width="500" height="518" alt="ss2" /></p>
+              <p>Note that if you are using a trial version of RMS Mix®, only the first 5 songs for the downloaded show will be available.              </p>
+              <h4 class="title"><a name="loadingashow" id="loadingashow"></a>Loading a show from RMS Coach® or Sinfonia®</h4>
+              <p>To load an export of your show from one of our other programs, you need to use the &quot;Show Management&quot; utility found under the &quot;Tools&quot; menu. </p>
+              <p>If you have saved any local exports from either RMS Coach® or Sinfonia®, they will show up in this screen under folders for your specific order number. You can navigate into the folder and click on a file name to load that export.</p>
+              <p>To download an export that has been saved to the cloud server, the steps are the same as listed above under the <a href="#authentication">Authentication</a> section.</p>
+              <p>For instructions on how to export shows within RMS Coach® or Sinfonia® for use in RMS Mix®, please see the relevant sections in either manual:</p>
+<p><a href="http://www.realtimemusicsolutions.com/webmanuals/rmscoach/menus.html#rmsmix">RMS Coach® exporting</a></p>
+              <p><a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/customization.html#rmsmix">Sinfonia® exporting</a>              </p>
+              <h3 class="title"><a name="interface" id="interface"></a>Interface</h3>
+              <p>There are two main windows with the desktop program - the Navigation window and the Mixer window.</p>
+              <h4 class="title"><a name="navigation" id="navigation"></a>Navigation Window</h4>
+              <p>The navigation window is broken into a few subsections, allowing you quick and easy access to your entire show with just a few mouse clicks.</p>
+              <p><img src="images/ss-navwin.png" width="520" height="125" alt="navwin" /></p>
+              <h5>Song List</h5>
+              <p>On the left is the list of all the songs in your show, in performance order. You can select specific songs with the mouse or by the using the up and down arrow keys on your computer. </p>
+              <p>Please note that for songs that attacca straight into the following song, they will be grouped together under the song list. You will still be able jump to the beginning of the &quot;secondary&quot; song by using the marker list on the right, however.</p>
+              <p>In addition, songs that have extended pauses in the middle for dialogue or other dramatic requirements will be separated into multiple parts in the song list. Be sure to familiarize yourself the layout of your specific show before using RMS Mix® in a rehearsal!</p>
+              <h5>Marker List</h5>
+              <p>On the right side of the navigation window is a list of markers for the currently selected song. By clicking on a marker, you will immediately jump to that part of the song. You can also see the approximate placement of markers within a song as red lines within the timeline.</p>
+              <p>Tip - you can jump to a marker while the song is already playing, in real time. Use this functionality to handle events like a &quot;jump cut&quot;, or for a situation where a singer has missed an entrance and you need to re-start the current section.</p>
+              <h5>Customizing the marker list</h5>
+              <p>By default, markers are pre-programmed for all RMS Mix® shows. However, if you have a license for RMS Coach® or Sinfonia®, you can use either of those programs to modify and create your own markers for the show. For more information please see the relevant sections in either of the <a href="http://www.realtimemusicsolutions.com/webmanuals/rmscoach/interfaceediting.html#markers">RMS Coach®</a> or <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/interfaceediting.html#markers">Sinfonia® manuals</a>.</p>
+              <p>Note that for repeated sections of music, RMS Mix® will append a suffix to any markers contained within. For example, a marker named &quot;Vocal&quot; inside a section of music that plays 3 times will be called &quot;Vocal.1&quot;, &quot;Vocal.2&quot; and &quot;Vocal.3&quot; respectively.</p>
+              <h5><a name="transport" id="transport"></a>Transport<br />
+              </h5>
+              <p><img src="images/ss-transport.png" width="316" height="38" alt="transport" /></p>
+              <p>The transport bar is found in the middle of the navigation window. From left to right, the buttons have the following functionality:</p>
+              <ul>
+                <li>toggle visual/audio metronome</li>
+                <li>rewind to beginning of song / previous song</li>
+                <li>rewind by one measure</li>
+                <li>play</li>
+                <li>stop</li>
+                <li>fast forward by one measure</li>
+                <li>fast forward to next song</li>
+                <li>exit vamp</li>
+              </ul>
+<h5>Metronome</h5>
+<p>RMS Mix® has a metronome feature to assist in your learning and rehearsal process. When you toggle the metronome on using the button on the transport, it will activate both an audio as well as a visual click. (If the visual click window is not visible, make sure that it is checked on under the &quot;Windows&quot; menu bar). You can resize the visual click by using the arrow on the lower right side of the window.</p>
+<p>To change the volume of the click, go to the preferences menu and <a href="#clickpref">follow the instructions below.</a></p>
+<h5>Vamping</h5>
+              <p>RMS Mix® has built-in capabilities to handle vamping within songs. Whenever RMS Mix® comes across a section of a song pre-designated as a vamp, the &quot;Exit vamp&quot; button will highlight like this:</p>
+              <p><img src="images/ss-exitvamp-highlight.png" width="73" height="73" alt="vamp" /></p>
+              <p>This tells you that RMS Mix® is now within a vamp, and will keep repeating that section of music indefinitely until you press the &quot;exit vamp&quot; button. Once pressed, the program will finish its current playthrough of the vamp and proceed to the next section of music.</p>
+              <p>If you would like a vamp to be programmed to play a specific number of times on every playthrough, simply click-and-hold on the vamp icon when it is lit up for that particular vamp. Select the number of times you would like it to play and Mix® will use that for all future playthroughs.</p>
+              <p><img src="images/ss-setvamp.png" width="96" height="225" alt="setvamp" /></p>
+              <p>To return the vamp to default behavior, select the infinity symbol at the top of the list.</p>
+              <h4 class="title"><a name="relocate" id="relocate"></a>Arbitrary relocate</h4>
+              <p>RMS Mix® has the ability to instantly jump to any spot within a song by either measure number or marker name. You do this by first &quot;arming&quot; the relocation, then activating it.</p>
+              <p>To arm, simply type in either the bar number or marker name (RMS Mix® will autocomplete the marker as soon as possible). </p>
+              <p><img src="images/ss-reloc.png" width="398" height="99" alt="reloc" /></p>
+              <p>Hit enter, and the relocate is now &quot;armed&quot;. </p>
+              <p><img src="images/ss-armed.png" width="397" height="98" alt="armed" /></p>
+              <p>To activate the relocation hit enter again and RMS Mix® will instantly jump to that moment.</p>
+              <p>&nbsp;</p>
+              <h4 class="title"><a name="parts" id="parts"></a>Parts Mixer</h4>
+              <p><img src="images/ss-parts.png" width="500" height="500" alt="parts" /></p>
+              <p>The parts mixer is found within the mix window. In it you will find channel strips for predefined groups of instruments for your current show. A standard parts mixer might include the following families: Reeds, Brass, High Strings, Low Strings, Percussion, Keyboards, Guitar, Other. </p>
+              <p>This allows you to easily adjust the overall mix of your show without needing to micro-manage each individual instrument.</p>
+              <p>The headphone icon at the top will allow you to test the output of that channel strip. This is useful if you are first setting up your sound system and want a sound loop. </p>
+              <p>The main slider controls the overall volume of that grouping. Below that is a knob and text box for panning left/right.</p>
+              <p>The drop down text box at the bottom allows you to specify which output you would like to use for that channel strip. For a basic setup that only has a single stereo out, there is only one option &quot;A&quot;.</p>
+              <p>The speaker icons along the bottom will mute/unmute the channel strip.</p>
+              <h5>Customizing instrument groupings</h5>
+              <p>RMS Mix® comes with pre-programmed instrument groupings for each show, but if you have a license for Sinfonia®, you can specify your own instrument groupings. For more information, please see the <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/customization.html#rmsmix">relevant section within the Sinfonia® manual.</a></p>
+              <h4 class="title"><a name="output" id="output"></a>Output Mixer</h4>
+              <p>The other part of the mix window is the Output Mixer. This gives you control for pairs of stereo outputs on your system.</p>
+              <p><img src="images/ss-outputmixer.png" width="500" height="498" alt="outputmixer" /></p>
+              <p>The master fader on the right control the overall sound output level of RMS Mix®. Please note that this is independent of your system's volume controls.</p>
+              <h5>Reverb settings</h5>
+              <p>The knob at the bottom of each strip along the left allows you to control the amount of reverb &quot;send&quot; from that output.</p>
+              <p>The knob at the bottom of the master fader lets you control the overall level of reverb applied to the entire output of RMS Mix®. The drop-down menu at the bottom lets you select which output the reverb is sent to.</p>
+              <h5>Multi-channel output</h5>
+              <p>A default setup for a computer without a specialized audio interface will only have a single stereo output, designated &quot;A&quot;. If you are using a more complicated setup, each pair of available stereo outputs will show up as &quot;B&quot;, &quot;C&quot; and so forth. By default, everything routes to the &quot;A&quot; output. </p>
+              <h3><a name="menuitems" id="menuitems"></a>Menu Items              </h3>
+              <h5>Preferences</h5>
+<p><img src="images/ss-pref1.png" width="400" height="483" alt="prefs" /></p>
+              <p>Under the &quot;Audio' section of the preferences menu, you will see a list of all audio interfaces available for your system. If you have connected an interface and aren't getting sound through it from RMS Mix®, check that it is selected here.</p>
+              <p><img src="images/ss-pref2.png" width="400" height="483" alt="pref2" /></p>
+              <p>Under the &quot;Functions&quot; tab, you are able to re-assign the function keys on your keyboard. The possible commands are:</p>
+              <ul>
+                <li>Rewind/Previous Song</li>
+                <li>Previous Marker</li>
+                <li>Go</li>
+                <li>Stop</li>
+                <li>Next Marker</li>
+                <li>Next Song</li>
+                <li>Exit Vamp</li>
+                </ul>
+              <p><img src="images/ss-pref3.png" width="400" height="483" alt="pref3" /></p>
+              <p><a name="clickpref" id="clickpref"></a>Under the &quot;Click&quot; tab, you can adjust the volume of the click by decibals (dB). This can be done in realtime while RMS Mix® is playing. If you set the volume to &quot;off&quot; but have the click activated, you will still be able to see the visual click if that window is open.</p>
+              <p>You can also direct the click to a different stereo output pair, if your audio interface has more than one.</p>
+              <p>If the &quot;countoff&quot; checkbox is checked, then the click will play for a full measure before RMS Mix® starts playback.</p>
+<h5>Show Management</h5>
+              <p>Found under the &quot;Tools&quot; menu, you can use &quot;Show Management&quot; to switch between the different exports and downloads of shows available on your computer. These are organized in folders by the show, and then specific exports will be listed by the name you gave each export from with Sinfonia® or Coach®.</p>
+              <p><img src="images/ss-showmanagement.png" width="500" height="353" alt="showman" /></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+        <!-- end #content -->
+        <div id="sidebar-wrapper">
+          <div id="sidebar">
+            <ul>
+              <li> 
+                <!--div id="search" >
+                <form method="get" action="#">
+                  <div>
+                    <input type="text" name="s" id="search-text" value="" />
+                    <input type="submit" id="search-submit" value="GO" />
+                  </div>
+                </form>
+              </div-->
+                <div style="clear: both;">&nbsp;</div>
+              </li>
+              <li>
+                <h2>RMS Mix® - Desktop</h2>
+                <ul>
+                  <li><a href="#trialvfull">Trial vs. Full Version</a></li>
+                  <li><a href="#purchasing">Purchasing the Full Version</a></li>
+                  <li>    <a href="#authentication">Authentication</a></li>
+                  <li>    <a href="#additionalinstallations">Additional Installations</a></li>
+                  <li>    <a href="#expirationoflicense">Expiration of License</a></li>
+                  <li><a href="#showmanagement">Show Management</a>
+                  <li>    <a href="#loadingashow">Loading From Other Programs</a></li>
+                  <li><a href="#interface">Interface</a></li>
+                  <li>    <a href="#navigation">Navigation Window</a></li>
+                  <li>    <a href="#relocate">Arbitrary Relocate</a></li>
+                  <li>    <a href="#parts">Parts Mixer</a></li>
+                  <li>    <a href="#output">Output Mixer</a></li>
+                  <li><a href="#menuitems">Menu Items</a></li>
+                </ul>
+              </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.rms.biz/contact/">Contact Us</a></p>
+                </li>
+              
+            </ul>            
+          </div>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

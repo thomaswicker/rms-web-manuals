@@ -1,0 +1,231 @@
+!!!
+%html{:lang => "en"}
+  = Haml::Engine.new(File.read('components/views/partials/rms_coach_head.haml')).render
+  
+  %body
+    
+    / ################################ BEGIN NAVBAR ################################
+    %span.sticky
+      %nav.top-bar{"data-options" => "sticky", "data-topbar" => "", :role => "navigation"}
+        %ul.title-area
+          %li.name
+            %a.navbar-brand{:href => "http://www.rms.biz"}
+              %img{:src => "http://www.rms.biz/media/images/rms_logo.svg"}/
+          %section.web-manual-label.show-for-large-up RMS Coach
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span Menu
+        %section.top-bar-section
+          %ul.right
+            %li
+              %a{:href => "index.html"} introduction
+            %li
+              %a{:href => "installation.html"} installation
+            %li.active
+              %a{:href => "quickstart.html"} quick start
+            %li
+              %a{:href => "interfaceediting.html"} interface editing
+            %li
+              %a{:href => "menus.html"} menus
+
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING ABOVE THIS LINE !!!!!!!!!!!!!!!########################
+
+
+
+    %section#rms-manuals-container
+      %section#rms-manuals-right-alt
+        
+        %a.button.split{:href => "#"}
+          Quick Page Nav
+          %span{"data-dropdown" => "drop"}
+        %br
+          %ul#drop.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{:href => "#interfaceoverview"} Interface Overview
+            %li
+              %a{:href => "#basicsofuse"} Basics of Use
+            %li
+              %a{:href => "#tapcontrols"} Tap Controls
+            %li
+              %a{:href => "#shortcuts"} Shortcuts
+            %li
+              %a{:href => "#navigation"} Navigation
+            %li
+              %a{:href => "#sharingshowdata"} Sharing Your Showdata
+      
+      %section#rms-manuals-left
+        #rms-manuals-left-inner
+          %h1 Quick Start
+          %p.callout
+            Now that you have RMS Coach
+            %sup.superscript ®
+            fully installed, let's explore the robust features available at your fingertips!
+          %h3
+            %a#interfaceoverview{:name => "interfaceoverview"}>
+            Interface Overview
+          %p
+            %a{:href => "images/interface.png", :target => "_new"}
+              %img{:alt => "interface", :height => "335", :src => "images/interfacesmall.png", :width => "530"}/
+          %ol
+            %li Metronome - Activating this icon turns on a metronome click during playback.
+            %li Meter - Shows the current meter at the playback marker (the red line) in the Timeline.
+            %li Position - Shows the current position of the playback marker, by measure number and beat.
+            %li Transport - Controls for starting and stopping playback.
+            %li Tempo - Shows the programmed tempo and tap rhythm as well as the user defined tempo and tap rhythm. You can push the circular arrow key to revert to default.
+            %li Key - Allows the user to quickly move the key of the song up or down, and you can use the circular arrow key to revert to default.
+            %li Timeline - Shows a general overview of the form of the song, as well as the current position and any edits made to the form, such as (cuts, vamps, attaccas, etc).
+            %li Songs - Shows the list of songs for the given show. If you are in trial mode, unavailable songs will be grayed out.
+            %li Parts - A list of vocal parts for the selected song, as well as an accompaniment piano track. Parts can be muted or assigned different instruments, or made softer or louder.
+            %li Markers - A list of significant spots within the current song and their position, allowing for quick jumps within the song.
+          %h3
+            %a#basicsofuse{:name => "basicsofuse"}>
+            Basics of Use
+          %p
+            RMS Coach
+            %sup.superscript ®
+            is designed for intuitive use, but with a depth of customization for more advanced users. If you want to learn more about these features, jump to the
+            %a{:href => "interfaceediting.html"} INTERFACE AND EDITING
+            section of the manual.
+          %p Click the Play button to start music, or hit the Spacebar in rhythm to set a tempo yourself. Click on other songs or markers to navigate to different areas of the score. Or double click in the timeline to jump to a different part of the song. Adjust the part faders to bring them up or down in volume. Adjust the tempo slider to speed up or slow down playback.
+          %h3
+            %a#tapcontrols{:name => "tapcontrols"}>
+            Tap Controls
+          %p
+            RMS Coach
+            %sup.superscript ®
+            v2 adds a powerful new tool familiar to users of Sinfonia
+            %sup.superscript ®
+            \- the ability to &quot;play&quot; the music live, in a tempo of your choosing!
+          %p
+            By tapping the spacebar at your desired tempo, as you would a piano, you propel the song according to your individual interpretation. The process is analogous to conducting in the traditional sense; as you beat time, RMS Coach
+            %sup.superscript ®
+            responds. You can speed up and slow down to follow the performers. You can create deep rubato passages or taut accelerandos. 'Playing' is an essential way to breathe life into your rehearsals with RMS Coach
+            %sup.superscript> ®
+            \.
+          %p Try playing a song in tempo. To start, simply navigate the playback cursor to where you want to play from, and tap the Spacebar in rhythm to have to software follow along. To know what rhythm you should be playing, look at the note value next to the tempo indication along the top of the program window. This tells you if you should tap along in quarter notes, or eighth notes, or whatever note value is appropriate for that measure of music.
+          %p
+            %img{:alt => "temponotevalue", :height => "93", :src => "images/temponotevalue.png", :width => "177"}/
+          %p
+            When you &quot;play&quot; RMS Coach
+            %sup.superscript> ®
+            , tempo changes are immediate and you can start and stop on a dime, just like you would if you were playing any other musical instrument. It may take a minute to get a feel for this! But like anything, practice makes perfect.
+          %p
+            %em Note that you can trigger automatic playback by pressing the play button with the mouse or by pressing the F8 key.
+          %h3
+            %a#shortcuts{:name => "shortcuts"}>
+            Shortcuts
+          %p
+            RMS Coach
+            %sup.superscript ®
+            comes with a default set of shortcuts to make navigation and control easy.
+            %br/
+          
+          %table.shortcut-table-left
+            %tr
+              %th{:scope => "col", :width => "124"} Key
+              %th{:scope => "col", :width => "160"} Function
+            %tr
+              %td Spacebar
+              %td Tap in tempo
+            %tr
+              %td F1
+              %td MIDI reset
+            %tr
+              %td F2
+              %td (Unassigned)
+            %tr
+              %td F3
+              %td Slower
+            %tr
+              %td F4
+              %td Faster
+            %tr
+              %td F5
+              %td A Tempo
+            %tr
+              %td F6
+              %td Rewind/Previous Song
+            %tr
+              %td F7
+              %td Previous Marker
+          
+          %table.shortcut-table-right
+            %tr
+              %th{:scope => "col", :width => "124"} Key
+              %th{:scope => "col", :width => "160"} Function
+            %tr
+              %td F8
+              %td Go
+            %tr
+              %td F9
+              %td Stop
+            %tr
+              %td F10
+              %td Next Marker
+            %tr
+              %td F11
+              %td Next Song
+            %tr
+              %td F12
+              %td Exit Vamp
+            %tr
+              %td Page Up
+              %td Previous Song
+            %tr
+              %td Page Down
+              %td Next Song
+          %h3
+            %a#navigation{:name => "navigation"}>
+            Navigation
+          %p You can jump to any song, marker or position within the Timeline by simply clicking on the desired spot.
+          %p You can also jump to a specific measure number or marker by simply typing on the keyboard. When you start typing using the alphanumeric keys, a &quot;Go to…&quot; dialogue will pop up. Once you have entered the measure number or marker name, hit the return key once to &quot;arm&quot; the relocation, and then hit the return key again to jump to that spot.
+          %p
+            %img{:alt => "goto", :height => "128", :src => "images/gotoarmed.png", :width => "428"}/
+          %p
+            RMS Coach
+            %sup.superscript ®
+            has the ability to dynamically recognize marker locations and will autocomplete as you type. This often allows you to jump to a specific spot with only a few keystrokes.
+          %h3
+            %a#sharingshowdata{:name => "sharingshowdata"}>
+            Sharing Your Showdata
+          %p
+            RMS Coach
+            %sup.superscript ®
+            provides an easy and powerful new way to share edits with other members of your production. Under the &quot;Tools&quot; menu there is an option to &quot;Share Show Data&quot;. Currently the only method is to share via Email, but future versions of RMS Coach
+            %sup.superscript ®
+            will provide alternate methods of sharing show data.
+          %p
+            %img{:alt => "shareshowdata", :height => "154", :src => "images/shareshowdata.png", :width => "239"}/
+          %p Clicking &quot;OK&quot; will automatically open up your default email client and attach a copy of the current show to an email with basic instructions on loading the file. All you have to do is put in the email addresses of your team and hit &quot;send&quot;.
+          %p
+            %em Please note that this is not compatible with browser-based email. To share show data using a browser, you will need to use File-&gt;'Save As' to export a version of your show to a folder, then attach that file to an email manually. Be sure to include instructions on how to load the file!
+      
+      %section#rms-manuals-right
+        %aside#rms-manuals-right-inner3
+          %h2.page-nav-header Quick Start
+          %ul.page-nav
+            %li
+              %a{:href => "#interfaceoverview"} Interface Overview
+            %li
+              %a{:href => "#basicsofuse"} Basics of Use
+            %li
+              %a{:href => "#tapcontrols"} Tap Controls
+            %li
+              %a{:href => "#shortcuts"} Shortcuts
+            %li
+              %a{:href => "#navigation"} Navigation
+            %li
+              %a{:href => "#sharingshowdata"} Sharing Your Showdata
+          
+          .page-nav-contact
+            %h2.page-nav-header Contact
+            %a{:href => "http://www.rms.biz"} Realtime Music Solutions, LLC
+            %a{:href => "tel: +12126200774"} (212) 620-0774
+            %a{:href => "http://www.realtimemusic.biz/contact/"} Email us
+
+
+
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING BELOW THIS LINE !!!!!!!!!!!!!!!########################
+
+    = Haml::Engine.new(File.read('../components/views/partials/footer.haml')).render
+

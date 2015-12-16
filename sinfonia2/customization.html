@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+  </script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 12px
+}
+-->
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="http://www.rms.biz/products/sinfonia/">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="quickstart.html">Quick Start</a></li>
+          
+          <li><a href="interfaceediting.html">Interface and Editing</a></li>
+          
+          <li><a href="advanced.html">Advanced</a></li>
+          <li class="current_page_item"><a href="customization.html">Customization</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Customization</a></h2>
+              <div class="entry">
+                
+                <p>Sinfonia® can be uniquely tailored to fit the needs of your specific production in many ways. From its modular window display to its ability to load different versions of your show, you will find that almost every situation you would encounter in a live performance setting has been accounted for.</p>
+            <h3 class="title"><a name="setupwizard" id="setupwizard"></a>Setup Wizard</h3>
+            <p><img src="images/SetupWizard.png" alt="" width="400" height="299" /></p>
+            <p>Setting up Sinfonia to work with your keyboard and audio device is a very simple process. With your  MIDI-enabled keyboard and optional audio interface connected to your computer, select  Set-Up  Wizard from the Tools menu. This will configure your computer for use  with Sinfonia. </p>
+            <p><em>Please note, it is important that you have your  MIDI keyboard and audio device connected to the computer before you launch Sinfonia for the program to recognize your device!</em></p>
+            <h5>Configure Keyboard Input            </h5>
+            <p><img src="images/SetupWizard1.png" alt="" width="400" height="295" /></p>
+            <p>In live performance, Sinfonia is operated via a connected  MIDI-enabled keyboard. The specifics of how you connect your  keyboard are left up to you, but for suggestions on what you might  need, please visit our website at <a href="http://www.rms.biz">www.rms.biz</a> or visit your local music equipment retailer.            </p>
+            <h5>Configure Audio Output </h5>
+            <p><img src="images/SetupWizard2.png" alt="" width="400" height="297" /></p>
+            <p>The final screen of the Wizard selects which audio interface device you  want Sinfonia to utilize. For example, if you have an M-Audio  FireWire 410 connected to your computer you would select that device on  the setup screen.</p>
+            <p>It is possible to run sound out of your computer’s default audio device  (i.e. the headphone jack on a laptop) but you will have fewer options  for routing the sound, as well as decreased quality of sound when  compared to an external audio device. For suggestions on what audio  hardware you might need, please read our <a href="http://www.realtimemusicsolutions.com/haroon/rmskb_whatyouneed.html"><em>What You Need</em></a> article or visit your local music equipment retailer. </p>
+<h3 class="title"><a name="savesaveas" id="savesaveas"></a>New, Save, Save As, Open</h3>
+                <p>One of the most important aspects of Sinfonia® to be familiar with is the Save and Open functions. When you first run Sinfonia® and are about to begin editing, it is a good idea to save your show with a unique name, such as &quot;WSS1-PalmerHS2012&quot; by using the Save As function. Then, as you make edits, <strong>be sure to save frequently!</strong></p>
+                <p>Let's say you are using understudies in your show, and your matinee Maria doesn't quite have the same range as your primary Maria. You can have different versions of the show saved with different transposition settings, so that when it comes time to perform with the understudy, all you have to do is open the appropriate show file and you are ready to go.</p>
+                <p>(In this situation, it would be best to make all edits except the transposition settings to the primary file, and then create your different versions. This way, you don't have to make edits that apply to both shows twice.)
+                <p>The New function allows you to create an unedited, default showfile. This will not overwrite your current showfile, which you can access, along with any other showfiles you've created, by using the Open function. Use New if you want to create an alternate version or if you need to restore a song to default settings.</p>
+                <h3 class="title"><a name="backup" id="backup"></a>Backup, Load</h3>
+                <p>The Backup and Load functions, found under the Tools menu, deal with your entire show as a project. Whereas Save As and Open pertain to individual files and allow you to create and manage separate versions of the same show, Backup and Load package everything together and allow you to store the project in an alternate location.  This is important in case of a catastrophic event with your computer (i.e. lost or stolen, unrecoverable breakdown). It is also useful in case you want to transfer all data from one computer to another.</p>
+                <p><strong>Very important:</strong> it is highly recommended that, after you have made all the edits to your show, you <strong>backup</strong> the show files to an external drive, such as a USB stick. When you license Sinfonia®, you are given the ability to install the program on multiple machines. You should also have a second computer on hand that is ready to be swapped in in at any time. Technical difficulties do happen, and you don't want to be caught unprepared.</p>
+                <p>Note: If you are performing more than one title (i.e. Sound of Music and Fiddler on the Roof) you will need to run the Backup command for each show separately.</p>
+                <h3 class="title"><a name="importoutput" id="importoutput"></a>Import Output Settings</h3>
+                <p>Suppose your Sinfonia implementation involves a 16 channel mix.  You've spent a lot of time carefully routing various instruments to all  available outputs. It sounds great and takes full advantage of your  theatre's sophisticated sound capabilities. </p>
+                <p>However, you also want to rehearse at home, using  your personal computer with just a simple 2-channel stereo mix.  Furthermore, you want to continue making non-output related edits at  home and use them at the theatre. </p>
+                <p>There are a few challenges here:</p>
+                <ul>
+                  <li> You can't listen to the 16 channel mix on your 2-channel home  system. So at home, the show's output settings need to be reduced. You  will be prompted to save a new show file to accommodate this whenever  you launch Sinfonia on a system with fewer outputs than the  previous launch.<br />
+                  </li>
+                  <li>But if you make any changes that you then want to use at the  theatre, you've lost all the careful routing to your 16 channels. This  is where the Import Output Settings utility comes in handy.</li>
+                </ul>
+                <p>As the name suggests, Import Output Settings lets you grab the  output assignments from a different saved show. So if you load the  2-channel show file onto your theatre's computer, this utility will  bring in the 16-channel assignments. </p>
+                <p>Note: it wlll ignore songs with changed names - and  won't know what to do if you added songs. But it should get you most of  the way there so that any of these discrepancies can quickly be  addressed manually.</p>
+<h3 class="title"><a name="outputtest" id="outputtest"></a>Output Test, Instrument Test</h3>
+                <p>When you load up Sinfonia® for a rehearsal or a performance, it is recommended that you run tests to make sure that your hardware is connected properly. This is for the benefit of your theater's sound technician as much as it is for you. </p>
+                <p>Here is how to run an output test:</p>
+                <p><img src="images/v2OutputTest.png" alt="" width="421" height="428" /></p>
+                <ol>
+                  <li>Open the Output Mixer window</li>
+                  <li>Enter Edit mode</li>
+                  <li>Toggle the button with the headphone icon above the channel you would like to test</li>
+                </ol>
+                <p>This will send a neutral signal tone through that channel. If you do not hear the tone but can see that an audio signal is being sent through the channel, you should consult with your sound technician. Note that most Sinfonia® installations will probably only use a single stereo channel.</p>
+                <p>After you have confirmed that your audio hardware is set up correctly, you should perform an Instrument test to check that individual instrument channels are routed correctly.</p>
+                <p>Here is how to run an instrument test (which is very similar to the output test.)</p>
+                <p><img src="images/v2InstrumentMixer.png" alt="" width="479" height="466" /></p>
+                <ol>
+                  <li>Open the Output Mixer window</li>
+                  <li>Enter Edit mode</li>
+                  <li>Toggle the button with the headphone icon above the channel you would like to test</li>
+                </ol>
+                <p>This will toggle a repeating 5-note scale on the instrument you have selected.
+</p>
+                <p>This is particularly useful if you are using a more complicated, multi-channel audio setup in Sinfonia®. This way, you can check that all the winds are properly routed to channel A, all the strings are properly routed to B and so forth.</p>
+                <p><strong>Very important:</strong> You should run these tests each time you load up Sinfonia®, whether in rehearsal or in performance. You should work in tandem with your theater sound technician to make sure that you have a strong, clean signal. </p>
+               <h3 class="title"><a name="windowlayouts" id="windowlayouts"></a>Window Layouts</h3>
+               <p>As you have probably noticed, Sinfonia® is highly customizable. To make sure that you aren't presented with any unnecessary information during editing and performance, you can hide any windows which you don't need.</p>
+               <p>A typical performance setup might include the following windows: Transport, Songs, Timeline, Keyboard, Rhythm and Markers. You can reposition (and resize) windows to fit whatever on-screen real-estate you have available with your specific computer. </p>
+               <p>Window layout settings are saved automatically. When you are ready for performance, just move the windows where you would like them to be and your settings will apply to any file you open.</p>
+               <p>Note that you can quickly cycle through the open windows in Sinfonia® by using the CTRL-~ command in Windows or CMD-~ in OSX.</p>
+               <h3 class="title"><a name="additionaltools" id="additionaltools"></a>Additional Tools</h3>
+               <h4>MIDI Reset</h4>
+               <p><img src="images/v2midireset.png" alt="" width="239" height="280" /></p>
+               <p>The MIDI Reset button sends a simple all-notes-off instruction to Sinfonia®. Use this in the rare occasion where you get a stuck note, or you are hearing any sounds from Sinfonia® that you can't identify.</p>
+               <p>You can activate the all-notes-off command by either using the MIDI Reset window, or by hitting CTRL-M in Windows or CMD-M in OSX.</p>
+               <h4>RMS SampleSync</h4>
+               <p>When you first install Sinfonia®, you should be prompted to run the SampleSync program. If you need to run SampleSync again, you can do so from the Tools menu. This program makes sure that your local Sinfonia® sound library is completely up-to-date. This can by done in two ways: from local media (such as a DVD drive) or over the internet.</p>
+               <p>Please note - the full sample library is quite large! If you have a slow internet connection, or do not have internet available for the computer you are using Sinfonia® on, you should contact the RMS offices at 212-620-0774 to request a DVD of the sample library.</p>
+               <p>It might take a while to install or update the sample library. Please make sure that everything is installed and working correctly <strong>before your first rehearsal.</strong></p>
+               <h3 class="title"><a name="rmsmix" id="rmsmix"></a>Integration with  RMS MIX®</h3>
+               <p>Every installation of Sinfonia® comes bundled with a trial version of RMS Mix®, which is a separate resource that provides sophisticated audio playback from your smartphone or desktop computer. RMS Mix®  gives you a very easy way to take your show with you (or give members of your production accompaniment tracks for rehearsal or home practice).</p>
+               <p>One of the main features of RMS Mix® is the ability for you to export your current Sinfonia® show (with key changes, cuts, and any other edits you might have made) for playback within RMS Mix®! To do so, there are couple steps to follow.</p>
+               <h4 class="title">Setting RMS Mix Groupings</h4>
+               <p>Under the &quot;Tools&quot; menu, first select the &quot;RMS Mix Groupings&quot; menu item. This will pop up a window with a list of groupings that RMS Mix will use to categorize instruments. </p>
+               <p><img src="images/ss-MixGroupings1.png" alt="" width="408" height="407" /></p>
+               <p>You can think of them like families of instruments that you will later be able to set levels for (instead of individual instruments). Sinfonia® shows will come with pre-set groupings, but you can make your own by re-naming the groups (by double-clicking) and re-assigning the instruments (again, by double-clicking on the next screen).</p>
+               <p><img src="images/ss-MixGroupings2.png" alt="" width="407" height="408" /></p>
+               <h4 class="title">Setting Markers</h4>
+               <p>Sinfonia shows all come with pre-programmed markers that will also show up in RMS Mix®. However, by editing the markers within Sinfonia®, you can customize the list of markers in Mix®. <a href="interfaceediting.html#markers">Click here for information on editing markers</a>.</p>
+               <h4 class="title">Exporting to RMS Mix®</h4>
+               <p>Once you have your Mix Groupings set, you are ready to begin the exporting process.</p>
+               <ol>
+                 <li>Under &quot;Tools&quot;, select &quot;Export to RMS Mix&quot;</li>
+                 <li>Enter your name and email. (they should match the information you used to acquire your Sinfonia® license)</li>
+                 <li>Enter a description of the export. Possibilities include &quot;General export&quot;, &quot;Transposed Mary's parts half step down&quot; or &quot;Slowed dance numbers way down for rehearsal&quot;</li>
+                 <li>Choose either &quot;Local Export&quot; or &quot;RMS Cloud Service&quot;
+                   <ul>
+                     <li>If you are going to be using RMS Mix® on the same computer as Sinfonia®, &quot;Local Export&quot; is much faster</li>
+                     <li>If you are going to use RMS Mix® (mobile), or if other members of your production will be using the export, choose &quot;RMS Cloud Service&quot;</li>
+                   </ul>
+                 </li>
+                 <li>Click &quot;Export&quot;. Sinfonia will now begin rendering the entire show for use within RMS Mix®.</li>
+                </ol>
+               <p><img src="images/ss-MixExport.png" alt="" width="408" height="307" /></p>
+<p>Please note that you have a limited number of RMS Cloud Service exports. With the trial version of Mix® included with Sinfonia®, you have a single export available to test out the program.</p>
+<p>For more information, please visit the <a href="http://www.rms.biz/products/mix/">RMS Mix® website</a>.               </p>
+<h3 class="title"><a name="preferences" id="preferences"></a>Preferences</h3>
+              <h4>General</h4>
+              <p>&nbsp;</p>
+              <h4>Audio</h4>
+              <p><img src="images/v2AudPrefs.png" alt="" width="321" height="400" /></p>
+              <p>If you would like to quickly switch your audio device without running the Set-up Wizard, you can do so here. You can also select the buffer size for Sinfonia® to use. Generally, you want to try and select the smallest buffer possible without getting stutters or other audio artifacts when you play the program. Note that larger buffer sizes with create more &quot;lag&quot; when you are using Sinfonia®.</p>
+              <h4>Rhythm</h4>
+              <p><img src="images/v2RhythmPrefs.png" alt="" width="324" height="400" /></p>
+              <p>You can customize the look of the Rhythm window using these options. By default, Sinfonia® will underline the current beat in the window, but if you can change that to be highlighted instead.</p>
+              <p>You can choose whether or not Sinfonia® highlights the current measure. A highlighted measure will have a blue outline.</p>
+              <h4>Colors</h4>
+              <p><img src="images/v2ColorPrefs.png" alt="" width="322" height="400" /></p>
+              <p>Using these options, you can select what color edits will show up as in the Timeline window. Simply click on the color box next to each type of edit and choose what you would like it to be.</p>
+              <h3 class="title"><a name="conclusion" id="conclusion"></a>Conclusion</h3>
+              <p>As you can see, Sinfonia® is an extremely powerful piece of software. If you are using it for the first time, don't be overwhelmed! Many of the basic functions are highly intuitive, and the more that you spend time with the program, the easier it will be to both edit the show and to perform with it.</p>
+              <p>If you have any sort of questions about the program that aren't covered by this manual, please reference the FAQ found at <a href="http://www.rms.biz/support/sinfonia/faq">http://www.rms.biz/support/sinfonia/faq.</a></p>
+              <p>You can also contact the RMS offices for technical support by calling 212-620-0774.</p>
+              <p>Just remember, practice makes perfect, and ENJOY THE SHOW!</p>
+<p>&nbsp;</p>
+                </ol>
+              </p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Customization</h2>
+                  <ul>
+                  <li><a href="#setupwizard">Setup Wizard</a></li>
+                    <li><a href="#savesaveas">New, Save, Save As, Open</a></li>
+                    <li><a href="#backup">Backup, Load</a></li>
+                    <li><a href="#importoutput">Import Output Settings</a></li>
+                    <li><a href="#outputtest">Output Test, Instrument Test</a></li>
+                    <li><a href="#windowlayouts">Window Layouts</a></li>
+                    <li><a href="#additionaltools">Additional Tools</a></li>
+                    <li><a href="#rmsmix">Integration with  RMS MIX®</a></li>
+                    <li><a href="#preferences">Preferences</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.rms.biz/contact/">Contact Us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --></div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+
+<!-- end #footer -->
+</body>
+</html>

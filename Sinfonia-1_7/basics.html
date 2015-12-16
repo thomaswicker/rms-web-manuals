@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+  </script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 12px
+}
+-->
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="#">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="quickstart.html">Quick Start</a></li>
+          <li class="current_page_item"><a href="basics.html">Basics</a></li>
+          <li><a href="playing.html">Playing</a></li>
+          <li><a href="editing.html">Editing</a></li>
+          <li><a href="advanced.html">Advanced</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Basics</a></h2>
+              <div class="entry">
+                <h3 class="title">Logging On</h3>
+                <p>Once Sinfonia® has been powered up, it will go through a series of
+                  startup processes. This should take less than thirty seconds. After
+                  these processes are complete, a log-in dialog box will appear.</p>
+                <ul>
+                  <li>Click the icon next to <font color="green">rms</font>.</li>
+                </ul>
+                <p>You will see the main player load, with the default
+                  show. This should already be set to Act1 of whatever show you have
+                  licensed. So if, for example, you are producing Annie, something along
+                  the lines of <font color="green">annie1</font>, will appear in the “Current Show” field, with all
+                  the songs in the first act of Annie present in the “SONG LIST” window.</p>
+                <table class="figure" width="500">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">Player Window</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="images/playerwindow1.png" alt="Player Window" height="366" width="500" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>You are now ready to play Sinfonia® (see instructions in the <a href="playing.html">next
+                  section</a> for details on playing Sinfonia®.)</p>
+                <h3 class="title"><a name="loadinganewshow" id="loadinganewshow"></a>Loading A New Show</h3>
+                <p>After you have finished with the first act, you will need to load another show - the second act of ANNIE for example, which may be called &ldquo;<font color="green">annie2</font>&rdquo; or something similar. Sinfonia® treats the separate acts of a musical as individual shows.</p>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">Sinfonia Editor</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/EditorWindow.png" alt="xxxxx" /></td>
+                  </tr>
+                </table>
+                <ol>
+                  <li>Click the &ldquo;<font color="green">Editor</font>&rdquo; button from the Player window. You will immediately be taken to the Editor. </li>
+                  <li>If it is not already selected, click the &ldquo;<font color="green">Shows</font>&rdquo; tab. This will take you to the area of the Editor where general housekeeping for show files takes place&mdash;including selecting the next show. </li>
+                  <li>Click &ldquo;<font color="green">New Default Show</font>&rdquo;. A pop-up window will appear containing all available shows in the box.</li>
+                  <table width="500" class="figure">
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">New Default Show Window</p></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="images/NewDefaultShowWindow.png" alt="xxxxx" /></td>
+                    </tr>
+                  </table>
+                  <li>Click on the show you want.</li>
+                  <li style="list-style: none"></li>
+                  <li>You will return to the &ldquo;<font color="green">Shows</font>&rdquo; tab (the previous screen).
+                    <p>Notice that your selected show now appears in the &ldquo;Show List&rdquo; box and the &ldquo;Current Show&rdquo; field.</p>
+                  </li>
+                  <li>Click &ldquo;<font color="green">Exit</font>&rdquo;. This returns you to the Player with the new show loaded. </li>
+                </ol>
+                <h4 class="title">An Alternative Way To Load A New Show<br />
+                </h4>
+                <p>When you enter the Editor from the Player window you will see the current show listed in the top left corner of the Editor window. Clicking on the arrow to the right of that show name will bring up a pop-up box; click on the name of the show you would like to load. You may then click the Exit button to return to the player.</p>
+                <h3 class="title"><a name="shuttingdown" id="shuttingdown"></a>Shutting Down</h3>
+                <ol>
+                  <li>Click on the ‘Quit’ button from the Player window. You will be returned to the original Log-In Screen.</li>
+                  <li>Click on the ‘Shutdown’ button. The computer will go through various shutdown routines. After
+                    about a minute, the computer will shut itself off. Do not close the computer until it has completely finished shutting down.</li>
+                </ol>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Basics</h2>
+                  <ul>
+                    <li><a href="basics.html">Logging On</a></li>
+                    <li><a href="#loadinganewshow">Loading A New Show</a></li>
+                    <li><a href="#shuttingdown">Shutting Down</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="../../../../../contact">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --></div>
+<div id="footer">
+  <p>Copyright (c) 2010 Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+
+<!-- end #footer -->
+</body>
+</html>

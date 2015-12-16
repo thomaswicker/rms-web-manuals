@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Mix</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="http://www.rms.biz/products/sinfonia/">RMS Mix&reg;</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li class="current_page_item"><a href="introduction.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="setup.html">Setup</a></li>  
+          <li><a href="operation.html">Operation</a></li>
+          <li><a href="customization.html">Customization</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">  
+  <div id="page">
+    <div id="page-bgtop">
+      <div id="page-bgbtm">
+        <div id="content">
+          <div class="post">
+            <h2 class="title"><a href="#">Welcome to RMS Mix&reg;</a></h2>
+            <div class="entry">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <h4 class="title">Heading 4...</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <h3 class="title"><a name="Aa" id="Aa"></a>Aa</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <h3 class="title"><a name="Bb" id="Bb"></a>Bb</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+<h3 class="title"><a name="Cc" id="Cc"></a>Cc</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <h3 class="title"><a name="Dd" id="Dd"></a>Dd</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ligula vulputate aliquet ullamcorper, libero dolor commodo libero, ac rutrum erat sem eu dolor. Nunc vel sagittis nibh. Nullam auctor, ex eget semper luctus, leo lectus varius ipsum, ut pellentesque dui nisl sit amet tellus. Suspendisse potenti. Praesent interdum aliquam ipsum, sit amet aliquet sem sollicitudin et. Sed eget semper nibh. Donec ut accumsan ante. Fusce quis arcu ipsum. Vestibulum a accumsan erat. Aenean et quam non velit aliquam tempor sed et dui. Cras ornare non mi ac pharetra. Nullam ornare, dui vel mollis sagittis, lorem erat ultrices dolor, et egestas velit dolor quis tellus. Integer accumsan tincidunt purus. Ut feugiat vel leo vitae tristique. Etiam egestas, justo ac condimentum sodales, justo odio mollis quam, iaculis varius ligula lorem eget tellus.</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+        <!-- end #content -->
+        <div id="sidebar-wrapper">
+          <div id="sidebar">
+            <ul>
+              <li> 
+                <!--div id="search" >
+                <form method="get" action="#">
+                  <div>
+                    <input type="text" name="s" id="search-text" value="" />
+                    <input type="submit" id="search-submit" value="GO" />
+                  </div>
+                </form>
+              </div-->
+                <div style="clear: both;">&nbsp;</div>
+              </li>
+              <li>
+                <h2>Introduction</h2>
+                <ul>
+                  <li>Aa</li>
+                  <li>Bb</li>
+                  <li>Cc</li>
+                  <li>Dd</li>
+                </ul>
+              </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.rms.biz/contact/">Contact Us</a></p>
+                </li>
+              
+            </ul>            
+          </div>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

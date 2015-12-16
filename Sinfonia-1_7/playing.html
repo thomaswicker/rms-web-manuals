@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+  </script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="#">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="quickstart.html">Quick Start</a></li>
+          <li><a href="basics.html">Basics</a></li>
+          <li class="current_page_item"><a href="playing.html">Playing</a></li>
+          <li><a href="editing.html">Editing</a></li>
+          <li><a href="advanced.html">Advanced</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Playing</a></h2>
+              <div class="entry">
+                <h3 class="title">Playing Sinfonia®</h3>
+                <p>Remember – Sinfonia® is an instrument. It is meant to be played and
+                  performed over the course of the show. It is not a playback device like
+                  a tape deck or CD player. You can not &quot;fire-and-forget&quot; a backing-track version of the show using Sinfonia®, it is meant to be played live at all times.</p>
+                <p>The most basic way to play Sinfonia® is through the “Play” keys. By
+                  tapping the play keys at your desired tempo, as you would a piano,
+                  you propel the song according to your individual interpretation. The
+                  process is analogous to conducting in the traditional sense; as you
+                  beat time, Sinfonia® responds. You can speed up and slow down to
+                  follow the performance. You can create deep rubato passages or taut
+                  accelerandos. ‘Playing’ is the essential way to breathe life into
+                  Sinfonia®. So for starters, try using the play keys to perform some
+                  songs.</p>
+                <h4 class="title">An Early Pitfall</h4>
+                <p>Operation of Sinfonia® is pretty straightforward. It does, however,
+                  require the use of the MIDI keyboard to function properly.</p>
+                <ul>
+                  <li>Make sure the MIDI Keyboard is powered on with the red power
+                    light illuminated.</li>
+                </ul>
+                <h3 class="title"><a name="shownavigation" id="shownavigation"></a>Show Navigation</h3>
+                <p>The top two center stacked boxes are labeled <b><i>Current Show</i></b> and <b><i>Current Song</i></b>. These indicate what you are about to
+                  perform.</p>
+                <p>When Sinfonia® is first launched (see “<a href="basics.html">Logging On</a>”), it will
+                  automatically load the first song (i.e., 01-Overture). Notice that the
+                  first song in the <b><i>Song List</i></b> is highlighted. The
+                  highlight is another
+                  indicator of the current song. You may begin playing this song by
+                  pressing “GO” on the MIDI Keyboard; Sinfonia® will play the song at the
+                  pre-programmed tempo as defined in the score. [Of course, what sets
+                  Sinfonia® apart from pre-recorded music is its unique ability to follow
+                  a conductor or singer—acting like any other instrument in the pit,
+                  except sounding like many instruments playing at one time.]</p>
+                <p>The Up [↑] and Down [↓] arrow keys on the typewriter keyboard allow
+                  you to select other songs. If you are already in play mode (the current
+                  song has not ended), the arrow keys will also act as a stop button. If
+                  the current song ends, you will either need to arrow to another song
+                  (probably the next song in the show) or go to an earlier spot in the
+                  current song to continue playing (see “<a href="#songnavigation">Song Navigation</a>”).</p>
+                <h3 class="title"><a name="songnavigation" id="songnavigation"></a>Song Navigation<br />
+                </h3>
+                <p>As mentioned earlier, hitting “GO” on the MIDI keyboard will set the
+                  song in motion. You can also enter “GO” mode by hitting [<b>F8</b>] on
+                  the typewriter keyboard. While a song is playing, hitting “STOP” on the
+                  MIDI keyboard or hitting [<b>F6</b>] on the typewriter keyboard will
+                  stop the song. If you want to jump around within a song (for rehearsal
+                  purposes or stage emergencies), there is a three-step process:</p>
+                <ol>
+                  <li>On the numeric keypad, type the measure you want to go to.<br />
+                  </li>
+                  <p>You will notice as you type that the measure number appears in the
+                    “Information” box in the bottom center portion of the screen. You must
+                    enter an actual measure number from the song or you will get an
+                    “Invalid Measure” message. Treat lettered measures with relative
+                    numbers after a decimal point (e.g. 45b= 45.2, 12c=12.3, A=0.1)</p>
+                  <li>Hit [ENTER]</li>
+                  <p>You will get a message that says “GO TO [measure number] ARMED!!!”
+                    In this way you can prepare a score jump while in performance. For
+                    example, if an actor skips a verse and the conductor says, “Take it
+                    from measure 32 on my mark,” the Sinfonia® player can, while the music
+                    plays on naturally, set up the jump by typing 32 and hitting enter.
+                    Sinfonia® is now ready for the Conductor’s cue.</p>
+                  <li>Hit “GO” on the MIDI keyboard or [<b>F8</b>] on the typewriter
+                    keyboard.</li>
+                  <p>This executes the relocation. If it happens while Sinfonia® is
+                    playing, the music continues from the jump point without disruption.
+                    Therefore, approach this step in a musical fashion (hit the keyboard on
+                    the beat, right at the appropriate cue). If these three steps are
+                    performed after a “STOP” command (i.e. during rehearsal), Sinfonia®
+                    will await your instructions to play on.</p>
+                </ol>
+                <p>To rewind to the beginning of the currently selected song, hit [<b>F5</b>] on the typewriter keyboard.</p>
+                <h3 class="title"><a name="theplayerwindow" id="theplayerwindow"></a>The Player Window</h3>
+                <p>The main Player Window provides the basic information about the
+                  music and show being performed. It is mostly there for reference,
+                  rather than something to be watched continuously. It is analogous to
+                  the dashboard on your car. When you are driving, you should mostly keep
+                  your eyes on the road, with occasional glances at the gauges and
+                  meters. Similarly, when playing Sinfonia®, you should usually be
+                  looking at your music, the Conductor, the stage action – with periodic
+                  glances at the Player Window for reference.</p>
+                <h4 class="title">Navigational Indicators<br />
+                </h4>
+                <p>There are five boxes roughly in the center of the screen (labeled
+                  from left to right): <b><i>Measure, Beat, Meter, Tempo,</i></b> and
+                  (centered underneath <i>Beat</i>) <b><i>Rhythm</i></b>. These are
+                  your basic gauges of where you are and how fast you are traveling in a
+                  particular song.</p>
+                <ul>
+                  <li>Measure – This tells you what measure you are currently in.</li>
+                  <li>Beat – This tells you what beat you are in. Off beats are denoted
+                    by non-numeric symbols.</li>
+                  <li>Meter – This displays the current meter.</li>
+                  <li>Tempo – This displays the current beats per minute played.</li>
+                  <li>Rhythm –This tells you the current beat subdivision or pattern
+                    controlled by the “PLAY” keys.</li>
+                </ul>
+                <p>As you play, Sinfonia® counts off the bars and measure numbers.
+                  The Sinfonia® measure numbers correspond to the conductor score measure
+                  numbers—they are not necessarily consecutive. NOTE: If the score
+                  measure numbers include letters (i.e., 13a, 13b), Sinfonia® will
+                  display those measure numbers as 13.1, 13.2, etc.</p>
+                <p>Underneath these gauges, there are three stacked horizontal boxes,
+                  roughly four inches long. The most important of these boxes is probably
+                  the middle one, labeled <b><i>Next Event</i></b>. Some songs have
+                  pre-programmed
+                  “Events” if they exist in the score (for example, repeats or vamps,
+                  etc.). As each event passes by, the next event will appear in this
+                  window. For example, there may be a repeat of Bars 5 to 11. As soon as
+                  Sinfonia® finishes playing bar 11 for the second time, the next action
+                  event will appear (which may say vamp Bar 111 to 112). This event will
+                  remain in the window until the measure in which it occurs has played.</p>
+                <p>The <b><i>Information</i></b> window (just beneath Next Event) is
+                  where typed
+                  information appears. For example, if you need to jump to measure 45,
+                  this number will appear in the Information box as you type it.</p>
+                <p>The box above the <i>Next Event</i> window serves a dual purpose.
+                  Most of
+                  the time it functions as a symbolic timeline, giving a satellite view
+                  of the entire song and events (repeats, cuts, etc.) contained within.
+                  However, if certain arbitrary activities are initiated, such as a cut
+                  to an alternate measure location or a vamp-on-the-fly, the box will
+                  indicate this process. You can think of it as warning lights for
+                  certain critical real-time activities.</p>
+                <p>If ‘show hotkeys in player’ is selected in the Preferences section
+                  of the Editor, there will also be a grid of 36 cells (6 rows x 6
+                  columns) at the bottom of the screen. This will display Hotkey labels,
+                  if they are created. See ‘<a href="advanced.html">Hotkeys</a>’ for more
+                  information.</p>
+                <h4 class="title">Performance Modes</h4>
+                <p>In the center of the screen, just above the Beat and Measure
+                  indicators, is a box that tells you what mode you are in at any given
+                  time during the operation of Sinfonia®. The possible modes are:</p>
+                <ul>
+                  <li>Go<br />
+</li>
+                  <li>Stop<br />
+                  </li>
+                  <li>Play</li>
+                  <li>Cruise</li>
+                  <li>Pause</li>
+                  <li>Vamp</li>
+                </ul>
+                <p>These Modes are entered or exited depending on the way the song is performed via the MIDI keyboard (or typewriter keyboard).</p>
+                <h3 class="title"><a name="midikeyboardcontrol" id="midikeyboardcontrol"></a>MIDI Keyboard Control</h3>
+                <h4 class="title">Using The MIDI Keyboard</h4>
+                <table width="500" class="figure">
+                  <tr>
+                    <td valign="bottom"><p class="Oxygen8 keyboard (top view)">Oxygen8 keyboard (top view)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/Oxygenkeyboardtop.png"
+alt="xxxxx"  /></td>
+                  </tr>
+                </table>
+                <p>Sinfonia® is capable of mapping nearly 200 functions to different
+                  MIDI keys. Most people will not have this many MIDI keys (and would not
+                  want to map that many functions even if they did). A typical small
+                  keyboard included with a rental package would come pre-mapped as in
+                  Figure 4 with the following functions labeled on the keys:
+                  Slower&nbsp;&nbsp;&nbsp; A Tempo&nbsp;&nbsp;&nbsp;
+                  Faster&nbsp;&nbsp;&nbsp; Vamp&nbsp;&nbsp;&nbsp; Hotkey Prev
+                  Bar&nbsp;&nbsp;&nbsp; CutOff&nbsp;&nbsp;&nbsp; Next
+                  Bar&nbsp;&nbsp;&nbsp; Stop&nbsp;&nbsp;&nbsp; All Notes
+                  Off&nbsp;&nbsp;&nbsp; Next Song&nbsp;&nbsp;&nbsp;
+                  Pause&nbsp;&nbsp;&nbsp; Exit Vamp&nbsp;&nbsp;&nbsp; Go Cruise Play</p>
+                <ul>
+                  <li><b>PLAY</b>: Playing is one of the key elements that make
+                    Sinfonia® a powerful performance instrument. With PLAY, Sinfonia®
+                    becomes truly expressive, following a conductor or stage action just
+                    like any other live element in the performance. With each hit of a PLAY
+                    key, the music moves along at the assigned play value (quarter, eighth,
+                    half, etc. – or patterns, like triplet swing, rumba, etc.) thereby
+                    following the tempo of the player’s performance. There are multiple
+                    Play keys - in addition to the key labeled “Play,” each key with a
+                    downward pointing arrow is a Play key. The various Play keys are
+                    functionally identical and are there to allow for a more comfortable,
+                    pianistic performance. The Play Indicator on the computer screen
+                    displays the current Play resolution or pattern name. Also, the
+                    piano-conductor score will communicate what beat or pattern was
+                    assigned to the play keys in any given measure. Out of the box, most
+                    songs are programmed to be played in one rhythmic unit throughout the
+                    entire song, unless certain time signatures or musical phrases make a
+                    change in unit more intuitive. This may be customized to the tastes and
+                    sensibilities of the Sinfonist. Once a song has been loaded, you may
+                    begin performing the song by pressing any play key in a rhythm
+                    following the conductor or performer.</li>
+                  <li><b>CRUISE</b>: Cruise is similar to Play in that each time you
+                    press the key, the music moves to the next beat subdivision and
+                    calculates tempo information. However, Cruise allows you to simply lift
+                    off from the keyboard in order to set the music in motion at whatever
+                    is the established tempo. You do not have to hit Go after hitting
+                    Cruise. You should note that because of the built-in inertia of Cruise
+                    (the music continues to move forward at an established tempo after each
+                    strike), you will only be able to affect gradual tempo changes with
+                    Cruise. It’s a little like steering a ship: you can’t change directions
+                    suddenly. More extreme tempo changes should be handled with regular
+                    Play. With a little practice, you’ll learn which musical situations are
+                    better handled by Cruise v. Regular Play. And you can always switch
+                    back and forth between the two.</li>
+                  <li><b>GO</b>: When you hit the “GO” key, you enter GO mode. Music
+                    will play at the established tempo. Therefore if no tempo has been set
+                    with either PLAY or CRUISE, the music will perform on autopilot at the
+                    preprogrammed tempo. If you have established a desired tempo with PLAY
+                    or CRUISE and then hit the “GO” button, Sinfonia® will continue playing
+                    at the tempo you have set. Just like cruise control on a car, you can
+                    jump in with the play keys at any time if you need to change the tempo.
+                    NOTE: The Sinfonia® calculates the tempo from the last two notes you
+                    hit (including the tap on the “GO” button. You must hit the “GO” button
+                    in the same tempo as the play key, otherwise, you may find yourself in
+                    a tempo you didn’t intend!</li>
+                  <li><b>EXIT VAMP</b>: Whether you are in a pre-programmed vamp (see
+                    “Action Events” above), or in a vamp you have created “on-the-fly” (see
+                    “Vamp” Key below), hitting the “EXIT VAMP” key will cause Sinfonia® to
+                    exit the vamp on the next pass through (i.e., if you have a 4-measure
+                    vamp, hitting the “EXIT VAMP” key in measure 4 of the vamp will cause
+                    Sinfonia® to exit the vamp immediately. Conversely, if you hit the
+                    “EXIT VAMP” key in measure 1 of the vamp, Sinfonia® will complete one
+                    pass of the vamp playing through measures 2, 3, and 4 before exiting).
+                    “EXIT VAMP” will also similarly function to exit a pre-programmed
+                    repeat if you need to in an emergency situation.</li>
+                  <li><b>PAUSE</b>: Hitting the “PAUSE” key will cause Sinfonia® to
+                    hold in place until another key is struck. This is especially
+                    advantageous on long fermatas you may want to take, such as going from
+                    the “Tomorrow” theme into “Hard-Knock Life” in the ANNIE Overture, or
+                    at the end of big numbers where a longer hold is desired. The “PAUSE”
+                    key is used in conjunction with the “CUTOFF” key (see below).</li>
+                  <li><b>STOP</b>: The “STOP” key is essentially an “all notes off”
+                    command.
+                    It takes Sinfonia® out of any mode where music is still playing and
+                    puts it into STOP mode. It is essential that you hit the “STOP” key
+                    when you are finished playing, but you are still in the middle of a
+                    song. Failure to do so can cause Sinfonia® to crash. Instances like
+                    this can occur in many varieties: during rehearsal you may be playing a
+                    song and the rehearsal is momentarily stopped. You are in the middle of
+                    the song, and because you are not playing, no sound is being generated
+                    by Sinfonia®. However, the computer thinks you are just “between notes”
+                    unless you press the “STOP” key. If you try to resume playing, or give
+                    Sinfonia® another command, it will try to calculate a tempo based on
+                    your last hit of a play key (maybe several minutes ago). THE SYSTEM
+                    WILL CRASH!</li>
+                  <li><b>NEXT BAR</b>: While it sounds like a great place to be on a
+                    wild night on the town, the “NEXT BAR” actually is a quick way to jump
+                    to the first beat of the next measure in the score. Hitting the “NEXT
+                    BAR” key several times will advance you though the score bar by bar.
+                    (I’ll be in the corner in the dark). Use this key if you find that you
+                    are getting behind and want to jump immediately a bar ahead.</li>
+                  <li><b>CUTOFF</b>: The “CUTOFF” key will cut off a held or paused
+                    note,
+                    while keeping Sinfonia® in performance mode (this is how the “CUTOFF”
+                    key is different than the “STOP” key). This is the recommended way to
+                    cutoff a chord held by the “PAUSE” key. Hitting the “PLAY” or “GO” keys
+                    after hitting the “CUTOFF” key will resume play. Likewise, hitting the
+                    “CUTOFF” key and not hitting another key for awhile will cause
+                    Sinfonia® to CRASH as described above (see “STOP” key).</li>
+                  <li><b>PREV BAR</b>: Previous Bar—works just like the “NEXT BAR”
+                    key, except
+                    in reverse. Use this key if you find that you are getting ahead and
+                    want to jump immediately a bar behind.</li>
+                  <li><b>VAMP</b>: Hitting the “VAMP” key will cause The Sinfonia®
+                    to create
+                    an immediate vamp in a song. The length of the vamp will be equal to
+                    the number of times you hit the “VAMP” key. This is especially good if
+                    a scene change has not happened as quickly as anticipated or a piece of
+                    scenery has gotten “hung up,” etc. If the conductor gives the sign to
+                    “vamp measures 22 through 25,” you would hit the “VAMP” key four times
+                    once you are in measure 22. The “on-the-fly” vamp would appear in the
+                    “Action Event” window, and The Sinfonia® will keep vamping until the
+                    “EXIT VAMP” key is struck (see above).</li>
+                  <li><b>FASTER</b>: While in “GO” mode, hitting the “FASTER” button
+                    will
+                    nudge the tempo up. You will see the tempo marking change on the
+                    monitor a tic or two at a time.</li>
+                  <li><b>A TEMPO</b>: Hitting the “A TEMPO” button while in “GO”
+                    mode will
+                    cause The Sinfonia® to revert to the preset tempo in the file which
+                    will correspond to the tempo markings in the score.</li>
+                  <li><b>SLOWER</b>: While in “GO” mode, hitting the “SLOWER” button
+                    will
+                    nudge the tempo down. You will see the tempo marking change on the
+                    monitor a tic or two at a time.</li>
+                  <li><b>NEXT SONG</b>: As the name suggests, hitting this key will
+                    take you
+                    to the next song in the Song List.</li>
+                  <li><b>ALL NOTES OFF</b>: This button will send a note off event
+                    to all MIDI
+                    channels. It will also reset key performance values, such as pitch bend
+                    and modulation, to zero. If anything seems stuck (or if an instrument
+                    seems out of tune), try hitting ‘All Notes Off.'</li>
+                  <li><b>HOTKEY</b>: Hotkeys may be programmed for unique
+                    functionality – such
+                    as arbitrary relocates, mutes and more. Hitting this key will trigger
+                    the specially programmed function. See the ‘Advanced Editor’ section
+                    for information about programming Hotkeys.<br />
+                  </li>
+                </ul>
+                <p>For information about mapping additional functionality, as well
+                  as remapping the existing functionality, see ‘Remap.’</p>
+                <h3 class="title"><a name="qwerty" id="qwerty"></a>QWERTY Keyboard Shortcuts</h3>
+                <p>The QWERTY keyboard can also accomplish many commands that are
+                  MIDI Keyboard or Mouse driven. Following is a list:</p>
+                <p style="margin-left: 20px;">F1 = Slower<br />
+                  F2 = A Tempo<br />
+                  F3 = Faster<br />
+                  F4 = Cut Off<br />
+                  F5 = Rewind<br />
+                  F6 = Stop<br />
+                  F7 = Pause<br />
+                  F8 = Go<br />
+                  F9 = Reset<br />
+                  F10 = Exit Vamp<br />
+                  F11 = Vamp<br />
+                  F12 = Cruise</p>
+                <p style="margin-left: 20px;">Shift F1 = Quit<br />
+                  Shift F2 = Reinit<br />
+                  Shift F3 = Editor<br />
+                  Shift F4 = All Notes Off</p>
+                <p style="margin-left: 20px;">Space Bar = Play</p>
+                <br />
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Playing</h2>
+                  <ul>
+                    <li><a href="playing.html">Play, Go &amp; Cruise</a></li>
+                    <li><a href="#shownavigation">Show Navigation</a></li>
+                    <li><a href="#songnavigation">Song Navigation</a></li>
+                    <li><a href="#theplayerwindow">Player Window</a></li>
+                    <li><a href="#midikeyboardcontrol">MIDI Keyboard Control</a></li>
+                    <li><a href="#qwerty">QWERTY Keyboard Shortcuts</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="../../../../../contact">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --></div>
+<div id="footer">
+  <p>Copyright (c) 2010 Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+
+<!-- end #footer -->
+</body>
+</html>

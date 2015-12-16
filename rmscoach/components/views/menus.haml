@@ -1,0 +1,181 @@
+!!!
+%html{:lang => "en"}
+  = Haml::Engine.new(File.read('components/views/partials/rms_coach_head.haml')).render
+  
+  %body
+    
+    / ################################ BEGIN NAVBAR ################################
+    %span.sticky
+      %nav.top-bar{"data-options" => "sticky", "data-topbar" => "", :role => "navigation"}
+        %ul.title-area
+          %li.name
+            %a.navbar-brand{:href => "http://www.rms.biz"}
+              %img{:src => "http://www.rms.biz/media/images/rms_logo.svg"}/
+          %section.web-manual-label.show-for-large-up RMS Coach
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span Menu
+        %section.top-bar-section
+          %ul.right
+            %li
+              %a{:href => "index.html"} introduction
+            %li
+              %a{:href => "installation.html"} installation
+            %li
+              %a{:href => "quickstart.html"} quick start
+            %li
+              %a{:href => "interfaceediting.html"} interface editing
+            %li.active
+              %a{:href => "menus.html"} menus
+   
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING ABOVE THIS LINE !!!!!!!!!!!!!!!########################
+
+
+
+    %section#rms-manuals-container
+      %section#rms-manuals-right-alt
+        
+        %a.button.split{:href => "#"}
+          Quick Page Nav
+          %span{"data-dropdown" => "drop"}
+        %br
+          %ul#drop.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{:href => "#preferences"} Preferences
+            %li
+              %a{:href => "#file"} File
+            %li
+              %a{:href => "#modeemodep"} Mode-E / Mode-P
+            %li
+              %a{:href => "#tools"} Tools
+            %li
+              %a{:href => "#help"} Help
+      
+      %section#rms-manuals-left
+        #rms-manuals-left-inner
+          %h1 Menus
+          %p.callout
+            RMS Coach
+            %sup.superscript ®
+            provides a variety of useful tools and customization options through the program menus.
+          %h3.subheader
+            %a#preferences{:name => "preferences"}>
+            Preferences
+          %p You can access the Preferences menu through the toolbar, or by hitting CTRL-, (windows) or ⌘-, (mac).
+          %section.medium-5.large-6.columns.no-padding-left
+            %img{:alt => "preferencesgen", :height => "584", :src => "images/prefclick.png", :width => "484"}/
+          %section.medium-7.large-6.columns.no-padding-left.no-padding-right
+            %h4.subheader General
+            %p Underneath the general tab you can change the order of instruments that show up in the drop-down menu of the Parts list. By default it is set to &quot;General MIDI&quot; order.
+            %p You can also change the default location of backups created under the &quot;Tools&quot; menu. See Backup/Load
+            %h4.subheader Audio
+            %p
+              The Audio tab will provide a drop-down list of all valid audio devices on your system. If you are unable to hear sound from RMS Coach
+              %sup.superscript> ®
+              , this is the first place you should check.
+            %h4.subheader Click
+            %p The Click tab lets you route the metronome click to a different stereo output (if you have more than one available to your system). You can also set the volume of the click in dB (decibels).
+            %h4.subheader Functions
+            %p The Functions tab shows a list of shortcuts assigned to F1-F12, and these shortcuts may be reassigned using the drop-down menus.
+            %h4.subheader Colors
+            %p The Colors tab allows you to see and change the colors assigned to each of the various types of edits within the Timeline.
+          %h3.subheader
+            %a#file{:name => "file"}>
+            File
+          %h4.subheader New
+          %p Using the &quot;New&quot; command will create a clean, unedited version of your current show that you may work from.
+          %h4.subheader Save
+          %p Saves your current edits.
+          %h4.subheader Open
+          %p &quot;Open&quot; will provide a drop-down list of all valid showfiles saved on your computer that you may run.
+          %h4.subheader Save As
+          %p Using the &quot;save as&quot; command allows you to create a copy of your current show file under a different name, and makes that the currently active showfile.
+          %h3.subheader
+            %a#modeemodep{:name => "modeemodep"}>
+            Mode-E / Mode-P
+          %p This menu provides an alternate method of toggling between Performance Mode (Mode-P) and Edit Mode (Mode-E). The other method to do this is by toggling the lock icon on the Timeline.
+          %h3.subheader
+            %a#tools{:name => "tools"}>
+            Tools
+          
+          %section.medium-6.columns.no-padding-left
+            %h4.subheader Backup
+            %p Running the &quot;backup&quot; command will allow you to save the current showfile at a specific location on your hard drive, or on an attached device (such as a USB drive). This is the method by which you should share your edited showfile with cast members or the production team.
+            %p
+              Export to RMS Mix
+              %sup.superscript ®
+            %p
+              This will render your show for use within RMS Mix
+              %sup.superscript> ®
+              \. For more information on RMS Mix
+              %sup.superscript> ®
+              , please visit the
+              = succeed "." do
+                %a{:href => "http://www.rms.biz/products/RMS Mix/"}
+                  RMS Mix
+                  %sup.superscript ®
+                  website
+            %h4.subheader Extend License
+            %p
+              If you have contacted RMS and made arrangements to extend the license of your installation of RMS Coach
+              %sup.superscript> ®
+              , selecting this will allow you to input the extension code that RMS has sent you.
+            %h4.subheader MIDI reset
+            %p &quot;MIDI reset&quot; turns off all active MIDI data, in the case of stuck notes. By default, this is bound to the F1 key.
+          
+          %section.medium-6.columns.no-padding-right
+            %h4.subheader Get Sounds
+            %p
+              \&quot;Get sounds&quot; will likewise quit RMS Coach
+              %sup.superscript ®
+              and run RMS SampleSync. Run this in conjunction with the loading of any new show to make sure you have all the sounds required.
+            %h4.subheader Load
+            %p &quot;Load&quot; will allow you to open a showfile from anywhere on your computer hard drive or attached drive. If you have sent your cast members or production team a version of the show using the &quot;Backup&quot; command, they should use &quot;Load&quot; to open it.
+            %h4.subheader Get Shows
+            %p
+              \&quot;Get shows&quot; will quit out of RMS Coach
+              %sup.superscript ®
+              (first prompting you to save any changes) and launch the RMS Show Delivery program that was run at first installation. RMS Coach
+              %sup.superscript ®
+              will then relaunch at completion.
+            %h4.subheader Share Show Data
+            %p
+              This allows you to send you current show to members of your production via email. For more information, please see
+              = succeed "." do
+                %a{:href => "quickstart.html#sharingshowdata"} Sharing Your Showdata
+              %br/
+          %h3.subheader
+            %a#help{:name => "help"}>
+            Help
+          %p
+            Under the Help menu, you will find links to both the main Realtime Music Solutions
+            %sup.superscript ®
+            website as well as this manual.
+          %p If you are running a trial version, this is also where you can submit a request to purchase a license, or activate a license purchased by someone else in your organization.
+      
+      %section#rms-manuals-right
+        %aside#rms-manuals-right-inner
+          %h2.page-nav-header Introduction
+          %ul.page-nav
+            %li
+              %a{:href => "#preferences"} Preferences
+            %li
+              %a{:href => "#file"} File
+            %li
+              %a{:href => "#modeemodep"} Mode-E / Mode-P
+            %li
+              %a{:href => "#tools"} Tools
+            %li
+              %a{:href => "#help"} Help
+          .page-nav-contact
+            %h2.page-nav-header Contact
+            %a{:href => "http://www.rms.biz"} Realtime Music Solutions, LLC
+            %a{:href => "tel: +12126200774"} (212) 620-0774
+            %a{:href => "http://www.realtimemusic.biz/contact/"} Email us
+
+
+
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING BELOW THIS LINE !!!!!!!!!!!!!!!########################
+
+    = Haml::Engine.new(File.read('../components/views/partials/footer.haml')).render
+

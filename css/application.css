@@ -1,0 +1,530 @@
+/*
+ __     ___    ____  ___    _    ____  _     _____ ____
+ \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
+  \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
+   \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
+    \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
+
+*/
+/* -------------------------- BEGIN COLOR VARIABLES -------------------------- */
+/* ==========================================================================
+   Global Color Palette
+   ==========================================================================
+*/
+/* ==========================================================================
+   Button Variables
+   ==========================================================================
+*/
+/* -------------------------- END COLOR VARIABLES -------------------------- */
+/* ==========================================================================
+   Typography Variables
+   ==========================================================================
+*/
+/* Global Font Variables */
+/* -------------------------- BEGIN FONT VARIABLES -------------------------- */
+/* Font Weights */
+/* Font Sizes */
+/* ==========================================================================
+   Headers h1,h2,h3,h4,h5,h6
+   ==========================================================================
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
+/* ==========================================================================
+   Form Variables
+   ==========================================================================
+*/
+/* ==========================================================================
+   Media Query Variables
+   ==========================================================================
+*/
+/* -------------------------- END FONT VARIABLES -------------------------- */
+/*
+ __     ___    ____  ___    _    ____  _     _____ ____
+ \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
+  \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
+   \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
+    \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
+
+*/
+/* -------------------------- BEGIN COLOR VARIABLES -------------------------- */
+/* ==========================================================================
+   Global Color Palette
+   ==========================================================================
+*/
+/* ==========================================================================
+   Button Variables
+   ==========================================================================
+*/
+/* -------------------------- END COLOR VARIABLES -------------------------- */
+/* ==========================================================================
+   Typography Variables
+   ==========================================================================
+*/
+/* Global Font Variables */
+/* -------------------------- BEGIN FONT VARIABLES -------------------------- */
+/* Font Weights */
+/* Font Sizes */
+/* ==========================================================================
+   Headers h1,h2,h3,h4,h5,h6
+   ==========================================================================
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
+/* ==========================================================================
+   Form Variables
+   ==========================================================================
+*/
+/* ==========================================================================
+   Media Query Variables
+   ==========================================================================
+*/
+/* -------------------------- END FONT VARIABLES -------------------------- */
+/*
+  __  __ _____  _____ _   _ ____  
+ |  \/  |_ _\ \/ /_ _| \ | / ___| 
+ | |\/| || | \  / | ||  \| \___ \ 
+ | |  | || | /  \ | || |\  |___) |
+ |_|  |_|___/_/\_\___|_| \_|____/ 
+                                                                                                                                                                                                                                               
+*/
+/* % Prefixers % */
+/* % Inline-Block for IE % */
+/* % REM conversion to pixels % */
+/*
+==============================================================
+APPLICATION CSS FOR RMS MANUALS
+==============================================================
+*/
+.divider-line {
+  float: left;
+  width: 100%;
+  margin: 1.75rem 0rem 1rem 0rem;
+  border-bottom: 1px dashed #bbb; }
+
+.header-logo-text-split-left {
+  float: left;
+  width: 150px;
+  height: 120px; }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .header-logo-text-split-left {
+      width: 100%;
+      height: auto;
+      text-align: center; } }
+  .header-logo-text-split-left .product-logo {
+    position: relative;
+    left: -20px;
+    max-width: 150px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .header-logo-text-split-left .product-logo {
+        float: left;
+        clear: both;
+        position: static; } }
+    @media only screen and (min-width: 0em) and (max-width: 40em) {
+      .header-logo-text-split-left .product-logo {
+        float: none !important;
+        clear: none;
+        position: static;
+        padding-top: 1rem;
+        max-width: none; } }
+
+.header-logo-text-split-right {
+  float: left;
+  width: calc(100% - 150px); }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .header-logo-text-split-right {
+      width: 100%; } }
+
+.web-manual-label {
+  position: fixed;
+  top: .2rem;
+  left: 43%;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 1.4rem;
+  color: white;
+  display: none;
+  z-index: 1000000000; }
+  .web-manual-label span {
+    color: #42aae0; }
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    .web-manual-label {
+      position: static;
+      float: left;
+      width: auto;
+      font-size: 1.2rem; } }
+  @media (min-width: 993px) and (max-width: 1200px) {
+    .web-manual-label {
+      position: static;
+      float: left;
+      width: auto;
+      padding: .4rem 1rem 0rem 1rem;
+      font-size: 1.2rem;
+      color: black; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .web-manual-label {
+      position: static;
+      float: left;
+      width: auto;
+      padding: .4rem 1rem 0rem 1rem;
+      font-size: 1.2rem !important;
+      color: black; }
+      .web-manual-label span {
+        font-size: 1.3rem !important;
+        color: black; } }
+  @media (min-width: 641px) and (max-width: 767px) {
+    .web-manual-label {
+      position: static;
+      float: left;
+      width: auto;
+      padding: .3rem 1rem 0rem 1.2rem;
+      font-size: 1.2rem !important;
+      color: black; }
+      .web-manual-label span {
+        font-size: 1.3rem !important;
+        color: black; } }
+  @media (min-width: 0px) and (max-width: 640px) {
+    .web-manual-label {
+      display: none; }
+      .web-manual-label span {
+        font-size: 1rem !important;
+        color: white; } }
+
+.top-bar-section ul, .top-bar-section ol {
+  z-index: 100010001000112; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .top-bar-section ul li.active a, .top-bar-section ol li.active a {
+      font-size: .75rem !important; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .top-bar-section ul li a, .top-bar-section ol li a {
+    font-size: .75rem !important; } }
+
+#rms-manuals-container h1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #bbb; }
+#rms-manuals-container h1 a {
+  color: blue;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300; }
+#rms-manuals-container h2 {
+  color: green; }
+#rms-manuals-container h3 {
+  float: left;
+  clear: right;
+  width: 80%;
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+  padding-bottom: .5rem;
+  color: #42aae0 !important;
+  border-bottom: 1px solid #42aae0; }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    #rms-manuals-container h3 {
+      margin-top: 1rem; } }
+  #rms-manuals-container h3 a {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #42aae0 !important; }
+#rms-manuals-container h4 {
+  color: #14395d;
+  margin: 1rem 0rem .3rem 0rem; }
+  #rms-manuals-container h4.subheader {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+#rms-manuals-container h5 {
+  margin: 1rem 0rem .3rem 0rem;
+  font-size: .85rem;
+  font-weight: 800;
+  color: black; }
+#rms-manuals-container .title {
+  color: #42aae0; }
+#rms-manuals-container p {
+  float: left;
+  margin: .5rem 0rem .5rem 0rem;
+  line-height: 1.5rem;
+  display: block; }
+  #rms-manuals-container p.emphasize-sentence {
+    font-weight: 500;
+    font-style: italic; }
+#rms-manuals-container ul, #rms-manuals-container ol {
+  float: left;
+  width: 100%;
+  list-style-type: disc;
+  margin-bottom: .7rem; }
+  #rms-manuals-container ul li, #rms-manuals-container ol li {
+    float: left;
+    width: 100%;
+    margin: .4rem 0rem 0rem 1.2rem;
+    margin-left: 2rem;
+    line-height: 1.8rem; }
+    #rms-manuals-container ul li:first-child, #rms-manuals-container ol li:first-child {
+      margin-top: .25rem; }
+#rms-manuals-container a:hover {
+  text-decoration: underline !important; }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #rms-manuals-container img {
+    width: 100%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #rms-manuals-container {
+    padding-top: 2rem; } }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #rms-manuals-container {
+    padding-top: 3rem; } }
+#rms-manuals-container #rms-manuals-left {
+  float: left;
+  width: calc(100% - 400px);
+  padding: 1.75rem 3rem 10rem 3rem; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    #rms-manuals-container #rms-manuals-left {
+      padding: 1.75rem 3rem 10rem 2rem; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    #rms-manuals-container #rms-manuals-left {
+      width: 100%;
+      padding: 1.75rem 1rem 10rem 1rem; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    #rms-manuals-container #rms-manuals-left {
+      width: 100%;
+      padding: 0rem 1rem 10rem 1rem; } }
+  #rms-manuals-container #rms-manuals-left #rms-manuals-left-inner {
+    float: left;
+    padding: 1rem 2.5rem 1.5rem 2.5rem;
+    background-color: white; }
+    @media only screen and (min-width: 0em) and (max-width: 40em) {
+      #rms-manuals-container #rms-manuals-left #rms-manuals-left-inner {
+        padding: 1rem 1rem 1.5rem 1rem; } }
+#rms-manuals-container #rms-manuals-right {
+  float: left;
+  width: 400px;
+  padding: 1.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 1rem; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    #rms-manuals-container #rms-manuals-right {
+      display: none; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    #rms-manuals-container #rms-manuals-right {
+      display: none; } }
+  #rms-manuals-container #rms-manuals-right h2.page-nav-header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: .75rem 1rem .75rem 1rem;
+    background-color: #14395d !important;
+    color: white; }
+  #rms-manuals-container #rms-manuals-right .page-nav {
+    list-style-type: none; }
+    #rms-manuals-container #rms-manuals-right .page-nav li {
+      float: left;
+      width: 100%;
+      margin-top: 0rem;
+      margin-left: 0;
+      padding: 0rem;
+      border-bottom: 1px solid #bbb; }
+      #rms-manuals-container #rms-manuals-right .page-nav li:last-child {
+        border-bottom: 0px; }
+      #rms-manuals-container #rms-manuals-right .page-nav li a {
+        float: left;
+        width: 100%;
+        padding: .35rem 1rem .35rem 1rem; }
+        #rms-manuals-container #rms-manuals-right .page-nav li a:hover {
+          background-color: #b0dbf2;
+          color: #14395d;
+          text-decoration: none !important; }
+  #rms-manuals-container #rms-manuals-right .page-nav-contact a {
+    float: left;
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 1rem; }
+    #rms-manuals-container #rms-manuals-right .page-nav-contact a:hover {
+      text-decoration: underline; }
+  #rms-manuals-container #rms-manuals-right .page-nav-contact-2 {
+    display: none; }
+  #rms-manuals-container #rms-manuals-right #rms-manuals-right-inner {
+    float: left;
+    padding: .5rem 1rem 1rem 1rem; }
+  #rms-manuals-container #rms-manuals-right #rms-manuals-right-inner2 {
+    float: left;
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 3px #333; }
+  #rms-manuals-container #rms-manuals-right #rms-manuals-right-inner3 {
+    float: left;
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: white;
+    border: 1px solid #bbb; }
+#rms-manuals-container #rms-manuals-right-alt {
+  display: none; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    #rms-manuals-container #rms-manuals-right-alt {
+      float: left;
+      width: 100%;
+      position: fixed;
+      top: 2.8rem;
+      z-index: 100000;
+      padding: .8rem 1rem .3rem 0rem;
+      background-color: #dedede;
+      text-align: right;
+      display: block; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    #rms-manuals-container #rms-manuals-right-alt {
+      float: left;
+      width: 100%;
+      position: fixed;
+      top: 2.8rem;
+      z-index: 100000;
+      margin-top: 0rem;
+      padding: .5rem 0rem .4rem 0rem;
+      background-color: #dedede;
+      text-align: center;
+      display: block; } }
+
+#back-top a {
+  position: fixed;
+  bottom: 60px !important;
+  right: 20px !important;
+  width: 108px;
+  padding: .5rem 1rem .5rem 1rem;
+  text-align: center;
+  font: 11px/100% Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ddd;
+  color: white;
+  display: block;
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    #back-top a {
+      bottom: 60px !important;
+      right: 10px !important; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    #back-top a {
+      bottom: 50px !important;
+      right: 10px !important; } }
+
+#back-top a:hover {
+  background-color: #aaa;
+  color: white; }
+
+/* arrow icon (span tag) */
+#back-top {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 108px;
+  height: 108px;
+  display: block;
+  /* rounded corners */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
+
+#back-top a:hover span {
+  background-color: #777; }
+
+.f-dropdown {
+  list-style-type: none !important;
+  z-index: 10000000; }
+
+.f-open-dropdown {
+  padding: 0rem 0rem 0rem 0rem;
+  list-style-type: none !important;
+  text-align: left; }
+  .f-open-dropdown li {
+    margin-left: 0rem !important;
+    padding: 0rem .75rem 0rem .75rem; }
+    .f-open-dropdown li:first-child {
+      padding-top: 0rem; }
+
+.f-dropdown {
+  max-width: 250px; }
+
+.dropdown {
+  background-color: #42aae0 !important;
+  color: white !important; }
+  .dropdown:hover {
+    background-color: #1a73a2 !important;
+    color: white !important; }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .dropdown {
+      max-width: none;
+      width: 80%; } }
+
+.shortcut-table-left th, .shortcut-table-right th {
+  background-color: #ddd !important;
+  font-weight: bold; }
+.shortcut-table-left tr:nth-child(odd), .shortcut-table-right tr:nth-child(odd) {
+  background-color: #eee !important; }
+
+.shortcut-table-left {
+  float: left;
+  width: 45%;
+  border-right: 1px solid #bbb; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .shortcut-table-left {
+      width: 100%;
+      border-right: 0px; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .shortcut-table-left {
+      width: 100%;
+      border-right: 0px; } }
+
+.shortcut-table-right {
+  float: left;
+  width: 55%;
+  padding-left: 50px; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .shortcut-table-right {
+      width: 100%; }
+      .shortcut-table-right tr th {
+        display: none; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .shortcut-table-right {
+      width: 100%; }
+      .shortcut-table-right tr th {
+        display: none; } }
+
+.no-padding-left {
+  padding-left: 0rem; }
+
+.no-padding-right {
+  padding-right: 0rem; }
+
+.left-off-canvas-toggle {
+  color: #ffffff;
+  position: relative;
+  top: .2rem; }
+  .left-off-canvas-toggle:hover {
+    background-color: #1e83b7;
+    color: #ffffff;
+    text-decoration: none !important; }
+  .left-off-canvas-toggle:focus {
+    background-color: #1e83b7;
+    color: #135476;
+    text-decoration: none !important; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .left-off-canvas-toggle {
+      top: 0rem;
+      color: #ffffff; } }
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    .left-off-canvas-toggle {
+      top: 0rem;
+      color: #ffffff; } }
+
+.left-off-canvas-menu {
+  position: fixed;
+  z-index: 10000000000 !important; }
+  .left-off-canvas-menu ul {
+    list-style-type: none !important; }
+    .left-off-canvas-menu ul li {
+      margin-left: 0rem !important; }

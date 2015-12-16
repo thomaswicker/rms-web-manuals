@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Keyboard Manual - Interface</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="index.html">RMS Keyboards&reg;</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="setup.html">Set-up</a></li>
+          <li class="current_page_item"><a href="interface.html">Interface</a></li>
+          <li><a href="operation.html">Operation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Interface</a></h2>
+              <div class="entry">
+              <h3 class="title"><a name="editdrawers" id="editdrawers"></a>Performance Mode v. Edit Mode</h3>
+              <p><img src="images/P_v_E_Modes.png" alt="" width="530" height="53" /></p>
+              <p>There are two distinct modes of operation for RMS Keyboards: Performance and Edit. As the names suggest, you use one when performing and the other for editing. The principle here is to keep elements locked for run-throughs and performances, so that you don't make any accidental changes. Editing should be done outside of full orchestra rehearsals or runs with the cast.</p>
+              <p>The Mode menu indicates the active mode and allows you to toggle between the two.</p>
+<p>Be aware that it's possible to make small changes - like adjusting a volume setting - when in Performance mode. However, these will only save when in Edit mode.</p>
+<h3 class="title"><a name="themonitorwindow" id="themonitorwindow"></a>Monitor Window</h3>
+                <p><img src="images/Monitor.png" width="519" height="89" alt="monitor" /></p>
+                <p>The <i>Monitor</i> window is a baszic representation of a keyboard, and will show MIDI data <em>for the active keyboard</em> as the program receives it. In addition, it shows icons for the hotkey assignments within the range of a typical 88-key controller.</p>
+                <table width="515" border="1" cellpadding="0" cellspacing="0">
+                  <tr align="center" valign="middle">
+                    <td width="128"><img src="images/PrevSetupIcon.png" width="20" height="20" alt="prevsetup" /></td>
+                    <td width="128"><img src="images/NextSetupIcon.png" width="20" height="20" alt="nextsetup" /></td>
+                    <td width="128"><img src="images/PrevSongIcon.png" width="20" height="20" alt="prevsong" /></td>
+                    <td width="128"><img src="images/NextSongIcon.png" width="20" height="20" alt="nextsong" /></td>
+                  </tr>
+                  <tr align="center" valign="middle">
+                    <td>Previous setup</td>
+                    <td>Next setup</td>
+                    <td>Previous song</td>
+                    <td>Next song</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <h3 class="title"><a name="thesongswindow" id="thesongswindow"></a>Songs Window</h3>
+                <p>This is a list of all the songs for the currently installed show. You can click on a song name to jump to that song within RMS Keyboards. If you wish to rename a song, simply double-click on the name of the song and type in the new name.</p>
+                <p align="center"><img src="images/SongsWindow.png" width="258" height="387" alt="songs" /></p>
+                <p>Switch to Edit mode and you'll be able to edit the song list in the following ways:</p>
+                <ul>
+                  <li>Delete song - Highlight any song and click the minus sign (-) to delete it.</li>
+                  <li>Duplicate song - Highlight any song and click the overlapping squares icon to duplicate it.</li>
+                  <li>Add song - Click the plus sign (+) to bring up an additional window, wherein you can select any other song in the show to insert at the current highlighted song list location.</li>
+                  <li>Reorder - Drag and drop the songs in the list to customize the order.</li>
+                </ul>
+<p>In addition to using hotkeys to switch songs, you may also use the <i>Page Up</i> and <i>Page Down</i> keys to switch the currently loaded song.</p>
+<p>RMS Keyboards loads groups of setups organized by song. Because of this, it is not possible to have Keyboard 1 playing a setup from '00 Overture' and Keyboard 2 playing a setup from '01 Prologue' at the same time. </p>
+                <h3 class="title"><a name="theinstrumentwindow" id="theinstrumentwindow"></a>Keyboard Window</h3>
+                <p>A single RMS Keyboards installation will have as many different keyboards as there are books for that show. For example, JOSEPH calls for Keyboard 1, Keyboard 2 and PianoSynth. ALTAR BOYZ calls for Piano-Conductor and Keyboard 2.</p>
+                <p>Only one Keyboard window may be active at any given time. The active keyboard will have an orange border around it, as seen here. The active keyboard will have its MIDI input and hotkeys mirrored in the Monitor window, and will be the keyboard that is played by the assigned MIDI controller. If each keyboard has a unique MIDI controller, then changing the active Keyboard window will only affect what is shown in the Monitor window.</p>
+                <p align="center"><img src="images/ActiveInstrument.png" width="503" height="391" alt="activeinstrument" /></p>
+                <p>The left pane of the Keyboard window will show the list of setups  for  the current song, in the order that they appear in the score. Each setup will have a name that closely resembles the name in the score, though you may change the name to something more to your liking by double clicking on it in edit mode (see next section). You can advance through setups by use of the <i>Next/Previous Setup</i> hotkeys or by the up/down arrow keys on the computer (for the active Keyboard). If you have the <i>Cycle through songs</i> option selected under <i>Preferences</i>, clicking <i>Next/Previous Setup</i> will automatically change songs when you get to the last (or first) setup in a list.                </p>
+                <p>The right pane of the Keyboard window shows channel strips for each patch within a specific setup. Each patch has its own volume slider, L-R panning knob, output channel selector and mute/unmute button.</p>
+                <p>The volume sliders have a range of 0-200%, with 100% being the default volume level for patches.</p>
+                <p>Panning knobs have a range of 0-127, with 64 being center. </p>
+<p>Changes made in these channel strips apply to the current setup <b>only</b>! </p>
+                <h4 class="title">Global Edits in the Keyboard Window</h4>
+                <p>Edit mode reveals a special editing button in the Keyboard windows - the Global Edit button.</p>
+                <table border="1" align="center" cellpadding="0" cellspacing="0">
+                  <tr align="center" valign="middle">
+                    <td width="252"><img src="images/GlobalChangeInactive.png" width="28" height="27" alt="globalinactive" /></td>
+                    <td width="254"><img src="images/GlobalChangeActive.png" width="28" height="28" alt="globalactive" /></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="middle">Global Edits – inactive</td>
+                    <td align="center" valign="middle">Global Edits - active</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>Toggling the <i>Global Edit</i> icon will allow you to make sweeping changes to all setups within the current keyboard. Use this for:</p>
+                <ul>
+                  <li>Setting an entire keyboard to route through a different channel in the Output Mixer. (This is useful for external mixing of multiple instruments with your audio hardware)</li>
+                  <li>Adjusting the volume or panning of an entire Keyboard. </li>
+                </ul>
+                <p><em>Please note that changing the volume or panning while in Global Edit mode is <em>absolute</em>, not relative. Setting the volume slider to 60 will change the volume of every patch in every setup for that instrument to 60 and overwrite any subtle mixing of patches that you might have done. If you wish to change the overall level of every patch in a single setup, please see the section on Volume Pedals/Sliders.</em></p>
+                <p>To protect you from accidental global changes, you will be presented with the following screen the first time you change a specific parameter while in Global Edit mode:</p>
+                <p><img src="images/GlobalChangeWarning.png" width="500" height="253" alt="globalwarn" /></p>
+                <p>If you wish to leave Global Edit mode, simply click <i>Cancel</i> and uncheck the <i>Global Edit</i> button.</p>
+                 <h3 class="title"><a name="theinstrumenteditor" id="theinstrumenteditor"></a>Keyboard Editor                </h3>
+                <p><img src="images/InstrumentWithDrawer.png" width="517" height="323" alt="inswithdrawer" /></p>
+                <p>In Edit mode, you can reorder setups by clicking and dragging on a single setup name. If you double click on a setup you can rename it.</p>
+                <p>We also see fields displaying the hotkey assignments for Previous/Next Setup and Previous/Next Song. You can change these hotkeys here by clicking on the field and playing the desired note on the keyboard, or by typing the value into the field. </p>
+                <p>There is also a checkbox with the label <i>Sustain Pedal Reversal</i>. If your sustain pedal seems to be working backwards (sustains when not pressed, does not sustain when pressed) simply check this box to change the pedal behavior.</p>
+                <p>Within the Editor, you may customize the setup list to a very high degree. Notice the three buttons that appear directly above the setup list. From left to right, they are <i>delete setup</i>, <i>add setup</i>, and <i>duplicate setup</i>.                </p>
+                <ul>
+                  <li>Delete setup - Highlight any setup and click the minus sign (-) to delete it.</li>
+                  <li>Add setup - Click the plus sign (+) to bring up an additional window, wherein you can select any other setup in the show to insert at the current highlighted setup list location. See notes below.</li>
+                  <li>Duplicate setup - Highlight any setup and click the overlapping squares icon to duplicate it.</li>
+                  <li>Reorder - Drag and drop the setups in the list to customize the order.</li>
+                </ul>
+<p><em><strong>Very important: if you are going to be making changes to the setup list, you should create a clean version of your show using the Save As command under the File menu
+  before making any edits. Performing the Remove Setup action is destructive, meaning that if you don't have an unaltered version of your show saved you will not be able to add that setup later!</strong></em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                <p>When you click on the <i>Add Setup</i> button you are presented with a dialogue box allowing you to choose the specific show, song, keyboard, and setup you would like to insert into the list. With this, you can create customized keyboards parts pulling together setups from any song or keyboard part within your show.</p>
+                <p><img src="images/NewSetup.png" width="290" height="308" alt="newsetup" /></p>
+                <p>Also, within the Editor, some additional buttons will appear on the channel strip for each layer that is part of the current setup. Near the top, above the fader strip:</p>
+                <ul>
+                  <li> <em>Sus Ped</em></li>
+                  <li><em>Vol Ped</em></li>
+                  <li><em>Track Modwheel</em></li>
+                </ul>
+<p>Near the bottom, on either side of the Mute button:</p>
+<ul>
+  <li><em>External Sound                </em></li>
+  <li><em>Instrument transposition menu</em></li>
+</ul>
+<p>When toggled on, the top buttons will tell that specific layer to ignore any data received from the respective input source. This can be useful for partitioning the way the keyboard range responds. For example, consider a set-up comprised of a bass guitar patch that is sharing the keyboard with strings or other pad type sounds. With the top buttons, you can sustain and apply dynamics to synth pads without interfering with the bass guitar line.</p>
+                <p>When the feature is on, the button will be shaded blue and you will see a line striking through the text on the button.</p>
+                <p align="center"><img src="images/NoSusPed.png" width="59" height="16" alt="nosus" />    <img src="images/NoVolPed.png" width="59" height="16" alt="novol" /></p>
+                <p>The <i>External Sound</i> button brings up the External Sound window. This allows you to route the given patch to an external device outside of the RMS Sampler soundset used by RMS Keyboards. With this feature, you can take advantage of your personal electronic music library. For example, if you have a violin sound that you like more than ours, you could integrate it into the RMS Keyboards performance while retaining all the sophisticated mapping, layering, triggering, and transposing associated with the part! The External Sound window is explained in greater detail in the following section.</p>
+                <p>The Transposition pop-up menu allows you to transpose the corresponding instrument channel. Please see the Transposition section for details on how transpositions work in RMS Keyboards.                </p>
+                <h3 class="title"><a name="theexternalwindow" id="theexternalwindow"></a>External Sound Window</h3>
+                <p><img src="images/ExternalSound.png" alt="External Sound" width="364" height="351" /></p>
+                <p>The External Sound window allows you to route the selected instrument channel to a device in your personal collection. Note: this is an advanced feature, intended for users with an excellent understanding of their personal devices, especially the way they handle MIDI patch change messages.</p>
+                <p>The feature will work with devices that are physically separated from the computer running RMS Keyboards (i.e. external synthesizers, sound modules, additional computers that are hosting virtual instruments.) If these devices are connected to the RMS Keyboard computer through Core Audio (on OS X systems) or through individual device drivers on Windows systems, they will be accessable to the External Sound window. Use the <em>Device</em> pop-up menu to select your external device.</p>
+                <p>The <i>Channel</i> pop-up menu will define the  channel through which the particular patch's MIDI signal will be routed. You can only use a given channel once per set-up per keyboard. If you plan to use one external device simultaneously for many sounds over multiple Keyboard windows, you will need to plan carefully so that you don't run into channel conflicts.</p>
+                <p>Most MIDI instruments handle patch changes through a combination of one or more of the following messages:</p>
+                <ul>
+                  <li>CC 0 (MSB) - Bank select message</li>
+                  <li>CC 32 (LSB) - Bank select message</li>
+                  <li>a specific patch (program) number between 0-127</li>
+                  <li>a keyswitch, a MIDI note-on/off event(s)</li>
+                </ul>
+                <p>If <em>Specify Bank/Program</em> is checked, the corresponding message will be sent to the external device when the setup is selected. Note: if your device does not use either MSB or LSB messages, enter 0 in that field.</p>
+                <p>If <em>Send Keyswitch</em> is checked, the corresponding MIDI note will be sent to the external device when the setup is selected. You can define the MIDI note either by typing the value or by placing your cursor in the field and then hitting a note on your MIDI keyboard.</p>
+                <p>Some devices do not handle patch change messages very well. The Roland JV1080 is one example; it can take a full half second before it  processes the message. In these cases, you could preset the device's patches on the corresponding channels and then leave the checkboxes in RMS Keyboards unchecked. RMS Keyboards will route the MIDI signal accordingly without sending any patch change message.                </p>
+                <h3 class="title"><a name="transpositions" id="transpositions"></a>Transpositions</h3>
+                <p>Transpositions can happen in three places:</p>
+                <ul>
+                  <li>Song</li>
+                  <li>Setup</li>
+                  <li>Instrument channel</li>
+                </ul>
+                <p>In all cases, you can transpose in a range of -12 to +12. 0 means no transposition. Each increment of 1 represents a half step. The full sweep allows you to transpose an octave in either direction. The transposition affects the output. As a very basic example, if you set a transposition of -2 and then play a C major scale, you will hear a Bb major scale.</p>
+                <p>Most of the time, you will probably just want to transpose at the song level (usually to help a singer who may not have the right vocal range.) But there may be reasons to drill down and and approach it at the set-up or instrument level. For example:</p>
+                <ul>
+                  <li>A setup or instrument layer may be defined to a non-pitched instrument, such as a drum kit. You probably would  want to exclude this from any transposition.</li>
+                  <li>The underlying programming may contain sound effects that should not be pitch altered.</li>
+                </ul>
+                <p>The song, setup, and instrument transpositions are added together to produce the final transposition values. By carefully adjusting the various settings, you can handle any transposition situation.</p>
+                <p>To create a transposition, open the edit drawer of  the <em>Song</em>s and/or <em>Keyboard</em> window:</p>
+                <ul>
+                  <li><em>Song Transposition</em> is located in the <em>Songs</em> window, on the right side above the song list.</li>
+                  <li><em>Setup Transposition</em> is located in the <em>Keyboard</em> window, on the right side above the setup list.</li>
+                  <li><em>Instrument Transposition</em> is located in the <em>Keyboard</em> window, underneath the speaker icon of each instrument channel.                </li>
+                </ul>
+                <p>Once finished with all your edits and customizations, close the drawer by clicking again on the drawer icon.</p>
+                <h3 class="title"><a name="theoutputmixer" id="theoutputmixer"></a>Output Mixer</h3>
+                <p>The Output Mixer allows you to make adjustments to the volume of instruments routed to specific channels, as well as the level of reverb assigned to each channel. <em>These settings are saved per song</em>, allowing you to pre-set volume levels and reverb settings on a song-by-song basis.</p>
+                <p align="center"><img src="images/OutputMixer.png" width="414" height="329" alt="outputmixer" /></p>
+                <p><em>These settings are not global by default. Adjustments made to these faders and knobs apply to the current song only, unless you are in Global Change mode. </em></p>
+                <p>Ports A-E each have a separate volume fader, as well as a <i>Reverb Send</i> knob. To the far right is a blue <i>Global Volume</i> fader and a <i>Reverb Return</i> knob. <i>Reverb Send</i> determines how much of the signal passing through a specific channel gets sent to the reverb engine, and <i>Reverb Return</i> determines the overall level of reverb present in the mix.</p>
+                <p><em>A note about reverb: to keep the CPU requirements of RMS Keyboards low, we only allow reverb to return on a single port. </em>You can specify which port reverb returns on by using the drop-down menu underneath the global volume fader. Keep in mind that you can always add your own external FX processing to the audio signal after it leaves RMS Keyboards, including reverb.</p>
+                <p>Every setup in every instrument defaults to port A, which corresponds to the main output on your external audio device. RMS Keyboards gives you a lot of control over how you route your audio. If you want to send all of Keyboard 1 to port A, all of Keyboard 2 to port B, and so forth, you can do that. If, instead, you would like to send all string patches to A (with a lot of reverb), all piano patches to B (with light reverb), and everything else to C (with no reverb), you can do that too. RMS Keyboards gives you more ways to control your mix than most standard synthesizers.</p>
+                <p>Above the channel strips is a label indicating your current audio output device and buffer size. You can change your audio device and buffer size through the Setup Wizard or Preferences screen.</p>
+                <h4 class="title">Global Changes in the Output Mixer</h4>
+                <p>By activating the <i>Global Edit</i> icon on the Output Mixer, you can adjust the volume faders and reverb settings for every song in the show. You will receive a warning screen on first adjustment to prevent any accidental changes while in Global Edit mode. </p>
+                <p><em>Please note that changing the volume or reverb settings while in Global Edit mode is absolute, not relative. Setting the volume slider to 60 in Global Edit mode will change the volume of that port for every song to 60.</em></p>
+                <h3 class="title"><a name="theoutputeditor" id="theoutputeditor"></a>Output Editor</h3>
+                <p>In Edit mode, you can adjust reverb width (mono vs. stereo), brightness (bright vs. dull) and length (long vs. short.) Experiment with these settings to find a sound that suits you and your performance space. As a reminder, edits made to these reverb settings are on a song-by-song basis, unless you are in Global Edit mode.</p>
+                <p align="center"><img src="images/OutputMixerWithDrawer.png" width="455" height="360" alt="outputdrawer" /></p>
+                <p>While in Edit mode, you will see a button above each channel strip with a headphone icon on it. Clicking on one of these buttons will toggle a sine wave test signal to that port. This will allow you to check the audio routing of your external audio device without having someone play RMS Keyboards constantly. You should use this feature as part of your daily pre-show sound check to prevent unwanted surprises at performance time.</p>
+                <p>The small green window above the master fader will show you the maximum number of voices that have been triggered at any given time. RMS Keyboards has a limit of 128 voices, and going over that number will cause the window to turn red. Clicking on that window will reset the counter to 0. Don&rsquo;t worry; it would take very bombastic performances by many pianists to play 128 notes at once!</p>
+                <h3 class="title"><a name="thecurrentsetupwindow" id="thecurrentsetupwindow"></a>Current Setup Window</h3>
+                <p>When you play a show on a programmable synthesizer made by companies like Korg and Roland, you have access to a digital readout displaying the name of the current setup in an easily readable location. To give the same sort of ability to RMS Keyboards, we have added a window showing the current song and setups for every instrument in a given show. Space in pits is often at a premium, and this feature allows you to set the laptop off to the side or a few feet away while still giving you the most important information in an easily readable format, even at a distance.</p>
+                <p align="center"><img src="images/CurrentSetupWindow.png" width="464" height="328" alt="currentsetup" /></p>
+                <p>The order that the setups appear, top to bottom, will match the order of the keyboard books in the orchestration; for example, Keyboard 1/Keyboard 2/Pianosynth or Piano-conductor/Keyboard 2. The currently active instrument will have an orange border. If you click on the name of any instrument it will make that instrument active and bring the instrument window to the foreground, even if it is hidden. Is your Keyboard 3 player on SFZ Tuba instead of Sweet Strings? Click on the setup name and change it for him or her! </p>
+                <p>The current setup window can also be set to display only the Active Window, which is useful for single-user installations. This setting can be changed under program preferences/general.</p>
+                <h3 class="title"><a name="commentswindow" id="commentswindow"></a>Comment Window</h3>
+                <p>This window allows you to create plain language instructions related to specific setups. Potential comments might be "Mod-wheel controls vibrato" or "Sound effect triggered on middle C." Some comments will be built into the show file as a way to convey specific keyboard idiosyncrasies. But the feature is mainly there for you to store and display any information that will help you in rehearsal and/or performance.</p>
+                <p><img src="images/CommentWindow1.png" alt="" width="400" height="256" /></p>
+                <p>To add a comment:</p>
+               <ol>
+	<li>Make sure the setup you want to attach the comment to is selected.</li>
+	<li>Click the Comment Window edit drawer button.</li>
+	<li>Click the add (+) button.</li>
+	<li>Type your comment text and click Okay.</li>
+	<li>Review and save comment, or edit as necessary.</li>
+</ol>
+
+                <p>You can delete a comment by highlighting it in the comment list and clicking the delete (-) button.</p>
+                <p>A special aspect of the Comments window is that you can choose to display and hide comments automatically. If &quot;Automatically display/hide comments&quot; is checked in the Preferences/General tab, the window will only display when an applicable setup is activated. This can save valuable screen real estate.</p>
+<h3 class="title"><a name="midireset" id="midireset"></a>MIDI Reset Button</h3>
+                <p align="center"><img src="images/MidiReset.png" width="191" height="202" alt="panic" /></p>
+                <p>It is a feature of most modern synthesizers to include a MIDI reset button, and RMS Keyboards provides this functionality as well. Pressing this sends an all notes off signal to every instrument in the program in case you have any stuck notes. (If this happens, we suggest using a different MIDI controller the next time you run RMS Keyboards.)</p>
+                <p>You can either click on the button with the mouse, or hit COMMAND-M (MAC) or CONTROL-M (WINDOWS). If you choose to hide the MIDI reset button in your interface, you can still access the functionality with the keyboard shortcut.</p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <!--li>
+                  <div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div>
+                  <div style="clear: both;">&nbsp;</div>
+                </li-->
+                <li>
+                  <h2>Interface</h2>
+                  <ul>
+                  <li><a href="#editdrawers">Edit Drawers</a></li>
+                     <li><a href="#interface">Monitor Window</a></li>
+                    <li><a href="#thesongswindow">Songs Window</a></li>
+                    <li><a href="#theinstrumentwindow">Keyboard Window</a></li>
+                    <li><a href="#theinstrumenteditor">Keyboard Editor</a></li>
+                    <li><a href="#theexternalwindow">External Sound Window</a></li>
+                    <li><a href="#transpositions">Transpositions</a></li>
+                    <li><a href="#theoutputmixer">Output Mixer</a></li>
+                    <li><a href="#theoutputeditor">Output Editor</a></li>
+                    <li><a href="#thecurrentsetupwindow">Current Setup Window</a></li><strong></strong>
+                    <li><a href="#commentswindow">Comment Window</a></li>
+                    <li><a href="#midireset">MIDI Reset Button</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+(212) 620-0774 <br />
+<a href="http://www.realtimemusic.biz/contact/">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,617 @@
+@import 'global/vars';
+@import 'global/mixins';
+
+/*
+==============================================================
+APPLICATION CSS FOR RMS MANUALS
+==============================================================
+*/
+
+.divider-line {
+  float: left;
+  width: 100%;
+  margin: 1.75rem 0rem 1rem 0rem;
+  border-bottom: 1px dashed #bbb;
+}
+
+.header-logo-text-split-left {
+  float: left;
+  width: 150px;
+  height: 120px;
+
+  @include mq(sm) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .product-logo {
+    position: relative;
+    left: -20px;
+    max-width: 150px;
+
+    @include mq(md) {
+      float: left;
+      clear: both;
+      position: static;
+    }
+
+    @include mq(sm) {
+      float: none !important;
+      clear: none;
+      position: static;
+      padding-top: 1rem;
+      max-width: none;
+    }
+  }
+}
+
+.header-logo-text-split-right {
+  float: left;
+  width: calc(100% - 150px);
+
+  @include mq(sm) {
+    width: 100%;
+  }
+}
+
+.web-manual-label {
+  position: fixed;
+  top: .2rem;
+  left: 43%;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 1.4rem;
+  color: white;
+  display: none;
+  z-index: 1000000000;
+
+  span {
+    color: $blue;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    position: static;
+    float: left;
+    width: auto;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    position: static;
+    float: left;
+    width: auto;
+    padding: .4rem 1rem 0rem 1rem;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  @media (min-width: 768px) and (max-width:992px) {
+    position: static;
+    float: left;
+    width: auto;
+    padding: .4rem 1rem 0rem 1rem;
+    font-size: 1.2rem !important;
+    color: black;
+
+    span {
+      font-size: 1.3rem !important;
+      color: black;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width:767px) {
+    position: static;
+    float: left;
+    width: auto;
+    padding: .3rem 1rem 0rem 1.2rem;
+    font-size: 1.2rem !important;
+    color: black;
+
+    span {
+      font-size: 1.3rem !important;
+      color: black;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width:640px) {
+    display: none;
+
+    span {
+      font-size: 1rem !important;
+      color: white;
+    }
+  }
+}
+
+.top-bar-section {
+  ul, ol {
+    z-index: 100010001000112;
+
+    li.active a {
+      @include mq(md) {
+        font-size: .75rem !important;
+      }
+    }
+  }
+
+  ul li a, ol li a {
+    @include mq(md) {
+      font-size: .75rem !important;
+    }
+  }
+}
+
+#rms-manuals-container {
+  h1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #bbb;
+  }
+
+  h1 a {
+    color: blue;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+  }
+
+  h2 {
+    color: green;
+  }
+
+  h3 {
+    float: left;
+    clear: right;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+    padding-bottom: .5rem;
+    color: $blue !important;
+    border-bottom: 1px solid $blue;
+
+    @include mq(sm) {
+      margin-top: 1rem;
+    }
+
+    a {
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $blue !important;
+    }
+  }
+
+  h4 {
+    color: #14395d;
+    margin: 1rem 0rem .3rem 0rem;
+
+    &.subheader {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  h5 {
+    margin: 1rem 0rem .3rem 0rem;
+    font-size: .85rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  .title {
+    color: $blue;
+  }
+
+  p {
+    float: left;
+    margin: .5rem 0rem .5rem 0rem;
+    line-height: 1.5rem;
+    display: block;
+
+    &.emphasize-sentence {
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+
+  ul, ol {
+    float: left;
+    width: 100%;
+    list-style-type: disc;
+    margin-bottom: .7rem;
+
+    li {
+      float: left;
+      width: 100%;
+      margin: .4rem 0rem 0rem 1.2rem;
+      margin-left: 2rem;
+      line-height: 1.8rem;
+
+      &:first-child {
+        margin-top: .25rem;
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  img {
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+
+  @include mq(md) {
+    padding-top: 2rem;
+  }
+
+  @include mq(sm) {
+    padding-top: 3rem;
+  }
+
+  #rms-manuals-left {
+    float: left;
+    width: calc(100% - 400px);
+    padding: 1.75rem 3rem 10rem 3rem;
+
+    @include mq(lg) {
+      padding: 1.75rem 3rem 10rem 2rem;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      padding: 1.75rem 1rem 10rem 1rem;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding: 0rem 1rem 10rem 1rem;
+    }
+
+    #rms-manuals-left-inner {
+      float: left;
+      padding: 1rem 2.5rem 1.5rem 2.5rem;
+      background-color: white;
+
+      @include mq(sm) {
+        padding: 1rem 1rem 1.5rem 1rem;
+      }
+    }
+  }
+
+  #rms-manuals-right {
+    float: left;
+    width: 400px;
+    padding: 1.5rem;
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+
+    @include mq(md) {
+      display: none;
+    }
+
+    @include mq(sm) {
+      display: none;
+    }
+
+    h2.page-nav-header {
+      font-family: $font-1;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: .75rem 1rem .75rem 1rem;
+      background-color: $blue2 !important;
+      color: white;
+    }
+
+    .page-nav {
+      list-style-type: none;
+
+      li {
+        float: left;
+        width: 100%;
+        margin-top: 0rem;
+        margin-left: 0;
+        padding: 0rem;
+        border-bottom: 1px solid #bbb;
+
+        &:last-child {
+          border-bottom: 0px;
+        }
+
+        a {
+          float: left;
+          width: 100%;
+          padding: .35rem 1rem .35rem 1rem;
+
+          &:hover {
+            background-color: lighten($blue, 25%);
+            color: $blue2;
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+
+    .page-nav-contact {
+      a {
+        float: left;
+        width: 100%;
+        margin-top: 1rem;
+        padding-left: 1rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .page-nav-contact-2 {
+      display: none;
+    }
+
+    #rms-manuals-right-inner {
+      float: left;
+      padding: .5rem 1rem 1rem 1rem;
+    }
+
+    #rms-manuals-right-inner2 {
+      float: left;
+      padding: .5rem 1rem 1rem 1rem;
+      background-color: white;
+      box-shadow: 0px 0px 3px #333;
+    }
+
+    #rms-manuals-right-inner3 {
+      float: left;
+      padding: .5rem 1rem 1rem 1rem;
+      background-color: white;
+      border: 1px solid #bbb;
+    }
+  }
+
+  #rms-manuals-right-alt {
+    display: none;
+
+    @include mq(md) {
+      float: left;
+      width: 100%;
+      position: fixed;
+      top: 2.8rem;
+      z-index: 100000;
+      padding: .8rem 1rem .3rem 0rem;
+      background-color: #dedede;
+      text-align: right;
+      display: block;
+    }
+
+    @include mq(sm) {
+      float: left;
+      width: 100%;
+      position: fixed;
+      top: 2.8rem;
+      z-index: 100000;
+      margin-top: 0rem;
+      padding: .5rem 0rem .4rem 0rem;
+      background-color: #dedede;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+#back-top a {
+  position: fixed;
+	bottom: 60px !important;
+  right: 20px !important;
+	width: 108px;
+  padding: .5rem 1rem .5rem 1rem;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+  background-color: #ddd;
+	color: white;
+  display: block;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+
+  @include mq(md) {
+    bottom: 60px !important;
+    right: 10px !important;
+  }
+
+  @include mq(sm) {
+    bottom: 50px !important;
+    right: 10px !important;
+  }
+}
+
+#back-top a:hover {
+  background-color: #aaa;
+	color: white;
+}
+
+/* arrow icon (span tag) */
+#back-top {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+	width: 108px;
+	height: 108px;
+	display: block;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+.f-dropdown {
+  list-style-type: none !important;
+  z-index: 10000000;
+
+  li {
+    a {
+
+    }
+  }
+}
+
+.f-open-dropdown {
+  padding: 0rem 0rem 0rem 0rem;
+  list-style-type: none !important;
+  text-align: left;
+
+  li {
+    margin-left: 0rem !important;
+    padding: 0rem .75rem 0rem .75rem;
+
+    &:first-child {
+      padding-top: 0rem;
+    }
+  }
+}
+
+.f-dropdown {
+  max-width: 250px;
+}
+
+.dropdown {
+  background-color: $blue !important;
+  color: white !important;
+
+  &:hover {
+    background-color: darken($blue, 20%) !important;
+    color: white !important;
+  }
+
+  @include mq(sm) {
+    max-width: none;
+    width: 80%;
+  }
+}
+
+
+.shortcut-table-left, .shortcut-table-right {
+
+    th {
+      background-color: #ddd !important;
+      font-weight: bold;
+    }
+
+    tr {
+      &:nth-child(odd) {
+      background-color: #eee !important;
+    }
+  }
+}
+
+.shortcut-table-left {
+  float: left;
+  width: 45%;
+  border-right: 1px solid #bbb;
+
+  @include mq(md) {
+    width: 100%;
+    border-right: 0px;
+  }
+
+  @include mq(sm) {
+    width: 100%;
+    border-right: 0px;
+  }
+}
+
+.shortcut-table-right {
+  float: left;
+  width: 55%;
+  padding-left: 50px;
+
+  @include mq(md) {
+    width: 100%;
+
+    tr th {
+      display: none;
+    }
+  }
+
+  @include mq(sm) {
+    width: 100%;
+
+    tr th {
+      display: none;
+    }
+  }
+}
+
+.no-padding-left {
+  padding-left: 0rem;
+}
+
+.no-padding-right {
+  padding-right: 0rem;
+}
+
+.left-off-canvas-toggle {
+  color: $white;
+  position: relative;
+
+
+  top: .2rem;
+
+  
+
+  &:hover {
+    background-color: darken($blue, 15%);
+    color: $white;
+    text-decoration: none !important;
+  }
+
+  &:focus {
+    background-color: darken($blue, 15%);
+    color: darken($blue, 30%);;
+    text-decoration: none !important;
+  }
+
+  @include mq (md) {
+    top: 0rem;
+    color: $white;
+  }
+
+  @include mq (sm) {
+    top: 0rem;
+    color: $white;
+  }
+}
+
+.left-off-canvas-menu {
+  position: fixed;
+  z-index: 10000000000 !important;
+
+  ul {
+    list-style-type: none !important;
+
+    li {
+      margin-left: 0rem !important;
+    }
+  }
+}

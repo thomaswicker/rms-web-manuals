@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+  </script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="http://www.rms.biz/products/sinfonia/">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="introduction.html">Introduction</a></li>
+         <li><a href="installation.html">Installation</a></li>
+          <li><a href="quickstart.html">Quick Start</a></li>
+          
+          <li class="current_page_item"><a href="interfaceediting.html">Interface and Editing</a></li>
+        
+          <li><a href="advanced.html">Advanced</a></li>
+          <li><a href="customization.html">Customization</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a name="interfaceandediting">Interface and Editing</a></h2>
+              <div class="entry">
+                <h3 class="title"><a name="performanceedit" id="performanceedit"></a>Performance vs. Edit Mode</h3>
+                <p>Sinfonia has two basic modes: Performance and Edit. Just like you would expect, Performance Mode is for running the show during rehearsals and performances, and Edit Mode is for making changes to suit your specific production (adding cuts, removing songs, making key changes etc).</p>
+                <p>You can toggle between the modes in two ways:</p>
+                <ul>
+                  <li>By using the "mode" menu along the top of the screen. Mode-P means you are in Performance Mode, and Mode-E means you are in Edit Mode.</li>
+                  <li>By toggling the lock icon in the Timeline window. If it is locked, then you are in Performance Mode, if it is unlocked (and highlighted) you are in Edit Mode.</li></ul>
+                  <table width="500" class="figure">
+                  <tr>
+                    <td valign="bottom"><p class="Performance Mode">Performance Mode</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/v2TimelineLockedco.png" alt="" width="500" height="223" /></td>
+                  </tr>
+                </table>
+                <table width="500" class="figure">
+                  <tr>
+                    <td valign="bottom"><p class="Edit Mode">Edit Mode</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/v2TimelineUnlockedco.png" alt="" width="500" height="221" /></td>
+                  </tr>
+                </table>
+                
+                <p>Please note: while it is possible to play along in Edit Mode, we do not recommend running the show like this! Performance Mode prevents you from accidentally making changes during a show.</p>
+                
+                <h3 class="title"><a name="timeline" id="timeline"></a>Timeline</h3>
+                <p>The Timeline is one of the most important windows in Sinfonia, especially when it comes to easily making large-scale edits. </p>
+                <p>Because there are many different types of edits that you can make within Sinfonia, the Timeline window selectively shows only edits that are related to the current "active" window. For example, if you select the Navigation window (either by clicking on it or by using the drop-down menu within Timeline) you will be able to see regions of the song that currently have vamps, cuts, repeats, fermatas; basically any edit that you make with the Navigation window. </p>
+                <p>Here are the types of edits visible, based on the current "active" window. (for detailed information on what various edits do, see the following sections corresponding to the appropriate window.)</p>
+                <table width="500" border="1">
+                  <tr>
+                    <td width="170"><b>ACTIVE WINDOW</b></td>
+                    <td width="314"><b>EDITS VISIBLE</b></td>
+                  </tr>
+                  <tr>
+                    <td>Hotkeys</td>
+                    <td>hotkey definitions</td>
+                  </tr>
+                  <tr>
+                    <td>Instrument Mixer</td>
+                    <td>mute settings, volume adjustments</td>
+                  </tr>
+                  <tr>
+                    <td>Miscellaneous</td>
+                    <td>any edits not covered by other settings</td>
+                  </tr>
+                  <tr>
+                    <td>Navigation</td>
+                    <td>cuts, vamps, repeats, attaccas, pauses, stops, cutoffs, relseq</td>
+                  </tr>
+                  <tr>
+                    <td>Songs</td>
+                    <td>transpositions</td>
+                  </tr>
+                  <tr>
+                    <td>Tempo</td>
+                    <td>tempo adjustments</td>
+                  </tr>
+                </table>
+                <br />
+                <p>Please note, the Timeline window doesn't necessarily tell you exactly what edit is made to a region! It merely tells you that there is an edit there. If you need detailed information on an edit, you should use the Advanced Editor window. (Some edits are color-coded, however. Check under the Preferences menu [CMD-, on Mac and CTRL-, on Windows] to see what they are, or to change the colors).</p>
+<br />
+<h3 class="title"><a name="performancemode" id="performancemode"></a>In Performance Mode</h3>
+<p><img src="images/v2TimelinePerfco.png" alt="" width="500" height="220" /></p>
+<p>Timeline can be a useful window to have visible during performances or rehearsals. As mentioned above, you can see different types of edits based on the active window. So if you want to see all upcoming vamps, make sure that Navigation is active.</p>
+<p>The Timeline also has a playhead cursor which shows you exactly where you are in the song. And if you are in a rehearsal and your choreographer wants to go over the dance break starting at measure 53, simply click on that spot in the timeline. The playhead cursor will relocate and you are ready to go!</p>
+<p>In the upper right corner, you can toggle between performance mode and edit mode using the lock icon, and "reset" the song using the circular arrow icon. (This is useful when playing a song with edits that use the "wait" and "times" feature. For example, if you have already played a song through the 2nd ending and want to start from somewhere in the middle and go to the first ending, you would need to click the reset icon.)</p>
+<p>You can zoom the view in or out using the icons on the lower left.</p>
+<h3 class="title"><a name="makingedits" id="makingedits"></a>Making Edits with Timeline</h3>
+<p><img src="images/v2TimelineEdit.png" alt="" width="500" height="214" /></p>
+<p>Clicking on the lock icon in the upper right will toggle between Performance mode and Edit mode. Making fast edits with Timeline is extremely easy and intuitive, and is one of the added features we are most excited about!</p>
+<p>There are two basic types of edits you can make: region edits and point edits. Region edits apply to a range of measures (like a vamp), and point edits are single events that happen at a specific spot (like a fermata).</p>
+<p>Here is how you would make a sample cut from bar 5 to bar 9 using the Timeline:</p>
+<p><img src="images/v2Navco.png" alt="" width="155" height="400" /></p>
+<ol>
+  <li>Enter edit mode</li>
+  <li>Set the active window to Navigation (and make sure it is visible)</li>
+  <li>Click-and-drag the region in Timeline between bar 5 and bar 9. It should now be highlighted, and the fields at the bottom should read: Selection-Start 5, 1, 0 and End 9, 1, 0</li>
+  <li>In the Navigation window, click on the top icon (cut)</li>
+  <li>Exit edit mode</li>
+</ol>
+<p>Voilà! You have just created a cut from the downbeat of measure 5 to the downbeat of measure 9! Take some time to experiment with the other types of navigation edits, and you will see just how powerful the Timeline editor really is.</p>
+<p>Deleting an edit is even easier. To remove the cut we just made, simply enter Edit Mode, click on the edit region to select it, and hit Delete.</p>
+<p>To make a point edit (such as a fermata at the downbeat of bar 12), the process is almost identical.</p>
+<ol>
+  <li>Enter edit mode</li>
+  <li>Click on the downbeat of bar 12</li>
+  <li>In the Navigation window, click on the fermata icon (pause)</li>
+  <li>You should now see a little arrow at bar 12. This shows that a point edit exists there.</li>
+  <li>Exit edit mode. Now when you play (using the Go key) the music will automatically pause there!</li>
+</ol>
+<p>As you can see, it is extremely easy to customize your show with just a few clicks! There are many different types of edits you can create - for detailed information on all of them, see the corresponding sections below.</p>
+<h3 class="title"><a name="songs" id="songs"></a>Songs</h3>
+<p>In Performance Mode, the Songs window simply displays the order of music for the show you are running. Most Sinfonia installations only load one act at a time, so you will need to load Act 2 by using the File-&gt;Open command for multi-act shows. </p>
+<p>You can switch the current song by clicking on the song name, or by using the Previous Song/Next Song buttons within Transport. There is also a MIDI keyboard key to advance to the next song.</p>
+
+<h3 class="title"><a name="editingsongs" id="editingsongs"></a>Editing in the Songs Window</h3>
+<p><img src="images/v2SongsEditunl.png" alt="" width="284" height="294" /></p>
+<p>When you switch to Edit Mode, you can make a number of extremely useful edits within Songs. This includes re-ordering songs, adding reprises, cutting songs, changing keys, etc.</p>
+<h4>Changing Song Order</h4>
+<p><img src="images/v2SongsOrderunl.png" alt="" width="287" height="300" /></p>
+
+<p>To change the order of the songs in your show, simply click-hold and drag on any song name to move it to a different spot in your playlist.</p>
+<h4>Changing the Key of a Song</h4>
+<p><img src="images/v2SongKey.png" alt="" width="284" height="324" /></p>
+<p>Simply click on the name of a song to highlight it, and click-and-hold on the &quot;0&quot; in the upper right corner of Songs. This will display a series of numbers ranging from -12 to +12 corresponding to how many half-steps up or down you would like to move the song.</p>
+<p>You will notice when you do this that the Timeline will now show a region edit for Songs that encompasses the entire song. It is also possible to change the key of a section of the song by selecting that region within Timeline and using the half-step selector in Songs to set the transposition. Or if you want a transposition to start at a particular measure and apply to the end of the song, move the playhead cursor to that measure in Timeline and then use the half-step selector.</p>
+<h4>Cutting (Or Un-Cutting) a Song</h4>
+<p>To remove a song from the playlist, simply select it in Edit Mode and click the minus icon in the upper left of Songs. Don't worry, this change is not permanent! You can add the song back by clicking on the plus icon and selecting the song from the drop-down menus.</p>
+<h4>Adding a Reprise</h4>
+<p>If you want to reprise a song, you can either copy the current song by clicking on the duplicate button or by using the plus icon. Note that if you &quot;duplicate&quot; the song, the new version will retain any edits you have already made (like adjusting the key.) </p>
+<p>You can then make cuts (using Timeline and Navigation) and other adjustments to the duplicate and drag the song to its new position.</p>
+<h4>Renaming a Song</h4>
+<p>By default, duplicating a song will call it something like &lt;song title&gt;-copy. If you want to call it something else, simply double click on the song in Edit Mode and you can edit the name. Just make sure the song name is unique. You cannot have two identically named songs in the list.</p>
+<h3 class="title"><a name="transport" id="transport"></a>Transport</h3>
+<p><img src="images/v2Transport.png" alt="" width="446" height="164" /></p>
+<p>The transport window should look familiar to anyone who has used a music playback device, and functions very similarly, with a few notable exceptions. All of these buttons are hotmapped to the MIDI keyboard, allowing you an efficient means of navigating the set without having to interact directly with the computer. See the <a href="#keyboard">Keyboard</a> section of the manual for specifics.</p>
+<p>Many of these buttons can also be activated using the function keys F1-F12, as covered under the <a href="#functionlegend">Function Legend</a> section of the manual.</p>
+<h4>Rewind/Previous and Next Song</h4>
+<p><img src="images/v2TransportPrevNext2.png" alt="" width="446" height="164" /></p>
+<p>As expected, these buttons will navigate within the Songs window. If you are in the middle of a song, the &quot;previous&quot; button will first move to the beginning of the song. If you are already at the top of a song, the button will take you to the previous song.</p>
+<h4>Previous Bar and Next Bar</h4>
+<p><img src="images/v2TransportSkip2.png" alt="" width="446" height="164" /></p>
+<p>These buttons move backwards or forwards within the current song by a single measure. </p>
+<h4>Start, Pause, and Stop</h4>
+<p><img src="images/v2TransportPPS4.png" alt="" width="446" height="164" /></p>
+<p>Clicking on the Start button will start the song in go mode at the default tempo without any interaction from the user. (However, Sinfonia® is intended to be played live!) </p>
+<p>If you click on the Pause button while music is advancing, it will act as a fermata, and any sounding notes will continue to sound until you continue by either clicking Start, Stop, or hitting the Cut-off key.</p>
+<p>The Stop button does exactly that - stops the music.</p>
+<h4>Exit Vamp</h4>
+<p><img src="images/v2TransportExitVamp2.png" alt="" width="446" height="164" /></p>
+<p>If you enter a vamp when playing a song, you must click on the Exit Vamp button to continue. This can be done with the mouse, by function key (F10 by default) or on the MIDI keyboard.</p>
+<h3 class="title"><a name="keyboard" id="keyboard"></a>Keyboard</h3>
+<p><img src="images/v2Keyboard.png" alt="" width="500" height="157" /></p>
+<p>In performance mode, the Keyboard window provides a useful visual reference for what keys perform what function on your MIDI keyboard. Please note, while it is entirely possible to use Sinfonia without an external keyboard, you will find that playing live feels much more natural with a keyboard attached.</p>
+<p>Along the top of the window are numbers showing which octave on the keyboard is displayed. Sinfonia uses the American system of note designations, where C3 = middle C.</p>
+<h4>Editing the Keyboard</h4>
+<p>By no means are you restricted to using the default layout on the Keyboard. Each and every function can by re-mapped (or cleared) by entering Edit mode.</p>
+<p><img src="images/v2KeyboardEdit.png" alt="" width="500" height="157" /></p>
+<p>You will notice a small drawer open to the right when you enter Edit mode. This allows you to set up a number of unique layouts and switch between them with ease. There are buttons for adding, deleting and duplicating a layout, and a button to reset the current layout to the default setting. If you double-click on a layout, you can re-name it.</p>
+<p>To change what is assigned to a key, simple click-and-hold on that particular key. A list of icons will pop up, and you can choose what you would like to assign, or clear the current assignment.</p>
+<p><img src="images/v2KeyboardAssign.png" alt="" width="500" height="234" /></p>
+<p>You can assign a range of keys to the same function by using shift-click-and-hold or control-click-and-hold (command on Mac.)</p>
+<h4>Default Keyboard Icons</h4>
+<h5>Tap</h5>
+<h5> <img src="images/Tap.png" alt="" width="26" height="30" />
+</h5>
+<p>These are your basic go-to keys for performing the show live. Simply play the tap keys in the rhythm designated in the score or Rhythm window, and Sinfonia will follow your every move.</p>
+<h5>Tempo down</h5>
+<h5> <img src="images/TempoDown.png" alt="" width="25" height="27" />
+</h5>
+<h5>Tempo up</h5>
+<h5><img src="images/TempoUp.png" alt="" width="31" height="33" />
+</h5>
+<h5>A tempo</h5>
+<h5> <img src="images/Atempo.png" alt="" width="28" height="28" />
+</h5>
+<p>If you are in cruise or play mode, these buttons will adjust the tempo accordingly. The a tempo button will set the current tempo to the default program setting, even if you are in cruise mode.</p>
+<h5>Create vamp</h5>
+<h5> <img src="images/CreateVamp.png" alt="" width="26" height="27" /></h5>
+<h5> Pause </h5>
+<h5><img src="images/Pause.png" alt="" width="28" height="30" /></h5>
+<h5>Cut-off </h5>
+<h5><img src="images/Cutoff.png" alt="" width="26" height="28" /></h5>
+<h5>Exit vamp</h5>
+<h5> <img src="images/ExitVamp.png" alt="" width="25" height="25" /></h5>
+<p>The arbitrary vamp button can be very useful in a live performance setting. Let's say that an actor misses an entrance, or your set isn't quite in the right spot and you need to fill time. The arbitrary vamp button will create an on-the-fly vamp for you! If you hit it once, it will create a 1-bar vamp. If you hit it twice, it will create a 2-bar vamp and so forth. Keep in mind, this button sets the <b>beginning</b> of the vamp to the current bar. </p>
+<p><i>If you find yourself in a bind and need to jump to a specific measure during a performance, the &quot;Go to...&quot; function can be your friend. For more detail, see the <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/tips.html#emergencynav">appropriate section</a> in the manual.</i></p>
+<p>Just like in the Transport, hitting the pause key will act like a fermata - sustaining any currently sounding notes. If you want to then stop the sound of the sustained notes, use the cut-off key. <i>It is always better to use the cut-off key instead of the stop key to end a fermata, since hitting stop will cause the program to forget live playback tempos used for the cruise function.</i></p>
+<p>Exit vamp functions the same way as in the Transport.</p>
+<h5>Skip forward</h5>
+<h5> <img src="images/SkipForward.png" alt="" width="22" height="23" /></h5>
+<h5>Skip backward </h5>
+<h5><img src="images/SkipBackward.png" alt="" width="22" height="23" /></h5>
+<h5>Next song</h5>
+<h5> <img src="images/NextSong.png" alt="" width="24" height="22" /></h5>
+<p>Just like in the Transport, the skip keys will rewind or fast forward by single bars, and the next song key will advance the playlist.</p>
+<h5>Stop </h5>
+<h5><img src="images/Stop.png" alt="" width="25" height="24" /></h5>
+<h5>Start</h5>
+<h5> <img src="images/Start.png" alt="" width="23" height="23" /></h5>
+<h5>Cruise </h5>
+<h5><img src="images/Cruise.png" alt="" width="25" height="27" /></h5>
+<p>Stop and Start function the same way that they do in Transport. The Cruise key can be a useful tool during performance to set the tempo during a section of music and letting it go. Simply hit Cruise after setting the tempo with the tap keys, and Sinfonia will continue along in whatever tempo you have set.</p>
+<h5>MIDI Reset</h5>
+<h5> <img src="images/MidiResetKB.png" alt="" width="24" height="25" /></h5>
+<p>Hitting this key will send an emergency all notes off command to Sinfonia.</p>
+<h4>Additional keyboard icons</h4>
+<p>The following icons are not set to keys in the default layout, but are still available for you to assign yourself.</p>
+<h5>Previous song</h5>
+<h5> <img src="images/PreviousSong.png" alt="" width="22" height="23" /></h5>
+<p>This key behaves exactly like the previous song button in Transport, rewinding the playlist.</p>
+<h5>Reset</h5>
+<h5> <img src="images/Reset.png" alt="" width="24" height="26" /></h5>
+<p>Similarly to the Reset button in the Timeline, the will reset the internal counters for the current song. Use this if you have played through an edit that uses the wait or times feature (like a 1st, 2nd ending) and you want to start the song over from the beginning.</p>
+<h5>Hotkeys (1-36)</h5>
+<h5> <img src="images/Hotkey.png" alt="" width="24" height="30" /></h5>
+<p>Hotkeys can be an extremely useful and powerful tool within Sinfonia, and are covered under more detail <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/interfaceediting.html#hotkeys">here</a>.</p>
+<h3 class="title"><a name="functionlegend" id="functionlegend"></a>Function Legend</h3>
+<p><img src="images/v2Function.png" alt="" width="500" height="75" /></p>
+<p>You can also perform many of the actions detailed on the Keyboard window using the function keys (F1-F12) on the computer. </p>
+<table width="338" border="1">
+  <tr>
+    <td width="63"><b>Key</b></td>
+    <td width="259"><b>Action</b></td>
+  </tr>
+  <tr>
+    <td>F1</td>
+    <td>tempo slower</td>
+  </tr>
+  <tr>
+    <td>F2</td>
+    <td>a tempo</td>
+  </tr>
+  <tr>
+    <td>F3</td>
+    <td>tempo faster</td>
+  </tr>
+  <tr>
+    <td>F4</td>
+    <td>cut-off</td>
+  </tr>
+  <tr>
+    <td>F5</td>
+    <td>previous song</td>
+  </tr>
+  <tr>
+    <td>F6</td>
+    <td>stop</td>
+  </tr>
+  <tr>
+    <td>F7</td>
+    <td>pause</td>
+  </tr>
+  <tr>
+    <td>F8</td>
+    <td>go</td>
+  </tr>
+  <tr>
+    <td>F9</td>
+    <td>reset song</td>
+  </tr>
+  <tr>
+    <td>F10</td>
+    <td>exit vamp</td>
+  </tr>
+  <tr>
+    <td>F11</td>
+    <td>create vamp</td>
+  </tr>
+  <tr>
+    <td>F12</td>
+    <td>cruise</td>
+  </tr>
+  <tr>
+    <td>shift-F1</td>
+    <td>MIDI reset (all notes off)</td>
+  </tr>
+</table><br />
+<p>If you enter edit mode, you can change the default assignments (and assign shift-commands to all the function keys). To do so, simply click-and-hold on the button you would like to edit and a list of possible assignments will appear.</p>
+<p>Additionally, in Performance mode, the spacebar serves as a Play key.</p>
+<h3 class="title"><a name="navigation" id="navigation"></a>Navigation</h3>
+<p><img src="images/v2Navigation.png" alt="" width="236" height="409" /></p>
+<p>The navigation window, together with Timeline, gives you an extremely fast and simple way to make large-scale edits to the songs. </p>
+<p>In performance mode, if you have the Navigation window active, then Timeline will show you regions of the song that have edits active in them. But edit mode is where the Navigation window is truly useful.</p>
+<h4>Editing with Navigation</h4>
+<h5>Cuts, vamps, and repeats</h5>
+<p>These types of edits require you to select a region within the timeline. Note that you can fine-tune the selection using the fields at the bottom of the Timeline window. The repeat button defaults to repeating the section <b>only once</b>. You can use the &quot;times&quot; field in the Timeline window after making the repeat to change this setting.</p>
+<h5>Attacca, pause, stop, and cutoff</h5>
+<p>These are &quot;point&quot; edits. Attacca will immediately jump to the next song in the playlist, pause will create a fermata, and stop will halt automatic playback at that particular spot.</p>
+<p><i>Please note: a pause effectively holds playback <b>before the notes where it is placed</b>. For example, creating a pause edit at the downbeat of bar 12 will cause Sinfonia to hold playback at the very end of bar 11. If you want to create a fermata on a specific chord, you need to place a pause edit on the note or rest <b>that follows the written fermata</b>.</i></p>
+<h5>Relseq</h5>
+<p>Relseq is provided as an alternate way to advance to a different track automatically. When you create a relseq edit at a spot in the Timeline, it will advance to the beginning of the next track and stop playback (if you are in Go or Cruise mode). An attacca edit would continue playback in the next song.</p>
+<p>When you are playing Sinfonia live, relseq and attacca function essentially the same way.</p>
+<p><i>Both attacca and relseq can be customized to jump to a different song within the loaded show by using the Advanced Editor. However, if you are making a lot of adjustments to the order of the show, it is recommended that you edit the Songs tracklist to duplicate songs and keep your playlist linear.</i></p>
+<h5>Using wait and times</h5>
+<p>The wait and times features allow you to be a little more specific about exactly when an edit will take place. </p>
+<p>Wait tells the program to ignore that edit until a later pass through that spot of music. Times tells the program to perform the edit a specific number of times only. </p>
+<p>For example, let's say you have a 16 bar repeat starting at measure 1 that you want to play 3 times <b>total</b> (repeat twice). To do this, create a repeat from measure 1 to measure 17 and set &quot;times&quot; to 2. Sinfonia will now take the repeat twice to play that section 3 times total. On the third repeat the edit will disappear and playback will continue as normal.</p>
+<p>Now let's say you have a vamp and want a particular to pause at a particular spot starting on the 3rd vamp. To do this, create the pause edit and set the &quot;wait&quot; value to 2. This tells Sinfonia to ignore the edit for the first two passes.</p>
+<p>As you can see, &quot;wait&quot; and &quot;times&quot; can be a little tricky to wrap your head around when programming edits, but understanding them can give you greater flexibility in your editing. </p>
+<h3 class="title"><a name="rhythm" id="rhythm"></a>Rhythm</h3>
+<p><img src="images/v2Rhythm.png" alt="" width="500" height="96" /></p>
+<p>The Rhythm window is one of the most exciting features added to Sinfonia 2. When you are in play mode, it tells you at a glance what particular rhythm you need to play for the current (and surrounding) measure in the music.</p>
+<h4>Editing tap rhythms</h4>
+<p><img src="images/v2RhythmEdit.png" alt="" width="500" height="127" /></p>
+<p>It is when you enter edit mode that the power of the Rhythm window becomes apparent. </p>
+<p>The first thing you will notice is a row of additional buttons that appear along the top of the Rhythm window. Using these buttons, you can quickly change the default tap rhythms. If you have ever used a music notation program, then this process will feel very familiar to you.</p>
+<p>From left to right, you have buttons to set note duration, a button to tie two notes together, a button to create triplets, a button to beam notes together, and rests of varying lengths.</p>
+<p>To change the tap rhythm, you first must delete the existing tap rhythms. To do this, select the rhythms you would like to delete by click-and-drag and then hit the &quot;delete&quot; button. You should now see one or more measures that are highlighted red. These are measures that do not currently have the current number of taps programmed.</p>
+<p>To create a rhythm, simply place the blue cursor in the measure where you want edits and click the note buttons to create the desired rhythm. You can also copy and paste existing rhythms by using ctrl-c (command-c on mac) and ctrl-v (command-v on mac). </p>
+<p>Sinfonia treats rests in measures differently than notes. If you enter rhythms using rests, then Sinfonia will automatically advance through those beats. Use this if you want to program sections of music with distinct cued hits, or to save yourself from tapping through empty measures.</p>
+<p>By default, Sinfonia will not beam notes together. If you want to create beaming patterns, simply select groups of notes that you would like beamed together and push the &quot;beam&quot; button.</p>
+<p>Adding ties is a similar process by selecting the note that begins the tie and pressing the button.</p>
+<p>To create triplets, first enter all the notes for the triplet, then select the group and press the button.</p>
+<p><img src="images/v2RhythmError.png" alt="" width="445" height="319" /></p>
+<p>If you have entered too many (or too few) beats for the current measure, Sinfonia will highlight the measure red and give you an error if you try to leave edit mode. You can either fix the mistake manually or have Sinfonia try to fix the mistake for you.</p>
+<h3 class="title"><a name="tempo" id="tempo"></a>Tempo</h3>
+<p><img src="images/v2Tempo.png" alt="" width="269" height="251" /></p>
+<p>When you are in Performance Mode, the tempo window tells you very quickly:</p>
+<ul>
+  <li>What the default tempo is for the current location</li>
+  <li>What your current played tempo is</li>
+  <li>How much faster or slower the played tempo is compared to the programmed tempo</li>
+  </ul>
+<h4>Editing default tempos</h4>
+<p><img src="images/v2TempoEdit.png" alt="" width="327" height="260" /></p>
+<p>If you enter Edit Mode, the Tempo window allows you to quickly change the default tempos, either by using the percentage slider <i>or by recording a performance of the given section of music.</i></p>
+<p>To edit using the tempo slider, simply click-and-drag the section of music you would like to be faster or slower and move the slider appropriately.</p>
+<p>However, you might be able to get a more nuanced performance of the given section of music by recording it yourself!</p>
+<ol>
+  <li>Select the spot of music within Timeline where you would like to begin recording.</li>
+  <li>Click the triangular button in the Tempo window to &quot;arm&quot; the recording. It will start blinking.</li>
+  <li>Begin playing!</li>
+  <li>When you are finished, turn off the recording by clicking the triangular button again.</li>
+  </ol>
+<p>You can even change what note value is used to determine the tempo using the drop down menu to the right of &quot;Current Tempo.&quot;</p>
+<p>After you have made a tempo edit, a single region will show up in Timeline covering the area where you have made an edit. To revert to the default tempo, simply select the edit in Timeline and delete it, like you would with any other edit.</p>
+<h3 class="title"><a name="markers" id="markers"></a>Markers</h3>
+<p><img src="images/v2Markers.png" alt="" width="290" height="205" /></p>
+<p>Setting markers gives you an alternate and convenient method of navigating to various sections within the current song quickly. </p>
+<p>Let's say you have a dance break that the choreographer likes to start rehearsal at frequently. Instead of having to look up the bar number and type that into the keyboard, you can set a marker called &quot;dancebreak&quot; at that particular spot in the music ahead of time. </p>
+<p>Then, while you are within that song, you can simply start typing &quot;dancebreak&quot; on the computer and Sinfonia will auto-complete based on the currently active markers. Hit &quot;return&quot; once to arm the jump, and again to jump to that spot in the music. Set up markers in songs you rehearse frequently to simplify and speed up your rehearsal process!</p>
+<p>Creating markers is simple. Just enter edit mode, select a spot within the timeline, and then push the &quot;+&quot; button on the markers window. Name the marker something appropriate, and you are set! To delete a marker, select it within the Markers window and push &quot;-&quot;.</p>
+<p>Markers can also be used as destinations for a hotkey &quot;location&quot; event.</p>
+<h3 class="title"><a name="hotkeys" id="hotkeys"></a>Hotkeys</h3>
+<p><img src="images/v2Hotkeys.png" alt="" width="500" height="170" /></p>
+<p>Hotkeys can be an incredibly powerful tool to give you even more control over the show (especially during a performance). With hotkeys, you can trigger unique relocations, mutings, external sequences and more. For example, you can set up a hotkey to take you instantly to measure 37. Or you can set up a hotkey to trigger the muting (or unmuting) of the flute part.</p>
+<p>Because hotkeys are programmed to be valid for a specific range within a song, you can use the same hotkey for different functions during a show. For example, hotkey 1 can be your &quot;jump cut&quot; hotkey in one song, and your &quot;toggle the mute on Trumpet 1&quot; button on another song.</p>
+<p>Here are the possible types of hotkeys:</p>
+<ol>
+  <li>Location - This will immediately jump to the designated spot within the current song.</li>
+  <li>Instrument - This toggles the mute state for a particular instrument. If the instrument is currently muted it will un-mute it and vice-versa.</li>
+  <li>Sequence - This will trigger an external sequence (a snippet of music in a different time-signature or a sound cue.)</li>
+  <li>Undefine - This &quot;clears&quot; a previously defined hotkey. </li>
+  </ol>
+<p><i>&quot;Sequence&quot; hotkeys are rare, and should be pre-programmed for your Sinfonia show. The &quot;Undefine&quot; hotkey is programmed automatically by Sinfonia.</i></p>
+<h4>Programming hotkeys</h4>
+<p><img src="images/v2HotkeyEdit.png" alt="" width="500" height="170" /></p>
+<p>To program Location and Instrument hotkeys, first select (in Edit Mode) the region you would like the hotkey to be active, and then push the &quot;+&quot; button in the Hot Keys window. </p>
+<p>If you select a single spot in Timeline, then the hotkey will be active from that spot until the end of the song (or until the hotkey is redefined by subsequent programming). To make a hotkey active for the entire song, simply place the cursor at the beginning of the song before hitting the &quot;+&quot; button.</p>
+<p>Use the Number field to set the hotkey number (1-36), and Label to create a helpful name for the hotkey (like &quot;jumpcut&quot; or &quot;muteTpt1&quot;). The Wait and Times fields function in the same way as they do when programming other types of edits.</p>
+<h5>Location hotkeys</h5>
+<p>The target field for location hotkeys can be either a bar number within the current song, or a predefined marker.</p>
+<h5>Instrument hotkeys</h5>
+<p>When you create an instrument hotkey, the target field will show a list of possible instruments. Pressing this hotkey will toggle the mute state of that particular instrument.</p>
+<p>After you program a hotkey, it is helpful to check your hotkey assignments on the MIDI keyboard. A programmed hotkey isn't very useful without a key to trigger it!</p>
+<h3 class="title"><a name="instrumentmixer" id="instrumentmixer"></a>Instrument Mixer</h3>
+<p><img src="images/v2InstMix.png" alt="" width="500" height="452" /></p>
+              <p>The Instrument Mixer is where you will do all your major edits to the individual instrument parts within the show. You can adjust volume, mute settings, pan settings and even adjust what channel each instrument goes to (if you are setting up a more complicated mix).</p>
+              <p>Each instrument has a channel strip with a volume slider (set to a default of 100%), a panning knob, a channel output selection, and a mute button.</p>
+              <p>Note that channel strips are assigned per individual instrument, not per &quot;book.&quot; If the show calls for Reed 1 to play flute, piccolo, and clarinet, then each of those instruments will be on a separate channel strip. This makes it easier for you to deal with situations where a live player can cover only some of the part assigned.</p>
+              <p>For convenience, there is a reset button (like the one in Timeline) in the upper right of the Instrument Mixer.</p>
+              <h4>Editing in the instrument mixer</h4>
+              <h5>Individual song edits</h5>
+              <p>By using the Instrument Mixer with Timeline, you can make adjustments to the default mix for any given song. These edits function much in the same way as any other edit within Timeline - first make sure you are in edit mode, then either place the cursor at the spot where you would like the edit to begin or select a range of measures for the edit. If you select a single point within the Timeline, then the edit will be active until it either reaches another edit to that parameter, or until the end of the song.</p>
+              <p>Note that for volume edits, you are essentially applying a percentage multiplier to the pre-programmed mix. So if you set the piccolo slider to 70, it will play at 70% overall volume for that region while still performing any indicated dynamics.</p>
+              <p>Please note that these edits only apply within the given song. If you want to make all the brass quieter for the entire show, you need to make a <b>global edit</b>.</p>
+              <h5>Global edits</h5>
+              <p>Unlike edits made within songs (like key changes, hotkey settings, cuts, etc), global edits apply to the <b>entire current showfile</b>. This means that you can quickly mute all the brass, or perhaps make the double bass a little bit louder for every song. This is especially useful when you are combining Sinfonia with a group of live players, and don't need certain parts to be played, or perhaps want to double live players quietly to add more body to the pit sound.</p>
+              <p>Here is how to make a global edit:</p>
+              <p>First, you must be in Edit Mode. Then, click on the &quot;+&quot; icon in the upper left corner of the Instrument Mixer. You should now see an orange border around the window - this indicates that you can now make global edits. When you first make an adjustment after entering global edit mode, you will get a pop-up warning box.</p>
+              <p><img src="images/v2GlobalEditWarning.png" alt="" width="487" height="462" /></p>
+              <p>This is to ensure that you don't make a global edit without meaning to.</p>
+              <p>At this point, you can make sweeping changes to volume and mute settings for the entire show. If you have made any local general adjustments to that instrument, you will also get this pop-up warning:</p>
+              <p><img src="images/v2globallocalwarning.png" alt="" width="444" height="187" /></p>
+              <p>You can choose one of two options - you can either erase (overwrite) all local edits for that instrument, or you can retain the local edits on top of the global edit. If you choose the latter, <b>the local and global edits are cumulative</b>. So if you have previously mixed a particular timpani hit to be louder, but then decide to make the timpani quieter for the entire show with a global edit, that local edit will still apply. It won't be as loud as the original edit, but will be louder than the rest of the timpani part.</p>
+              <p>When you have finished making adjustments, exit global edit mode by clicking on the &quot;+&quot; icon. Note that you are still in general edit mode at this point.</p>
+              <p><i>Currently, only volume sliders and mute settings are available for global edits. Pan settings and channel out assignments are by default global, and you don't need to be in global edit mode (or even general edit mode) to make changes.</i></p>
+              <h5>Instrument channel test</h5>
+              <p>When you enter Edit Mode, you will also notice a series of headphone icons above each channel strip. This will send a series of notes to that instrument, and is used to test the output of that particular channel. This is useful when you are setting up Sinfonia in your rehearsal or performance space, particularly when using a multi-channel mix. For more information, see [link to appropriate technical setup section].</p>
+              <h3 class="title"><a name="outputmixer" id="outputmixer"></a>Output Mixer</h3>
+              <p>The output mixer window is used to make adjustments to the level of the entire mix (or sub-mixes) being sent to your sound system, as well as to fine tune reverb settings.</p>
+              <p>The number of active channel strips will change according to the type of audio interface you are using. Note that each channel strip is stereo, and will correspond to two outputs on your interface. Channel A would be outputs 1 &amp; 2, channel B would be outputs 3 &amp; 4, and so forth.</p>
+              <p>If you are running Sinfonia® through the headphone output on your computer (which is possible but not recommended for reasons of audio quality) only a single channel strip will be visible.</p>
+              <p>By default a show will send every instrument to channel A. If you would like to set up a mix where all of the brass are going out a different channel, you would need to change the setting at the bottom of each corresponding strip in the Instrument Mixer. You are only limited by the number of channels on your interface.</p>
+              <p>Along the right side of the Output Mixer is a single blue fader channel - this is your master volume channel. You usually won't need to make adjustments to this, but if your sound person would like more (or less) sound from Sinfonia® this is a likely place to make that adjustment. Note that this is separate from any volume settings for your audio interface. This channel merely controls the level of sound that the Sinfonia® program sends to the computer. To find out how to adjust the volume for your audio interface, please refer to the manufacturer's manual.</p>
+              <h4>Reverb send and return</h4>
+              <p>The knobs along the bottom of the Output Mixer control the levels of reverb for each channel. In simple terms - &quot;reverb send&quot; controls the amount of signal for that channel that gets sent to the reverb effect, and &quot;reverb return&quot; (the single knob under the master volume) controls the overall amount of reverb in the mix.</p>
+              <p>Note that the reverb only sounds on a single channel (&quot;A&quot; by default). This is to save on CPU processing power and insure that Sinfonia® performs as well as possible in a live setting. If you would like the reverb to sound on a different channel, you can use the selector menu underneath the &quot;reverb return&quot; knob.</p>
+              <h4>Editing in the Output Mixer              </h4>
+              <p><img src="images/v2OutputMixerEdit.png" alt="" width="429" height="432" /></p>
+              <p><em>Please note - the volume settings in the Output Mixer are most useful when a particular song needs to be louder or softer overall. It is not possible (nor logical) to make &quot;region edits&quot; to settings in the Output Mixer. The Output Mixer is intended to be a &quot;set it and forget it&quot; window. You can adjust settings per song or for the entire show, and we recommend setting everything to a good basic level in your initial sound setup. Once you finish these large-scale volume edits, any further regional edits to the mix should be done using the Instrument Mixer.</em></p>
+              <p>The sliders in the Output Mixer function a little differently than they do in the Instrument Mixer. In performance mode, any adjustments made to channel volumes apply to the current song. This allows you to make quick &quot;on the fly&quot; adjustments to each group of instruments you might have assigned to the various channels. (If you are running a single stereo mix, then any adjustments to mix will need to be done using the Instrument Mixer.)</p>
+              <p>When you enter Edit Mode in the Output Mixer, a few more options are available to you. You will notice a pop-out drawer is now visible on the right side of the window. These settings control the type of reverb used by Sinfonia. You can choose between Stereo vs Mono, Bright vs Dull, and Long vs Short. Again, adjustments made to these settings in Edit Mode apply only to the current song. If you want to adjust reverb settings for the entire show, you will need to do so using <strong>global edits.</strong></p>
+              <h5>Global edits in the Output Mixer</h5>
+              <p>You can also make global edits using the Output Mixer. To do so, first enter Edit Mode and then click on the &quot;Global Edit&quot; button (the &quot;+&quot; in the upper left corner). You can now adjust channel volume settings and reverb &quot;color&quot; settings for the entire show. <em>Reverb send and receive settings are global by default, and are not intended to be changed from song to song.</em></p>
+              <h5>Output test</h5>
+              <p>When you are in Edit Mode, a series of buttons with headphone icons appears about each channel. Toggling these buttons will send a sine wave test sound to that channel. For more information, please see <a href="http://www.realtimemusicsolutions.com/webmanuals/sinfonia2/customization.html#outputtest">Output Test</a>.</p>
+               <h3 class="title"><a name="commentwindow" id="commentwindow"></a>Comments</h3>
+               <p><img src="images/CommentWindow.png" alt="" width="332" height="234" /></p>
+               <p>This window allows you to create plain language instructions related to specific setups. Potential comments might be "Watch out for the vamp in measure 35" or "Hotkey is programmed to trigger 'car horn' sample." Some comments will be built into the show file. But the feature is mainly there for you to store and display any information that will help you in rehearsal and/or performance.</p>
+               <p>To add a comment:</p>
+               <ol>
+                 <li>Make sure the measure you want to attach the comment to is selected.</li>
+                 <li>Open the Comment Window and switch to Edit Mode.</li>
+                 <li>Place the Timeline playhead where you want the comment to appear - or draw a region if you want it to display for a fixed portion of the song.</li>
+                 <li>Click the add (+) button.</li>
+                 <li>Type your comment text and click Okay.</li>
+                 <li>Review and save comment, or edit as necessary.</li>
+               </ol>
+               <p>You can delete a comment by highlighting it in the comment list and clicking the delete (-) button. A special aspect of the Comments window is that you can choose to display and hide comments automatically. If &quot;Automatically display/hide comments&quot; is checked in the Preferences/General tab, the window will only display when the comment definition is active. This can save valuable screen real estate.</p>
+<h3 class="title"><a name="midireset" id="midireset"></a>MIDI Reset</h3>
+               <img src="images/MidiReset.png" alt="" width="244" height="283" />
+               <p>It is a feature of most modern synthesizers to include a MIDI reset button, and Sinfonia provides this functionality as well. Pressing this sends an all notes off signal to every instrument in the program in case you have any stuck notes. (If this happens, we suggest using a different MIDI controller the next time you run Sinfonia.)</p>
+               <p>Sinfonia uses hundreds of thousands of expressive parameters in the course of a given show. If you're jumping around sections in rehearsal, it's possible you might stop mid-song where pitch-bend is engaged. If you then relocate to a different part of the song, the effect might remain in place, causing things to sound out of tune. Use the MIDI Reset button to set things right.</p>
+<p>You can either click on the button with the mouse, or tap the MIDI reset key on your MIDI keyboard. If you choose to hide the MIDI reset button in your interface, you can still access the functionality with the keyboard shortcut.</p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Interface and Editing</h2>
+                  <ul>
+                  <li><a href="#interfaceandediting">Interface and Editing</a></li>
+                  <li><a href="#performanceedit">Performance vs. Edit Mode</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#performancemode">Performance Mode</a></li>
+                    <li><a href="#makingedits">Making Edits with Timeline</a></li>
+                    <li><a href="#songs">Songs</a></li>
+                    <li><a href="#editingsongs">Editing in the Songs Window</a></li>
+                    <li><a href="#transport">Transport</a></li>
+                    <li><a href="#keyboard">Keyboard</a></li>
+                    <li><a href="#functionlegend">Function Legend</a></li>
+                    <li><a href="#navigation">Navigation</a></li>
+                    <li><a href="#rhythm">Rhythm</a></li>
+                    <li><a href="#tempo">Tempo</a></li>
+                    <li><a href="#markers">Markers</a></li>
+                    <li><a href="#hotkeys">Hotkeys</a></li>
+                    <li><a href="#instrumentmixer">Instrument Mixer</a></li>
+                    <li><a href="#outputmixer">Output Mixer</a></li>
+                    <li><a href="#commentwindow">Comments</a></li>
+                    <li><a href="#midireset">MIDI Reset</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.rms.biz/contact/">Contact Us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --></div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+
+<!-- end #footer -->
+</body>
+</html>

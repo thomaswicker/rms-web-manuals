@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+	 Design by Free CSS Templates
+	 http://www.freecsstemplates.org
+	 Released for free under a Creative Commons Attribution 2.5 License
+	 
+	 Name       : Programme     
+	 Description: A two-column, fixed-width design with dark color scheme.
+	 Version    : 1.0
+	 Released   : 20100707
+	 
+	 -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+				var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+				if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="#">Sinfonia®</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li class="current_page_item"><a href="quickstart.html">Quick Start</a></li>
+          <li><a href="basics.html">Basics</a></li>
+          <li><a href="playing.html">Playing</a></li>
+          <li><a href="editing.html">Editing</a></li>
+          <li><a href="advanced.html">Advanced</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Quick Start</a></h2>
+              <div class="entry">
+                <p> If you haven't done so already, be sure to read <a href="index.html#importantconsiderations">these important considerations</a>.</p>
+                <h3 class="title">What’s In The Box</h3>
+                <p>Your Sinfonia® system will arrive with the following items:</p>
+                <ul>
+                  <li>Apple Macintosh MacBook (Pre-loaded with Sinfonia® software and your licensed show)</li>
+                  <li>MIDI keyboard controller</li>
+                  <li>M-Audio Firewire 410 or Profire 610 audio breakout box</li>
+                  <li>USB Number Pad</li>
+                  <li>Power cable for MacBook</li>
+                  <li>USB cable for MIDI keyboard</li>
+                  <li>Firewire cable for Firewire 410 or Profire 610</li>
+                  <li>Documentation</li>
+                  <li>Sinfonia® score for your licensed show<br />
+                  </li>
+                </ul>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">In the Box</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/Inthebox.png"
+alt="xxxxx"  /></td>
+                  </tr>
+                </table>
+                <table width="500" class="figure">
+                  <tr>
+                    <td align="center" valign="bottom"><p class="caption">MacBook (left side)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><img src="images/Macbookleftside.png"
+alt="xxxxx"  /></td>
+                  </tr>
+                </table>
+                <h3 class="title"><a name="assembly" id="assembly"></a>Assembly</h3>
+                <p>If you haven't done so already, be sure to read <a href="index.html#importantconsiderations">these important considerations</a>.</p>
+                <ol>
+                  <li class="post">Connect the square, magnetic end of the power cord into the left
+                    back corner of the computer. Plug the other side into a clean dedicated
+                    power source. (<font color="red">This power source should not be shared
+                    with any other
+                    device.</font>)</li>
+                  <li class="post">Connect the MIDI keyboard to the computer with the USB cable. The
+                    flatter connection of the cable connects to either USB port on the left
+                    side of the Computer (See Figure 2 - MacBook (left side) above). The
+                    other side of the cable connects to the back of MIDI keyboard.</li>
+                  <table width="500" class="figure">
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">M-Audio MIDI Keyboard (back side)</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="images/MIDIkeyboardback.png"
+alt="xxxxx"  /></td>
+                    </tr>
+                  </table>
+                  <li class="post">Connect the USB Number Pad to the other USB port on the left side
+                    of the computer.</li>
+                  <li class="post">Connect the Audio Break-Out Box (FireWire 410 or ProFire 610) to
+                    the computer with the Firewire cable. One end of the cable connects to
+                    the FireWire 400 port on the left side of the Computer and the other
+                    connects to a similar port on the back of the Audio box. (<font color="red">Note: Only
+                    connect the Firewire 410 or ProFire 610 while the Computer is off.</font>)</li>
+                  <table width="500" class="figure">
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">Firewire 410 (back side)</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="images/Firewire410back.png"
+alt="xxxxx"  /></td>
+                    </tr>
+                  </table>
+                  <li class="post">Connect to your theater’s sound system with two (2) ¼ inch audio cables
+                    (not supplied) plugged into the unbalanced outputs on the back of the
+                    FireWire 410 or ProFire 610.&nbsp; Sinfonia outputs a stereo mix to line outs 1 and 2 of the breakout box.  If you wish to run a different type of mix (such as a mono or multi-channel mix), please see the "<a href="advanced.html">Channel Map</a>" section of the
+                    manual for information about audio routing to the various output
+                    ports.&nbsp;</li>
+                  <li class="post">Alternatively, for headphone monitoring, you can plug headphones
+                    into the headphone port on the front of the FireWire 410 or ProFire 610. This can be useful for practicing in private, though we do not recommend running sound for performances through the headphone port.</li>
+                </ol>
+                <p>Note: You will not need the Ethernet, video out or headphone
+                  jacks on the Macintosh.</p>
+                <h3 class="title"><a name="audiosetup" id="audiosetup"></a>Proper Audio Setup</h3>
+                <p>A few more works on setting up your audio. By default, Sinfonia is set up with a 2-channel stereo mix. In order to get the full sound out of the firewire interface, you need to plug audio patch cables (not provided) into Line Outputs 1 &amp; 2 in the back of the interface. Line Output 1 gives the &quot;left&quot; channel of the stereo mix, and Line Output 2 gives the &quot;right' channel. If you use only Line Output 1, you are missing half the sound!</p>
+                <p>Please note, if you are then running sound through a mixing console, you will need to pan the channels on the console hard left and hard right to reproduce the stereo mix.</p>
+                <p align="center">Profire 610</p>
+                <p><img src="images/ProFire610.png" width="521" height="112" alt="profire610" /></p>
+                <p align="center">Firewire 410</p>
+                <p><img src="images/FireWire410.png" width="521" height="106" alt="firewire410" /></p>
+                <p>&nbsp;</p>
+                <h3 class="title"><a name="powerupshutdown" id="powerupshutdown"></a>Powering Up &amp; Shutting Down</h3>
+                <p>If you haven't done so already, be sure to read <a href="important.html">these important considerations</a>.                </p>
+                <h4 class="title">Powering Up</h4>
+                <ol>
+                  <li class="post">If you received an Oxygen8 MIDI keyboard, make sure the power switch in
+                    the back is in the “On” position. If you have received an Oxygen25 MIDI keyboard, make sure the switch is set to the &quot; | &quot; position.</li>
+                  <li>Make sure the power button on the front of the FireWire 410 is
+                    pressed into the ‘on’ position.
+                    <table width="500" class="figure">
+                      <tr>
+                        <td align="center" valign="bottom"><p class="caption">Firewire 410 (front side)</p></td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><img src="images/Firewire410front.png"
+alt="xxxxx"  /></td>
+                      </tr>
+                    </table>
+                    <p><b>Note re: Firewire 410:</b> Most of the other Firewire 410 controls
+                      are unnecessary for Sinfonia® use and should be left alone. The
+                      exceptions are as follows: (1) you might want to adjust the headphone
+                      levels with the headphone gain knobs, if you are monitoring with
+                      headphones; and (2) the level control knob should be at full volume by
+                      default – but if it is accidentally turned down, you will want to
+                      adjust the knob to turn it back up. All buttons other than the power
+                      button should be left in the ‘out’/unengaged position.&nbsp;</p>
+                    <table width="500" class="figure">
+                      <tr>
+                        <td align="center" valign="bottom"><p class="caption">ProFire 610 (front side)</p></td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><img src="images/Profire610front.png"
+alt="xxxxx"  /></td>
+                      </tr>
+                    </table>
+                    <p>NOTE: The indicated items on the front of the ProFire 610 are the
+                      only items you will need to interact with. You should not turn on the
+                      phantom power button (to the left of the POWER button), and you will
+                      not need to do anything with the audio inputs on the front left side of
+                      the ProFire. (The back of the ProFire 610 should resemble the back of
+                      the FireWire 410; see Figure 4 on page 4 for an illustration.) </p>
+                    <p>With the ProFire 610, the audio will normally come out of
+                      Headphone
+                      Jack 1 only. We recommend turning the MAIN VOLUME of the ProFire all
+                      the way to the right for maximum signal (you can always lower the level
+                      of the sound at your mixing board or through the headphones if this is
+                      too loud for you.) </p>
+                  </li>
+                  <li class="post">Turn on the MacBook by pressing the power button on the top right
+                    corner of the MacBook’s keyboard.<br />
+                    <br />
+                    <p align="left">As the Computer boots up, you should see on the
+                      FireWire 410 that all the green LEDs on the front panel illuminate in
+                      succession and that the power light settles on a steady blue light.
+                      (For the ProFire 610, you will see the steady blue light in the top
+                      right corner, but not the succession of green LEDs.) You should also
+                      notice that the Oxygen8 MIDI keyboard’s LCD screen will flash, and then
+                      a number (such as ‘91’) will appear in the LED screen. (Do not be
+                      concerned with what number appears in the LED screen; this number does
+                      not have any bearing on Sinfonia® playback.)                    </p>
+                    <p><em>Note re. Oxygen8 &amp; Oxygen25 MIDI Keyboards:</em> You should not need to use any
+                      keys on
+                      the Oxygen8/25 keyboards other than the standard piano-type keys. In fact,
+                      a few of the non-piano type buttons &amp; knobs can cause trouble and
+                      should be avoided. See ‘Oxygen8/25 Notes’ for more information.</p>
+                  </li>
+                  <li class="post">After a minute or two, the Computer will land on a Log-In screen.
+                    Click
+                    the icon next to ‘RMS.’<br />
+                    <br />
+                    <p>There are two User ID options presented: (1) Administration, and
+                      (2)
+                      RMS. You will always use the RMS ID when using Sinfonia® – never
+                      Administration. </p>
+                  </li>
+                  <li class="post">Sinfonia® will launch automatically.</li>
+                </ol>
+                <h4 class="title">Shutting Down<br />
+                </h4>
+                <p>Shutting down is a simple process:</p>
+                <ol>
+                  <li class="post"> From the Sinfonia® Player window, click the ‘Quit’ button. You will be returned to the Log-In screen. </li>
+                  <li  class="post"> Click the ‘Shut-Down’ button on the Log-In screen. The Computer will go through a series of shut-down procedures and then power
+                    itself off. Do not &quot;close&quot; the computer screen until it has completely finished powering off.</li>
+                </ol>
+                <h3 class="title"><a name="equipmentnotes" id="equipmentnotes"></a>Equipment Notes</h3>
+                <h4 class="title">Oxygen8/25 Notes                </h4>
+                <p>Most of the time, you will not need to touch any of the Oxygen8 or Oxygen25
+                  controls other than the piano-type keys. In general, you should leave
+                  the other controls alone. But if something is accidentally bumped or
+                  changed, it will be helpful to be aware of the following:</p>
+                <p>Unless there is a conscious effort to change programming, most of
+                  the buttons above the piano keys will only temporarily affect the
+                  Oxygen8 settings. If you leave it alone for a moment, the LCD will
+                  return to its former state and Sinfonia® should perform as normal.</p>
+                <ul>
+                  <li><strong>Transpose Button</strong></li>
+                  <p>If you accidentally hit the Transpose Button to the left of the of
+                    the LCD screen, you will notice the display change in value in positive
+                    or negative integer increments. This will change the keyboard
+                    transposition either up or down in octave increments. If this happens,
+                    the keyboard functionality will be off by whatever transposition is in
+                    effect. To restore the original non-transposed keyboard settings, hit
+                    the transpose buttons either up or down until you reach the value of
+                    zero (0). </p>
+                  <table width="500" class="figure">
+                    <tr>
+                      <td align="center" valign="bottom"><p class="caption">Oxygen8 keyboard (top view)</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="images/Oxygenkeyboardtop.png"
+alt="xxxxx"  /></td>
+                    </tr>
+                  </table>
+                  <li><strong>Resetting the Keyboard</strong></li>
+                  <p>If any of the other buttons (such as the navigation buttons below
+                    the Controller Knobs) are pressed, it is possible to put the Oxygen8 in
+                    a state where it does not properly control Sinfonia®. In this case, the
+                    keyboard will need to be reset back to its default state for it play
+                    Sinfonia® properly. To reset the Oxygen8 keyboard:</p>
+                  <ol>
+                    <li>Unplug the USB cable from the back of the Oxygen8/25. The LED
+                      display should go completely blank.</li>
+                    <li>Hold down the – and + buttons on the bottom right side of the
+                      LED. While holding both the – and + buttons at the same time, plug the
+                      USB cable back in. The LED screen should come back on.</li>
+                    <li>Once the LED screen is on, you can release the – and + buttons.
+                      Please refer to the &quot;<a href="playing.html#midikeyboardcontrol">Playing</a>&quot; section of the Sinfonia® instruction
+                      manual for more information on the specific functions of the MIDI keyboard.</li>
+                  </ol>
+                  </p>
+                  <li><strong> Controller Knobs</strong></li>
+                  <p>The Controller Knobs labeled C1-8 at the upper right portion of the
+                    keyboard send large streams of data when turned. These would likely get
+                    in the way of Sinfonia® data and disrupt smooth playback. Therefore,
+                    take care that these knobs are not turned during performance. </p>
+                </ul>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <!--div id="search">
+                    <form method="get" action="#">
+                      <div>
+                        <input name="s" id="search-text" value="" type="text" />
+                        <input id="search-submit" value="GO" type="submit" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Quick Start</h2>
+                  <ul>
+                    <li><a href="quickstart.html">What's In The Box</a></li>
+                    <li><a href="#assembly">Assembly</a></li>
+                    <li><a href="#audiosetup">Proper Audio Setup</a></li>
+                    <li><a href="#powerupshutdown">Powering Up & Shutting Down</a></li>
+                    <li><a href="#equipmentnotes">Equipment Notes</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="../../../../../contact">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) 2010 Realtime Music Solutions, LLC. All rights
+    reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS
+    Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

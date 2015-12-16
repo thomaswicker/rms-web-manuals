@@ -1,0 +1,446 @@
+!!!
+%html{:lang => "en"}
+  = Haml::Engine.new(File.read('components/views/partials/rms_coach_head.haml')).render
+  
+  %body
+    
+    / ################################ BEGIN NAVBAR ################################
+    %span.sticky
+      %nav.top-bar{"data-options" => "sticky", "data-topbar" => "", :role => "navigation"}
+        %ul.title-area
+          %li.name
+            %a.navbar-brand{:href => "http://www.rms.biz"}
+              %img{:src => "http://www.rms.biz/media/images/rms_logo.svg"}/
+          %section.web-manual-label.show-for-large-up RMS Coach
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span Menu
+        %section.top-bar-section
+          %ul.right
+            %li
+              %a{:href => "index.html"} introduction
+            %li
+              %a{:href => "installation.html"} installation
+            %li
+              %a{:href => "quickstart.html"} quick start
+            %li.active
+              %a{:href => "interfaceediting.html"} interface editing
+            %li
+              %a{:href => "menus.html"} menus
+
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING ABOVE THIS LINE !!!!!!!!!!!!!!!########################
+
+
+
+    %section#rms-manuals-container
+      %section#rms-manuals-right-alt
+        %a.button.split{:href => "#"}
+          Quick Page Nav
+          %span{"data-dropdown" => "drop"}
+        %br
+          %ul#drop.f-dropdown{"data-dropdown-content" => ""}
+            %li
+              %a{:href => "#perfvsedit"} Performance vs Edit Mode
+            %li
+              %a{:href => "#timeline"} Timeline
+            %li
+              %a{:href => "#transport"} Transport Controls
+            %li
+              %a{:href => "#metermeasure"} Meter/Measure
+            %li
+              %a{:href => "#metronome"} Metronome
+            %li
+              %a{:href => "#tempocontrol"} Tempo Control
+            %li
+              %a{:href => "#transpose"} Transpose
+            %li
+              %a{:href => "#songs"} Songs
+            %li
+              %a{:href => "#parts"} Parts
+            %li
+              %a{:href => "#markers"} Markers
+            %li
+              %a{:href => "#rmsmix"}
+                Integration with RMS Mix
+                %sup.superscript ®
+     
+      %section#rms-manuals-left
+        #rms-manuals-left-inner
+          %h1 Interface Editing
+          %p.callout
+            You can do a lot of powerful editing with RMS Coach
+            %sup.superscript> ®
+            \! Every type of edit you would make to a score during a rehearsal process can be made in the program: key changes, cuts, vamps, re-ordering songs… it's all possible.
+          %h3
+            %a#perfvsedit{:name => "perfvsedit"}>
+            Performance vs Edit Mode
+          %p
+            To keep things clear and safe from accidental edits, RMS Coach
+            %sup.superscript ®
+            has two distinct modes: Performance Mode and Edit Mode. They can be accessed via the Mode-P (or Mode-E) item in the menu bar, or by clicking the lock icon on the right side of the Timeline. Locked means you are in Performance Mode and unlocked (and highlighted orange) means you are in Edit Mode.
+          %p Pay attention to the modes when you are making changes! There are some types of edits you can make in Performance Mode (such as muting or quickly changing the key of the song), but they won't &quot;stick&quot; and will return to the previously saved state when the program is closed, or in some cases when the current song changes.
+          %h3
+            %a#timeline{:name => "timeline"}>
+            Timeline
+          %p
+            %a{:href => "images/timelinewithedits.png", :target => "_new"}
+              %img{:alt => "timelinewithedits", :height => "95", :src => "images/timelinewitheditssmall.png", :width => "530"}/
+          %p The timeline is a graphic representation of the current song.  It contains helpful information including measure layout and meter changes.  Using the zoom function, the span of the timeline can be adjusted to the user's preference. As the song plays, the timeline scrolls to keep the display current. In addition to representing the structure of the song, the timeline also displays highlighted areas where there are edits.
+          %p
+            You may relocate to a new measure within the Timeline by simply double-clicking anywhere on the timeline. RMS Coach
+            %sup.superscript ®
+            will immediately jump to that location.
+          %h4.subheader Types of Timeline Edits
+          %p.emphasize-sentence
+            There are 6 different types of edits you can create in the Timeline:
+            %br/
+          %ul
+            %li cut
+            %li vamp
+            %li repeat
+            %li attacca
+            %li rhythm
+            %li transpose
+          %p Each type of edit is represented by a different color in the Timeline (and these colors can be personalized via the Preferences menu.
+          %p
+            %strong CUT
+            %br/
+            When inserted into a song, this edit will direct RMS Coach
+            %sup.superscript ®
+            to cut (jump over) a section of the music.  The section to be cut is determined by indicating the start and end locations of the cut.
+          %p
+            The selector for a
+            %em cut
+            is found in the upper left of the Timeline while in Edit Mode.
+          %p
+            %strong VAMP
+            %br/
+            When inserted into a song, a vamp directs RMS Coach
+            %sup.superscript ®
+            to repeat a section of the music indefinitely. The section to be vamped is determined by indicating the start and end locations. The user exits the vamp by clicking on the Exit Vamp button on the transport control strip or pushing the corresponding function key (F12 by default).  When the Exit Vamp button is clicked, RMS Coach
+            %sup.superscript ®
+            will exit the vamp upon completion of the current repeat.
+          %p The selector for a vamp is found in the upper left of the Timeline while in Edit Mode.
+          %p
+            %strong REPEAT
+            %br/
+            When inserted into a song, a repeat will direct RMS Coach
+            %sup.superscript ®
+            to the designated section multiple times (but not indefinitely like a vamp).  By default, RMS Coach
+            %sup.superscript ®
+            will establish a 1x repeat, playing the designated section twice through. When considering repeats, remember that the total passes through the music is one more than the repeat number. In other words, if the repeat value is 1, the section repeats once and is thus heard twice. If the repeat value is 3, the section will be heard 4 times total. To modify the repeat settings, see Wait/Times.
+          %p The selector for a repeat is found in the upper left of the Timeline while in Edit Mode.
+          %p
+            %strong ATTACCA
+            %br/
+            When inserted into a song, an attacca edit will direct RMS Coach
+            %sup.superscript ®
+            to immediately jump forward to the next song in the Song List and begin playing.  The placement of the attacca is determined by indicating the start location, and is represented by a line with an arrow at the bottom.
+          %p
+            The selector for an attacca is found in the upper left of the Timeline while in Edit Mode.
+            %br/
+          %p
+            %strong RHYTHM
+            %br/
+            The rhythm edit modifies the &quot;tap value&quot; for playing the music in real-time via the space bar. For example, let's say a section of music is in 4/4 and each press of the spacebar equals one quarter note. But maybe you want a little more control and want each spacebar press to equal an eighth-note. The rhythm edit will let you do that.
+          %p The value selector for making a rhythm edit is in the Tempo section. See 'Rhythm Editing' for more details.
+          %p
+            %img{:alt => "rhythmselector", :height => "152", :src => "images/rhythmselector.png", :width => "206"}/
+          %p
+            %strong TRANSPOSE
+            %br/
+            A transposition edit allows you to change the key of a section or even the entire song. You can move up or down by as many as 11 half steps (a major 7th), allowing you to place the song in the range best suited to your performers.
+          %p You can select the key you want (in half steps up or down) by clicking on the arrows in the Transpose section while in Edit Mode.
+          %h4.subheader Creating Timeline Edits
+          %p There are two types of Timeline edits: Range (selection) edits and point edits. Range edits apply to only a section of the Timeline, while point edits occur at a specific spot and apply to the end of the current song, or until a similar type of edit is encountered.
+          %p To create a range edit, simply click and drag over the part of the Timeline you would like to edit to highlight it, and select your edit. It will then be applied to the range you have selected, and a colored box will appear.
+          %p To create a point edit, simply place the playback cursor where you would like the edit to go into effect and select your edit. Cuts, vamps, and repeats are not valid options for a point edit, and an error dialogue will appear if you attempt to create one without a range selected.
+          %h4.subheader Deleting Timeline Edits
+          %p To remove an edit, simple click to select it while in Edit Mode, and press the &quot;delete&quot; key.
+          %h4.subheader Modifying Timeline Edits
+          %p There are two major concepts to be familiar with when modifying, or fine-tuning a Timeline edit. These are Measure/Beat/Tick and Wait/Times.
+          %h5 Measure/Beat/Tick
+          %p If you need an edit to take place at a spot within a specific beat, you will need to use the measure/beat/tick format of designating location within the Timeline.
+          %p
+            Measure: A number representing a valid measure in the current song.
+            %br/
+            Beat:  A number representing the beat within the indicated measure.
+            %br/
+            Tick: A number representing the subdivision of the beat within the measure.  RMS Coach
+            %sup.superscript ®
+            divides each beat into 480 ticks.  The tick number has the following correspondence:
+            %br/
+            eight note = 240 (ticks)
+            %br/
+            sixteenth note = 120 (ticks)
+            %br/
+            eight note triplet = 160 (ticks)
+            %br/
+            dotted eight note = 360 (ticks)
+          %p In the following example, if you want to cut from the last eighth note in measure 21 to the beginning of measure 25, the following edit region data would be used:
+          %p
+            %img{:alt => "mbtedit", :height => "163", :src => "images/mbtedit.png", :width => "395"}/
+          %h5 Wait/Times
+          %p After a Timeline edit is created, it is possible to refine its behavior by adding wait and/or times values. The wait and times fields are visible in the upper right portion of the Timeline when you select an edit.
+          %p
+            %img{:alt => "waittimes", :height => "172", :src => "images/waittimes.png", :width => "198"}/
+          %p The 'Times' value determines the total number of times an event will execute on successive passes before expiring. The classic use is in conjunction with repeats. A repeat with a times value of 1 will repeat one time (i.e. the playback will relocate 1 time when the repeat event is hit, and consequently the section of music will play twice.) On the second (or third, etc). passes,  no relocate takes place because the times count has expired.
+          %p The 'Wait' value determines the total number of passes before a given event engages. The classic use is with first ending/second ending situations. In this case, you may have a cut that you want to engage the second time around. For example, you might have a repeated section of music from the downbeat of measure 36 to the downbeat of measure 44. However, the second time through, you want to cut measures 42 and 43.
+          %p
+            %img{:alt => "waittimesmusic", :height => "233", :src => "images/waittimesmusic.png", :width => "400"}/
+          %p To do this, you would need two edits:
+          %p
+            a repeat of measures 36 through 43 (with a times value of 1)
+            %br/
+            a cut of measures 42 and 43 with a wait value of 1
+            %br/
+            The cut would not be performed the first time through. Instead, the cut would wait one pass before executing (the second time through). Thus, the music sounds as indicated by the first ending/second ending scenario described above.
+            %br/
+            %br/
+            An event with times value = 0 will perform every time (e.g. a vamp).
+          %p It is possible to apply &quot;wait&quot; and &quot;times&quot; to transposition, rhythm, and attacca edits as well.
+          %h3
+            %a#transport{:name => "transport"}>
+            Transport Controls
+          %p
+            %img{:alt => "transport", :height => "52", :src => "images/transport.png", :width => "325"}/
+          %p The transport buttons allow quick control of playback, and may also be activated with the Function Keys. From left to right, they are:
+          %p
+            Rewind to start/move to previous song (if at beginning of current song) - F6
+            %br/
+            Skip back 1 bar - F7
+            %br/
+            Go - F8
+            %br/
+            Stop - F9
+            %br/
+            Skip forward 1 bar - F10
+            %br/
+            Jump to next song - F11
+            %br/
+            Exit vamp - F12
+          %p Please note that on some Macintosh computers, F11 and F12 are used by the operating system. To be able to use these buttons, go into System Preferences-&gt;Keyboard-&gt;Shortcuts and uncheck the boxes next to &quot;Show Desktop - F11&quot; and &quot;Show Dashboard - F12&quot;.
+          %p You can also re-assign the Function Keys via the Preferences menu.
+          %h3
+            %a#metermeasure{:name => "metermeasure"}>
+            Meter/Measure
+          %p
+            %img{:alt => "metermeasure", :height => "73", :src => "images/metermeasure.png", :width => "213"}/
+          %p These fields show the current time signature and placement for the playback marker.
+          %h3
+            %a#metronome{:name => "metronome"}>
+            Metronome
+          %p
+            %img{:alt => "metronomeoff", :height => "73", :src => "images/metronomeoff.png", :width => "69"}>/
+             
+            %img{:alt => "metronomeon", :height => "73", :src => "images/metronomeon.png", :width => "69"}/
+          %p You can click on the metronome icon to toggle a click on/off during playback.
+          %p If you would like to change
+          %h3
+            %a#tempocontrol{:name => "tempocontrol"}>
+            Tempo Control
+          %p
+            %img{:alt => "tempo", :height => "95", :src => "images/tempo.png", :width => "178"}/
+          %p
+            The Tempo section of RMS Coach
+            %sup.superscript ®
+            contains information on the tempo at the current playback position, as well as tools for modifying the tempo and changing the default click rhythm. The top line shows the program-defined tempo, and the second line shows the current user-defined tempo. The slider on the bottom allows the user to scale the tempo for the entire song by percentage.
+          %h4.subheader Tempo Editing
+          %p Making manual tempo adjustments works differently whether you are in Performance Mode or Edit Mode.
+          %p When in Performance Mode, adjusting the slider to scale the tempo is a temporary change. It will stay in effect as long as you remain within the same song, but if you move to a different song (or quit the program), the change will be forgotten, and the song will revert to the saved tempo next time you load it.
+          %p If you would like adjustments to stick through song changes or program restarts, first enter Edit Mode through either the menu option or by clicking on the lock icon. Then make your change using the slider, which will now be showing specific percentages. When you are satisfied, exit edit mode and your changes will be saved.
+          %h4.subheader Rhythm Editing
+          %p The small note value icon on the second line of the tempo section is where you can change the default tap value for a highlighted section of the Timeline. Simply click on the note icon and a small menu will appear with note durations from 16th-note to whole-note, along with dotted variations. Select which one you want, and the highlighted section of the Timeline will change color, indicating that you have made the change.
+          %p
+            %img{:alt => "noteselect", :height => "152", :src => "images/rhythmselector.png", :width => "206"}/
+          %h3
+            %a#transpose{:name => "transpose"}>
+            Transpose
+          %p Similar to making tempo adjustments, making transposition adjustments functions differently whether you are in Performance Mode or Edit Mode.
+          %p When in Performance Mode, using the transpose arrows to move the key up or down applies to the entire current song. However, the change will not &quot;stick&quot; once you move to a different song.
+          %p When in Edit Mode, the arrow buttons will provide you with a menu that you can use to select how many steps up or down you would like to transpose by. Note that this edit does not apply to an entire song by default. If nothing is highlighted in the Timeline, the edit will apply from the playback marker to either the next transposition edit, or the end of the song, whichever comes first. If a section of the Timeline is highlighted, the transposition will apply to only that section.
+          %p
+            %img{:alt => "transposesection", :height => "295", :src => "images/transposesection.png", :width => "244"}/
+          %p So to make an edit to transpose an entire song up or down, first enter Edit Mode, make sure the playback marker is at the beginning of the song (or alternately, highlight the entire song), and make your change.
+          %h3
+            %a#songs{:name => "songs"}>
+            Songs
+          %p
+            %img{:alt => "songspane", :height => "433", :src => "images/songspane.png", :width => "400"}/
+          %p
+            RMS Coach
+            %sup.superscript ®
+            organizes all of the individual songs in the scrollable Song List. Clicking on a song highlights it and makes it the current song.  You can also navigate the Song List using the Page-Up and Page-Down buttons on the QWERTY keyboard.
+            %br/
+            Page-Up = Previous Song
+            %br/
+            Page-Down = Next Song
+          %h4.subheader Songs Editing
+          %p While in Edit Mode, you are given some more options within the Songs Pane. There will now be buttons for &quot;remove&quot;, &quot;add&quot; and &quot;duplicate&quot;. You can also rename a song by double-clicking on it, or move it in the list by dragging the song name.
+          %p Note that when you remove a song, it is not gone forever! The &quot;add&quot; button will give you a list of the original songs to choose from, including any songs you have cut.
+          %h3
+            %a#parts{:name => "parts"}>
+            Parts
+          %p
+            %img{:alt => "partspane", :height => "440", :src => "images/partspane.png", :width => "528"}/
+          %p
+            Each song is broken down into separate voices and instruments which are displayed in the Parts window. The individual parts represent important musical components such as the main accompaniment, any drum tracks, individual vocal lines, orchestral cues, etc. When played together, these individual parts represent the complete song.  By clicking on the speaker icons, the parts may be individually muted or unmuted in order to isolate lines or control the overall texture. This capability and flexibility is invaluable when rehearsing and learning music by allowing you to focus on whichever melody is being taught at that moment, or to mute all the vocal lines to have RMS Coach
+            %sup.superscript ®
+            act as an accompanist.
+          %p Each part can be individually mixed using the volume slider. Furthermore, each part can be given a unique sound to help isolate it in the full texture.  This is achieved by clicking on the patch name to the right of the part name to reveal a drop-down menu with over 100 instruments to choose from. For example, you might find it beneficial to put a lead vocal line on an instrument like a clarinet and raise the volume by 5% to help it cut through the texture of the full accompaniment.
+          %h4.subheader Parts Editing
+          %p
+            As you might guess, changes made to Parts while in Performance Mode won't stick through session changes. If you want your adjustments to be more permanent, make them while in Edit Mode and RMS Coach
+            %sup.superscript ®
+            will remember your edits.
+          %p
+            You can also re-order the Parts list while in Edit Mode to your liking. This also effects how the song exports to RMS Mix
+            %sup.superscript> ®
+            \. For more information,
+            = succeed "." do
+              %a{:href => "#rmsmix"} see below
+          %h3
+            %a#markers{:name => "markers"}>
+            Markers
+          %p
+            %img{:alt => "markerspane", :height => "435", :src => "images/markerspane.png", :width => "398"}/
+          %p
+            Markers are used for quick relocation and navigation within a song. Most songs will come with markers already in place for important moments. You may edit existing markers by renaming them, changing their location or deleting them altogether. You can also create brand new markers. To go to a marker location, simply click on the marker.  When a marker is selected, RMS Coach
+            %sup.superscript ®
+            displays an updated timeline to reflect your new location.
+          %p Marker locations are identified by the familiar measure/beat/tick format (see measure/beat/tick under &quot;Timeline&quot;). Each marker also has a text field that allows the user to further identify the location with an appropriate name or label.  Markers are very helpful for organizing rehearsals and practice sessions.
+          %h4.subheader Editing Markers
+          %p Changes to markers can only be made within Edit Mode. To add a marker, click on the + button and a generically-named marker will appear at the playback cursor. You may change the position or name of the marker by double-clicking on any of the text fields.
+          %p To delete a marker, highlight it and click on the – button.
+          %h3
+            %a#rmsmix{:name => "rmsmix"}>
+            Integration with  RMS MIX
+            %sup.superscript ®
+          %p
+            Every installation of RMS Coach
+            %sup.superscript ®
+            comes bundled with a trial version of RMS Mix
+            %sup.superscript> ®
+            , which is a separate resource that provides sophisticated audio playback from your smartphone or desktop computer. RMS Mix
+            %sup.superscript ®
+            gives you a very easy way to take your show with you (or give members of your production accompaniment tracks for rehearsal or home practice).
+          %p
+            One of the main features of RMS Mix
+            %sup.superscript ®
+            is the ability for you to export your current RMS Coach
+            %sup.superscript ®
+            show (with key changes, cuts, volume adjustments, transpositions, and any other edits you might have made) for playback within RMS Mix
+            %sup.superscript> ®
+            \! To do so, there are couple steps to follow.
+          %h4.subheader Setting Track Order
+          %p
+            RMS Mix
+            %sup.superscript ®
+            has 8 total channels of audio. When exporting a song from RMS Coach
+            %sup.superscript> ®
+            , the first 7 tracks (as seen within the &quot;Parts&quot; window for any given song) will each be given their own track within RMS Mix
+            %sup.superscript> ®
+            \. Any additional tracks will be grouped together on track 8.
+          %p If you require certain parts to have their own track that would otherwise be grouped together, you can re-order the individual voices within the &quot;Parts&quot; window while you are in Edit Mode. Do this by holding and dragging with your mouse.
+          %p
+            %img{:alt => "reorder", :height => "404", :src => "images/reorderparts.png", :width => "465"}/
+          %h4.subheader Setting Markers
+          %p
+            RMS Coach
+            %sup.superscript ®
+            shows all come with pre-programmed markers that will also show up in RMS Mix
+            %sup.superscript> ®
+            \. However, by
+            = succeed "," do
+              %a{:href => "#markers"}
+                editing the markers within RMS Coach
+                %sup.superscript ®
+            you can customize the list of markers in Mix
+            %sup.superscript> ®
+            \.
+          %h4.subheader
+            Exporting to RMS Mix
+            %sup.superscript ®
+          %p Once you have your Mix Groupings set, you are ready to begin the exporting process.
+          %ol
+            %li Under &quot;Tools&quot;, select &quot;Export to RMS Mix&quot;
+            %li
+              Enter your name and email. (they should match the information you used to acquire your RMS Coach
+              %sup.superscript ®
+              license)
+            %li Enter a description of the export. Possibilities include &quot;General export&quot;, &quot;Transposed Mary's parts half step down&quot; or &quot;Slowed dance numbers way down for rehearsal&quot;
+            %li
+              Choose either &quot;Local Export&quot; or &quot;RMS Cloud Service&quot;
+              %ul
+                %li
+                  If you are going to be using RMS Mix
+                  %sup.superscript ®
+                  on the same computer as RMS Coach
+                  %sup.superscript> ®
+                  , &quot;Local Export&quot; is much faster
+                %li
+                  If you are going to use RMS Mix
+                  %sup.superscript ®
+                  (mobile), or if other members of your production will be using the export, choose &quot;RMS Cloud Service&quot;
+            %li
+              Click &quot;Export&quot;. RMS Coach
+              %sup.superscript ®
+              will now begin rendering the entire show for use within RMS Mix
+              %sup.superscript> ®
+              \.
+          %p
+            %img{:alt => "", :height => "307", :src => "images/ss-mixexport.png", :width => "408"}/
+          %p
+            Please note that you have a limited number of RMS Cloud Service exports. With the trial version of Mix
+            %sup.superscript ®
+            included with Sinfonia
+            %sup.superscript> ®
+            , you have a single export available to test out the program.
+          %p
+            For more information, please visit the
+            = succeed "." do
+              %a{:href => "http://www.rms.biz/products/RMS Mix/"}
+                RMS Mix
+                %sup.superscript ®
+                website
+      
+      %section#rms-manuals-right
+        %aside#rms-manuals-right-inner
+          %h2.page-nav-header Introduction
+          %ul.page-nav
+            %li
+              %a{:href => "#perfvsedit"} Performance vs Edit Mode
+            %li
+              %a{:href => "#timeline"} Timeline
+            %li
+              %a{:href => "#transport"} Transport Controls
+            %li
+              %a{:href => "#metermeasure"} Meter/Measure
+            %li
+              %a{:href => "#metronome"} Metronome
+            %li
+              %a{:href => "#tempocontrol"} Tempo Control
+            %li
+              %a{:href => "#transpose"} Transpose
+            %li
+              %a{:href => "#songs"} Songs
+            %li
+              %a{:href => "#parts"} Parts
+            %li
+              %a{:href => "#markers"} Markers
+            %li
+              %a{:href => "#rmsmix"}
+                Integration with RMS Mix
+                %sup.superscript ®
+          .page-nav-contact
+            %h2.page-nav-header Contact
+            %a{:href => "http://www.rms.biz"} Realtime Music Solutions, LLC
+            %a{:href => "tel: +12126200774"} (212) 620-0774
+            %a{:href => "http://www.realtimemusic.biz/contact/"} Email us
+
+
+
+    / ########################!!!!!!!!!!!!!!! DO NOT END ANYTHING BELOW THIS LINE !!!!!!!!!!!!!!!########################
+
+    = Haml::Engine.new(File.read('../components/views/partials/footer.haml')).render
+

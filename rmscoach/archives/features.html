@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Coach Manual</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="index.html">RMS Coach™</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="quickstart.html">Quickstart</a></li>
+          <li class="current_page_item"><a href="features.html">Features</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Features</a></h2>
+              <div class="entry">
+                <h3 class="title"><a name="metermeasure" id="metermeasure"></a>Meter/Measure</h3>
+                <p align="center"><img src="images/MeterMeasure.png" width="217" height="71" alt="metermeasure" /></p>
+                <p>Displays the current measure, beat, and meter of the song.&nbsp; Clicking the metronome icon at left will toggle metronome click on/off.</p>
+                <h3 class="title"><a name="transportcontrols" id="transportcontrols"></a>Transport Controls</h3>
+                <p align="center"><img src="images/TransportControls.png" width="342" height="137" alt="transport" /></p>
+                <p>The transport control provides the buttons that play and move around the song.</p>
+                <blockquote>
+                  <p><strong>Play:</strong> Clicking on the Play button starts playback of the current song.&nbsp; Playback will begin from the location displayed in the measure counter.
+                  </p>
+                  <p><strong>Stop:</strong> Clicking on the Stop button will stop the current song.
+                  </p>
+                  <p><strong>Rewind/Previous Song:</strong>&nbsp; Clicking on this button will rewind the current song to the beginning.&nbsp; Clicking the button while at the beginning will move RMS Coach™ to the beginning of the previous song.&nbsp; Additional clicks on the button will continue to move RMS Coach™ backwards in the song list.
+                  </p>
+                  <p><strong>Next Song:</strong>&nbsp; Clicking on this button will move RMS Coach™ to the beginning of the next song.&nbsp; Additional clicks on the button will continue to move RMS Coach™ forward in the song list.
+                  </p>
+                  <p><strong>Next Measure:</strong>&nbsp; Clicking on this button will immediately advance the song to the beginning of the next measure.&nbsp; Additional clicks on the button will continue to advance the song forward by measure.
+                  </p>
+                  <p><strong>Previous Measure:</strong> Clicking on this button will immediately move the song to the beginning of the previous measure.&nbsp; Additional clicks on the button will continue to move the song backwards by measure.</p>
+                </blockquote>
+                <h3 class="title"><a name="tempocontrol" id="tempocontrol"></a>Tempo Control</h3>
+                <p align="center"><img src="images/TempoControl.png" width="317" height="175" alt="tempocontrol" /></p>
+                <p>The Tempo Control displays the original tempo associated with the current song.&nbsp; You can override the original tempo by adjusting the slider.&nbsp; The adjusted tempo is displayed beneath the original tempo.&nbsp; An <em>Reset</em> button returns the tempo to the original tempo.</p>
+                <h3 class="title"><a name="savearrangement" id="savearrangement"></a>Save Arrangement</h3>
+                <p align="center"><img src="images/SaveArrangement.png" width="162" height="55" alt="savearrangement" /></p>
+                <p>The Save Arrangement button allows the user to save modifications made to the songs.&nbsp; If you customize an arrangement, click this button to save it for a future rehearsal.&nbsp; These changes may include tempo alterations, the inclusion of Cuts and Vamps, volume adjustments, etc.</p>
+                <h3 class="title"><a name="transpose" id="transpose"></a>Transpose</h3>
+                <p align="center"><img src="images/Transpose.png" width="106" height="87" alt="transpose" /></p>
+                <p>The transpose box displays the transposition level of the current song.&nbsp; The default setting is &lsquo;Original Key&rsquo; - no transposition.&nbsp; You can click on the transpose arrows in either direction.&nbsp; The Up arrow transposes the song up and the Down arrow transposes the song down.&nbsp; The transposition occurs in half step increments with a range of one full octave.&nbsp; The Reset button returns the transposition to the original key – default setting. Each song can have its own transposition level.</p>
+                <h3 class="title"><a name="timeline" id="timeline"></a>Timeline</h3>
+                <p align="center"><img src="images/Timeline.png" width="432" height="60" alt="timeline" /></p>
+                <p>The timeline is a graphic representation of the current song.&nbsp; It contains helpful information including measure layout and meter changes.&nbsp; Using the Zoom function, the span of the timeline can be adjusted to the user’s preference. As the song plays, the timeline scrolls to keep the display current. In addition to representing the structure of the song, the timeline also includes the location of metaevents (seeMetaevents). </p>
+                <p>You may relocate to a new measure by simply double-clicking anywhere on the timeline. RMS Coach™ will immediately jump to that location.</p>
+                <h3 class="title"><a name="metaevents" id="metaevents"></a>Metaevents</h3>
+                <p align="center"><img src="images/Metaevents.png" width="194" height="58" alt="metaevents" /></p>
+                <p>RMS Coach™ uses &lsquo;Metaevents&rsquo; to help manage and navigate the playing of the music.&nbsp; The Metaevents are Cut, Vamp, Repeat and Attacca.</p>
+                <blockquote>
+                  <p><strong>Cut:</strong> When inserted into a song, the Cut metaevent will direct RMS Coach™ to cut (jump over) a section of the music.&nbsp; The section to be cut is determined by indicating the start and end locations of the Cut (see <a href="#editingmetaevents">Editing Metaevents</a>).</p>
+                  <p><strong>Vamp:</strong> When inserted into a song, the Vamp metaevent directs RMS Coach™ to repeat a section of the music. The section to be vamped is determined by indicating the start and end locations (see <a href="#editingmetaevents">Editing Metaevents</a>). The Vamp repeat is indefinite.&nbsp; The user exits the vamp by clicking on the Exit Vamp button on the transport control strip (see <a href="#transportcontrols">Transport Controls</a>).&nbsp; When the Exit Vamp button is clicked, RMS Coach™ will exit the vamp upon completion of the current repeat. <br />
+                  </p>
+                  <p><strong>Repeat:</strong> When inserted into a song, the Repeat Metaevent will direct RMS Coach™ to repeat the designated section.&nbsp; By default, RMS Coach™ will establish a 1x repeat. When considering repeats, remember that the total passes through the music is one more than the repeat number. In other words, if the repeat value is 1, the section repeats once and is thus heard twice. To modify the repeat settings, see <a href="#waittimes"> Wait/Times</a>.<br />
+                  </p>
+                  <p><strong>Attacca:</strong> When inserted into a song, the Attacca Metaevent will direct RMS Coach™ to immediately jump forward to the next song in the Song List and begin playing.&nbsp; The placement of the Attacca is determined by indicating the start location (see <a href="#editingmetaevents">Editing Metaevents</a>).</p>
+                </blockquote>
+                <p>These metaevents are available for use at the user&rsquo;s discretion and can be freely inserted throughout the song. To create a new metaevent, drag over a selected region in the timeline (or in the case of Attacca, simply click on a single point), and then click the desired metaevent button. You may also delete existing metaevents by highlighting in the timeline and hitting the delete key. The following sections demonstrate how you may also edit metaevents.</p>
+                <h3 class="title"><a name="editregions" id="editregions"></a>Edit Region</h3>
+                <p align="center"><img src="images/EditRegions.png" width="339" height="28" alt="editregion" /></p>
+                <p>The edit region box allows the user to specify start and end locations for metaevent editing.&nbsp; These locations inform RMS Coach™ on when and for how long a Metaevent is active.&nbsp; Enter location information into the edit region fields by clicking and typing.<br />
+                  Start and End locations are entered in the following format:<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Measure&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beat &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Tick<br />
+                </p>
+                <blockquote>
+                  <p><strong>Measure:</strong> A number representing a valid measure in the current song.<br />
+                  </p>
+                  <p><strong>Beat:</strong>&nbsp; A number representing the beat within the indicated measure.<br />
+                  </p>
+                  <p><strong>Tick:</strong> A number representing the subdivision of the beat within the measure.&nbsp; RMS Coach™ divides each beat into 480 ticks.&nbsp; The tick number has the following correspondence:<br />
+                    eight note = 240 (ticks)<br />
+                    sixteenth note = 120 (ticks)<br />
+                    eight note triplet = 160 (ticks)<br />
+                    dotted eight note = 360 (ticks)</p>
+                </blockquote>
+                <p>In the following example, if you want to cut from the last eight note in measure 5 to the beginning of measure 10, the following edit region data would be used:</p>
+                <p align="center"><img src="images/EditRegionMusic.png" width="373" height="81" alt="editregionmusic" /></p>
+                <p align="center"><img src="images/EditRegionFilled.png" width="332" height="29" alt="editregionfilled" /></p>
+                <h3 class="title"><a name="editingmetaevents" id="editingmetaevents"></a>Editing Metaevents                </h3>
+                <p>In addition to using the edit region fields to enter start and end locations manually, RMS Coach™ allows you to specify locations by clicking on the timeline.&nbsp; To enter a location region, click at the start location and drag the mouse to the end location.&nbsp; RMS Coach™ highlights the region on the timeline and inserts the exact locations into the edit region box.</p>
+                <p align="center"><img src="images/EditingMetaevents.png" width="328" height="97" alt="editingmetaevents" /></p>
+                <p>Once the start and end locations have been specified, simply click on the desired metaevent.&nbsp; RMS Coach™ responds by inserting the following metaevent icon into the timeline:</p>
+                <p>Cut:</p>
+                <p align="center"><img src="images/Cut.png" width="284" height="87" alt="cut" /></p>
+                <p>Vamp:</p>
+                <p align="center"><img src="images/Vamp.png" width="314" height="75" alt="vamp" /></p>
+                <p>Repeat:</p>
+                <p align="center"><img src="images/Repeat.png" width="318" height="83" alt="repeat" /></p>
+                <p>Attacca:</p>
+                <p align="center"><img src="images/Attacca.png" width="259" height="79" alt="attacca" /></p>
+                <p>Since an attacca applies to a single point in time, there is no region associated with the event.&nbsp; Therefore, simply click anywhere in the timeline (instead of click-dragging to establish a range). Then click the Attacca button to create your attacca.</p>
+                <p>Note: the display is different for Edit v. Play mode. In Play mode, metaevents will occupy more vertical space. Also, indicator icons will frame the event (repeat markings for vamps and repeats, arrows for cuts and attaccas, as shown in the pictures above). Most significantly, only metaevents that are due to execute will display. So for example, if a section of music is set to repeat one time, the metaevent will disappear from the timeline after the cursor relocates to begin the second pass.<br />
+                </p>
+                <p>In Edit mode, all metaevents will display. However, they may shrink in vertical size if there are overlapping events. They may also appear in a lighter color, depending on their wait value. See the <a href="#waittimes">Wait/Times</a> section for more details. <br />
+                </p>
+                <p>To change the start or end location of an existing metaevent, first click the existing event and then adjust the values in the edit region fields.&nbsp; To delete a metaevent, click anywhere in the region to highlight it.&nbsp; Hit delete to remove the event.<br />
+                </p>
+                <p>When inserting a metaevent using the timeline click and drag method, RMS Coach™ is accurate to the beat resolution. If tick resolution is needed, then manual editing of the tick field is required. </p>
+                <h3 class="title"><a name="waittimes" id="waittimes"></a>Wait/Times                </h3>
+                <p>After a metaevent is created, it is possible to refine its behavior by adding wait and/or times values. The wait and times fields are visible in the upper right portion of the timeline when you select a metaevent for additional editing.</p>
+                <p align="center"><img src="images/WaitTimes.png" alt="waittimes" width="169" height="54" /></p>
+                <p>The &lsquo;Times&rsquo; value determines the total number of times an event will execute on successive passes before expiring. The classic use is in conjunction with repeats. A repeat with a times value of 1 will repeat one time (i.e. the playback will relocate 1 time when the repeat event is hit, and consequently the section of music will play twice.) On the second (or third, etc). passes,&nbsp; no relocate takes place because the times count has expired.<br />
+                </p>
+                <p>The Wait value determines the total number of passes before a given event engages. The classic use is with first ending/second ending situations. In this case, you may have a cut that you want to engage the second time around. For example, you might have a repeated section of music from measures 10-20. However, the second time through, you want to cut measures 18-19.</p>
+                <p align="center"><img src="images/WaitTimesMusic.png" width="503" height="77" alt="waittimesmusic" /></p>
+                <p>To do this, you would need two metaevents:</p>
+                <ul>
+                  <li>a repeat from measures 10-20 (with a times value of 1)</li>
+                  <li>a cut from measure 18 to 20 with a wait value of 1</li>
+                </ul>
+                <p>The cut would not be performed the first time through. Instead, the cut would wait one pass before executing (the second time through). Thus, the music sounds as indicated by the first ending//second ending scenario contemplated above. <br />
+                </p>
+                <p>An event with wait value &gt; 0 will display in a lighter color, so they are more easily identified for editing.</p>
+                <p>An event with times value = 0 will perform every time (e.g. a vamp).</p>
+                <h3 class="title"><a name="songlist" id="songlist"></a>Song List</h3>
+                <p align="center"><img src="images/SongList.png" width="232" height="277" alt="songlist" /></p>
+                <p>RMS Coach™ organizes all of the individual songs in the scrollable Song List. Clicking on a song highlights it and makes it the current song.&nbsp; You can also navigate the Song List using the Page-Up and Page-Down buttons on the QWERTY keyboard.<br />
+                </p>
+                <p>Page-Up = Previous Song<br />
+                </p>
+                <p>Page-Down = Next Song</p>
+                <h3 class="title"><a name="parts" id="parts"></a>Parts</h3>
+                <p align="center"><img src="images/Parts.png" width="346" height="259" alt="parts" /></p>
+                <p>Each song is broken down into separate parts and displayed in the Parts window.&nbsp; Depending on the song, the parts represent important musical components such as the accompaniment, drum track, individual vocal lines, cues, etc. When played together, these individual parts represent the complete song.&nbsp; By clicking on the on/off icons, the parts may be individually muted or unmuted in order to isolate lines and control the overall texture.&nbsp; This capability and flexibility is invaluable when rehearsing and learning music. In addition, each line can be individually mixed using the volume slider. Furthermore, each part can be given a unique sound to help isolate it in the composite texture.&nbsp; This is achieved by using the drop down patch menu to select from over 100 sounds.&nbsp; These features make RMS Coach™ an extraordinary pedagogical environment.</p>
+<h3 class="title"><a name="markers" id="markers"></a>Markers</h3>
+                <p align="center"><img src="images/Markers.png" width="241" height="253" alt="markers" /></p>
+                <p>Markers are used for quick relocation and navigation in a song. While some songs may come with markers already in place, you may edit these by renaming them, changing their location or deleting them altogether. You may also enter brand new markers. To go to a marker location, simply click on the marker.&nbsp; Alternatively, you can use the arrow keys to move forward or backward through the marker list.&nbsp; When a maker is clicked, RMS Coach™ displays an updated timeline to reflect your new location.<br />
+                </p>
+                <p>Marker locations are identified by the familiar measure/beat/tick format (see 4.8<strong> </strong>Edit Region<strong></strong>).</p>
+                <p align="center"><img src="images/MarkersMBT.png" width="103" height="49" alt="MBT" /></p>
+                <p>Each marker has a text field that allows the user to further identify the location with an appropriate name or label.&nbsp; Markers are very helpful for organizing rehearsals and practice sessions.</p>
+                <p>To add a marker, click on the <strong>+</strong> button.&nbsp; </p>
+                <p align="center"><img src="images/Markers+.png" width="27" height="24" alt="+" /></p>
+                <p>A new marker is inserted into the marker window at the current measure/beat/tick location.&nbsp; The text field is blank.&nbsp; You may edit the location fields or the text field by doubling clicking in the field.<br />
+                </p>
+                <p>To delete a marker, click to highlight it and click on the <strong>–</strong> button.</p>
+                <p align="center"><img src="images/Markers-.png" width="30" height="26" alt="-" /></p>
+                <p><strong>Keyboard Shortcuts: </strong><br />
+                </p>
+                <p>Up Arrow = Previous Marker</p>
+                <p>                Down Arrow = Next Marker </p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <!--li>
+                  <div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div>
+                  <div style="clear: both;">&nbsp;</div>
+                </li-->
+                <li>
+                  <h2>Features</h2>
+                  <ul>
+                    <li><a href="#metermeasure">Meter/Measure</a></li>
+                    <li><a href="#transportcontrols">Transport Controls</a></li>
+                    <li><a href="#tempocontrol">Tempo Control</a></li>
+                    <li><a href="#savearrangement">Save Arrangement</a></li>
+                    <li><a href="#transpose">Transpose</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#metaevents">Metaevents</a></li>
+                    <li><a href="#editregions">Edit Region</a></li>
+                    <li><a href="#editingmetaevents">Editing Metaevents</a></li>
+                    <li><a href="#waittimes">Wait/Times</a></li>
+                    <li><a href="#songlist">Song List</a></li>
+                    <li><a href="#parts">Parts</a></li>
+                    <li><a href="#markers">Markers</a></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.realtimemusic.biz">Realtime Music Solutions, LLC</a><br />
+(212) 620-0774 <br />
+<a href="http://www.realtimemusic.biz/contact/">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

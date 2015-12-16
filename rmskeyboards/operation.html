@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Keyboard Manual - Operation</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="index.html">RMS Keyboards<sup>&reg;</sup></a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="setup.html">Setup</a></li>
+          <li><a href="interface.html">Interface</a></li>
+          <li class="current_page_item"><a href="operation.html">Operation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Operation</a></h2>
+              <div class="entry">
+                <h3 class="title"><a name="playingrmskeyboards" id="playingrmskeyboards"></a>Playing RMS Keyboards<sup>&reg;</sup></h3>
+                <p>Once RMS Keyboards<sup>&reg;</sup> has been configured, launching the program will automatically activate your system.&nbsp; Simply press the keys on your connected keyboard or keyboards and the currently selected setup will play the correct sounds out of your computer. At this point, you are basically ready to perform the show!</p>
+                <h4 class="title">Mod Wheel and Portamento</h4>
+                <p>RMS Keyboards<sup>&reg;</sup> provides full mod wheel support for classic Leslie effects and portamento control. You don't have to do any additional setup to enable these features. They are pre-programmed with appropriate values for the setups that require them.</p>
+                <h3 class="title"><a name="navigatingthroughtheshow" id="navigatingthroughtheshow"></a>Navigating Through the Show</h3>
+                <p>Groups of setups are organized by song, and only one song may be active at any given time. Each player is responsible for advancing their setups as indicated in the score, but every player also has the ability to advance the song. You can imagine the problems that might occur if both Keyboard 1 and Keyboard 2 hit a hotkey advancing the song at the same time. All of a sudden, you are in &ldquo;08 Fight (With Explosions)&rdquo; instead of &ldquo;07 Romantic Ballad&rdquo;! For this reason, it is a good idea to designate a single person to advance the song via hotkey, <em>and to disable the Next/Previous Song hotkeys for the other instruments</em><em>.</em> To do this, switch to Edit mode and, for each instrument, select the values in the <i>Next Song</i> and <i>Previous Song</i> fields, and set them to <i>Off</i> by hitting the delete key or spacebar.</p>
+                <p align="center"><img src="images/HotkeysOff.png" width="124" height="68" alt="hotkeysoff" /></p>
+                <p>In addition to controlling the current song or setup by MIDI hotkey, you can also use the computer keyboard to navigate. The up and down arrows will change the current setup for the active keyboard, and the Page Up and Page Down keys will change the current song. You can also use the mouse to select any song or setup.</p>
+                <h3 class="title"><a name="adjustingvolume" id="adjustingvolume"></a>Adjusting Volume in Performance</h3>
+                <p>Every installation of RMS Keyboards<sup>&reg;</sup> comes carefully pre-mixed for an excellent sounding audio configuration right out of the box. In addition, you have the ability to tweak and fine-tune the mix ahead of time. The ability to quickly adjust the overall volume in a performance setting will ultimately be decided by your specific audio setup. There is probably going to be a keyboard amp or other mixer in your setup where you (or your audio technician) can make adjustments.</p>
+                <p>To ensure that you have a good general volume to work with, however, we recommend going through the following steps:</p>
+                <ul>
+                  <li>Plug in and turn on RMS Keyboards<sup>&reg;</sup> and your external sound system.</li>
+                  <li>Test to make sure you are hearing sound.</li>
+                  <li>Select a suitably loud sound from RMS Keyboards<sup>&reg;</sup>, and <em>without making any volume adjustments in RMS Keyboards<sup>&reg;</sup>, </em>set the output volume on the external sound system to an appropriate level. If there are VU meters in your setup, then you should see a nice reading without clipping (hitting the peak value, or going into the red).</li>
+                  <li>Once you are certain you have a good default value, mark it with tape or some other means so you know where to set it.</li>
+                </ul>
+                <h4 class="title">Adjusting the Setup Volume via MIDI</h4>
+                <p>As an alternative, it is possible to use MIDI to control the patch levels in each instrument within RMS Keyboards<sup>&reg;</sup>. If you have a pedal or knob on your MIDI controller that can send out volume data (CC7), you can use it to scale the levels of the patches within the current setup.</p>
+                <p>For example, you have a setup consisting of separate patches for timpani, brass and strings. In pre-mixing, you set the timpani to a level of 120%, brass to 70% and strings to 100%. Then in performance, you can use a volume pedal to push the overall setup louder or softer, while preserving the relative levels of your pre-mix. Pushing the volume level all the way to its loudest would scale timpani to 200%, brass to 140% and strings to 200%. Moving the volume controller in the opposite direction would scale each patch smoothly to 0%. When the volume pedal is all the way down (loudest) each patch volume is twice as high as the default level, with a hard limit at 200%.</p>
+                <p>These changes are specific to the current setup only, <em>and are not saved</em>. Advancing to the next setup and returning will put each patch volume at its initial level (until you move the pedal again, of course).</p>
+                <h3 class="title"><a name="menucommands" id="menucommands"></a>Menu Commands</h3>
+                <h5>File                </h5>
+                
+                  <p>Using the commands in the file menu, you can have multiple versions of your show. For example, let's say that for performances you run a complicated 4-channel mix from your keyboard output, but occasionally you are in a rehearsal room with just a single speaker to play out of. You can use <i>Save As</i> to create a different version of the show for each situation.</p>
+                  <h5>Open</h5>
+                  <p>Loads the specified SHL file from the dropdown list.</p>
+                  <p>You may notice additional .shb showfiles in the &quot;Open Show&quot; window, or in the showfile save directory on your computer. These are automatic backups created by RMS Keyboards® every time the program exits. You should not rely on just these files to backup your show data, however, since only the 5 most recent automatic backups are saved. There is a separate command to manually backup your data in a more permanent manner. </p>
+              <h5>Save</h5>
+                  <p>Saves the current window configuration as well as any volume changes, reverb settings, hot key commands, and any other modifications to the default setup.</p>
+                  <h5>Save As</h5>
+                  <p>Allows you to save the current configuration under a different file name. Useful for creating multiple versions of the show or to create a &quot;clean&quot; copy of the show before making edits. Make sure you retain the .shl extension when using this command</p>
+                </blockquote>
+<h4>Windows                </h4>
+                <blockquote>
+                  <p>Shows or hides any of the component windows in RMS Keyboards<sup>&reg;</sup>.</p>
+                </blockquote>
+<h4>Tools</h4>
+                <blockquote>
+                  <h5>Backup</h5>
+                  <p>Backs up all the SHL files on the computer. For more on Backup and Load, <a href="#backuprestore">see below.</a></p>
+                  <h5>Get Sounds</h5>
+                  <p>Launches RMS SampleSync, which will update your sample library with the most recent sound samples.                  </p>
+                  <h5>Import Output Settings</h5>
+                  <p>Use this utility if you are working on multiple computers, each with a different number of outputs. Click <a href="http://www.realtimemusicsolutions.com/webmanuals/rmskeyboards/operation.html#importoutput">here</a> for details.                  </p>
+                  <h5>Load</h5>
+                  <p>Loads the specified set of SHL files. For more on Backup and Load, <a href="#backuprestore">see below.</a></p>
+<h5>MIDI Reset</h5>
+                  <p>Sends an all notes off command to RMS Keyboards<sup>&reg;</sup>, should any notes get stuck.</p>
+                  <h5>Output Labeler</h5>
+                  <p>Lets you relabel the various outputs to your audio interface to something besides the default &quot;A&quot;, &quot;B&quot;, etc. This is helpful if you are using a more complex multi channel audio setup.</p>
+                  <h5>Setup Wizard</h5>
+                <p>Launches the configuration utility to assist you with routing MIDI devices, setting hotkeys, and choosing an audio output device.</p>
+                <h5>Strip Keyboard</h5>
+                <p>Launches the strip keyboard utility, which allows you to remove one or more keyboards from the showfile. This allows you to free up memory if you do not plan to run all keyboards from a single computer.</p>
+                <h5>&nbsp;</h5>
+</blockquote>
+<h4>Help</h4>
+                <blockquote>
+                  <h5>Turn Tooltips Off</h5>
+                  <p>Disables tooltips in RMS Keyboards<sup>&reg;</sup>.</p>
+                  <h5>RMS Keyboards<sup>&reg;</sup> Manual</h5>
+                  <p>Opens this manual in your default browser.</p>
+                  <h5>RMS Website</h5>
+                  <p>Launches the RMS website in your default browser.</p>
+                <h5>Purchase or Authenticate Full Version (trial mode only)</h5>
+                <p>Launches the start-up screen where you can either purchase a license for RMS Keyboards<sup>&reg;</sup> or authenticate an already-purchased installation.</p>
+                </blockquote>
+                <h3 class="title"><a name="backuprestore" id="backuprestore"></a>Backup and Load</h3>
+                <p>Using the <i>Backup</i> and <i>Load</i> commands, you can transfer all of your customized SHL files from one computer to another. With each license of RMS Keyboards<sup>&reg;</sup>, you are given an extra unlock code to use on a backup computer. If your show has two keyboard books, you can authenticate RMS Keyboards<sup>&reg;</sup> on three machines. You should have the third machine available to swap in at any time in case of a crash or other computer malfunction. </p>
+                <p>When you are ready to start performances, you should create a backup file for each computer that you are using in the pit, <em>and then store those backup files on an external hard drive or USB stick.</em> This way, if something should happen to one of your performance computers, all you need to do is load that computer's backup data on to your spare machine and you are ready to perform.</p>
+                <h3 class="title"><a name="importoutput" id="importoutput"></a>Import Output Settings</h3>
+                <p>Suppose your RMS Keyboards<sup>&reg;</sup> implementation involves a 16-channel mix. You've spent a lot of time carefully routing various layers to all available outputs. It sounds great and takes full advantage of your theatre's sophisticated sound capabilities. </p>
+                <p>However, you also want to rehearse at home, using your personal computer with just a simple 2-channel stereo mix. Furthermore, you want to continue making non-output related edits at home and use them at the theatre. </p>
+                <p>There are a few challenges here:</p>
+               <ul>
+	<li> You can't listen to the 16 channel mix on your 2-channel home system. So at home, the show's output settings need to be reduced. You will be prompted to save a new show file to accommodate this whenever you launch RMS Keyboards<sup>&reg;</sup> on a system with fewer outputs than the previous launch.<br /></li>
+                  
+	<li>But if you make any changes that you then want to use at the theatre, you've lost all the careful routing to your 16 channels. This is where the Import Output Settings utility comes in handy.</li>           
+</ul>
+ <p>As the name suggests, Import Output Settings lets you grab the output assignments from a different saved show. So if you load the 2-channel show file onto your theatre's computer, this utility will bring in the 16-channel assignments. </p>
+                <p>Note: it wlll ignore songs with changed names - and won't know what to do if you added songs. But it should get you most of the way there so that any of these discrepancies can quickly be addressed manually.</p>
+<h3 class="title"><a name="preferences" id="preferences"></a>Preferences</h3>
+          <p>You can open the preferences window through the <i>RMS Keyboards<sup>&reg;</sup></i> menu on Mac, or the <i>Tools</i> menu on Windows.</p>
+                  <h4 class="title">Audio                </h4>
+                <p align="center"><img src="images/PreferencesAudio.png" width="478" height="578" alt="audio" /></p>
+                <blockquote>
+                  <h5>Audio Interface</h5>
+                  <p>This allows you select the specific audio interface to use with RMS Keyboards<sup>&reg;</sup>. This can also be selected via the Setup Wizard.</p>
+                  <h5>Buffer Size</h5>
+                  <p>This allows you to specify the buffer size (128, 256, 512, or 1024) for RMS Keyboards<sup>&reg;</sup> to use with your audio device. The best setting will depend on the type of computer you using, but in general you want to choose the smallest value that doesn't produce pops, clicks, or dropouts when running RMS Keyboards<sup>&reg;</sup>. Larger buffers will increase the amount of latency when you play a note. This value is set to 256 by default.</p>
+                  <h5>Disk Streaming vs. Ram Load</h5>
+                  <p>By default, Sinfonia® loads samples via the disk streaming method. This allows it to dynamically load sounds and use fewer resources during live playback. As an alternative, you can tell Sinfonia® to load <strong>all</strong> of the samples that are used by the show into the computer's RAM.</p>
+                  <p>If you decide to switch the sample access method, it won't be active until you relaunch the program.                </p>
+                </blockquote>
+                <h4 class="title">General</h4>
+                <p align="center"><img src="images/PreferencesGeneral.png" width="478" height="578" alt="general" /></p>
+                <blockquote>
+                  <h5>Previous/Next Setup Behavior</h5>
+                  <p>When checked, this allows the <i>Next/Previous Setup</i> hotkey to automatically advance to the next or previous song when it reaches the end of the setup list. <em>Please note, this functionality is enabled for ALL instruments, so it is generally a good idea to designate a single person to advance the song, and then disable those hotkeys on secondary instruments.</em></p>
+                  <h5>Current Setup Display</h5>
+                  <p>These options will change the behavior of the <i>Current Setup</i> window. If you are the only person playing from an installation of RMS Keyboards, it might be beneficial to set this to <i>Show Active Keyboard</i>, so that you aren't being presented with unnecessary information.</p>
+                  <h5>Automatically display/hide comments</h5>
+<p>When checked, the Comment window will automatically appear and disappear from its designated location on the screen, based on whether the selected setup has a comment associated with it.</p>
+                </blockquote>
+
+<h4 class="title">Tuning</h4>
+<blockquote>
+  <p><img src="images/PreferencesTuning.png" width="478" height="578" alt="preftuning" /></p>
+  <p>If you need to slightly adjust your entire RMS Keyboards® tuning slightly up or down (to match the tuning of the other players, you can do so here. By default, the program is set to A=440 Hz, but can be adjusted anywhere from A=439 to A=445.</p>
+</blockquote>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <!--li>
+                  <div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div>
+                  <div style="clear: both;">&nbsp;</div>
+                </li-->
+                <li>
+                  <h2>OPERATION</h2>
+                  <ul>
+                    <li><a href="operation.html">Playing RMS Keyboards<sup>&reg;</sup></a></li>
+                    <li><a href="#navigatingthroughtheshow">Navigating Through the Show</a></li>
+                    <li><a href="#adjustingvolume">Adjusting Volume in Performance</a></li>
+                    <li><a href="#menucommands">Menu Commands</a></li>
+                    <li><a href="#backuprestore">Backup and Restore</a></li>
+                   
+                    <li><a href="#importoutput">Import Output Settings</a></li>
+                    <li><a href="#preferences">Preferences</a></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+(212) 620-0774 <br />
+<a href="http://www.realtimemusic.biz/contact/">Email us</a></p>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

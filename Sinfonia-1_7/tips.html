@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sinfonia</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="#">Sinfonia&reg;</a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="quickstart.html">Quick Start</a></li>
+          <li><a href="basics.html">Basics</a></li>
+          <li><a href="playing.html">Playing</a></li>
+          <li><a href="editing.html">Editing</a></li>
+          <li><a href="advanced.html">Advanced</a></li>
+          <li class="current_page_item"><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Tips</a></h2>
+              <div class="entry">
+                <h3 class="title">Suggestions for Playing a Perfect Show</h3>
+                <p>Remember to use the &quot;STOP&quot; key. The mode description on the screen is a big aid for making sure you know that you have actually &quot;stopped&quot; and aren't continuing in a &quot;play&quot; mode (either &quot;PLAY&quot; or &quot;GO&quot;).</p>
+                <p>Take some time to rehearse and familiarize yourself with Sinfonia before you get together with the conductor, pit musicians or performers. You have to become familiar with the system and also with the score to the show. In addition, you will want to be familiar with how the score and the system work together. A good way to do that is to take the score and go through each song, marking what the play duration is throughout each song and thinking of places where you think you will need to tap, versus setting a tempo and letting Sinfonia run. REMEMBER: If you are working through the score and stopping to make notes, be sure to hit the &quot;STOP&quot; key when you pause to make a note - otherwise the system will CRASH!</p>
+                <p>If you are following a singer (versus following a conductor) remember that some singers like to &quot;backphrase&quot; or sing slightly behind the beat, especially on ballads. You will have the most success if you help set the beat and let it remain constant, rather than trying to &quot;PLAY&quot; exactly with the singer. What can happen when you do that is that the singer will try and sing slightly behind the beat, but you'll be slowing the song down. The singer will slow down further, and you will try and follow and soon the song will be crawling along and everyone will be extremely unhappy!</p>
+                <h3 class="title"><a name="checklist" id="checklist"></a>Sinfonia Pre-Show Checklist</h3>
+                <p>It is a good idea to run through this checklist before each show. For you convenience, you can download and print this checklist in both .DOC and .PDF format</p>
+                <table width="200" border="1" align="center">
+                  <tr align="center">
+                    <td><a href="files/Sinfonia® Pre-S…ecklist-1_2.doc">DOC</a></td>
+                    <td><a href="files/Sinfonia® Pre-S…ecklist-1_2">PDF</a></td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <ul>
+                  <li>Sinfonia plugged into a clean, dedicated power line.</li>
+                  <li>No other devices (e.g. stand lights) plugged into Sinfonia power.</li>
+                  <li>Sinfonia is on a clean and stable work surface</li>
+                  <li>All applicable Sinfonia devices (e.g. USB Keypad, MIDI Keyboard, Firewire 410 or Profire 610) securely connected and powered.</li>
+                  <li>Laptop is plugged in and not running on battery power.</li>
+                  <li>If you are not using the USB Keypad, be sure that it is unplugged and stored in the Sinfonia road case.</li>
+                  <li>Volume: be sure that the volume slider of the Laptop is at the proper level for your show.</li>
+                  <li>Run Output Test.</li>
+                  <li>Play through a few different sections in both acts to confirm that Sinfonia is at the proper level and is playing back at the correct pitch.</li>
+                  <li>Be sure that you have rewound to the beginning of the first song of Act I before you start the show</li>
+                  <li>_____________________________________________________________</li>
+                  <li>_____________________________________________________________</li>
+                  <li>Have a great performance!</li>
+                </ul>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <li> 
+                  <!--div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div-->
+                  <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                  <h2>Tips</h2>
+                  <ul>
+                    <li><a href="tips.html">Suggestions</a></li>
+                    <li><a href="#checklist">Pre-Show Checklist</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="../../../../../contact">Email us</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) 2010 Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

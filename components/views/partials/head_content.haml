@@ -1,0 +1,14 @@
+/ Below are stylesheets coming from the shared styles on production site
+%link{:href => "http://rms.biz/media/css/foundation.min.css", :rel => "stylesheet"}
+%link{:href => "http://rms.biz/media/css/styles.min.css", :rel => "stylesheet"}
+
+/ Below is the static page/stationary specific CSS and override styles
+%link{:href => "../css/application.css", :rel => "stylesheet"}
+
+/ META TAGS
+= Haml::Engine.new(File.read('../components/views/partials/meta.haml')).render
+
+/ BEGIN Google Fonts
+= Haml::Engine.new(File.read('../components/views/partials/google_fonts.haml')).render
+
+%link{:href => "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}

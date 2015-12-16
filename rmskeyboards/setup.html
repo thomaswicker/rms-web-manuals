@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Programme     
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100707
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RMS Keyboards<sup>&reg;</sup> Manual - Setup</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script-->
+<script src="jquery.js"></script>
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+  
+  if (!msie6) {
+    var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#sidebar').addClass('fixed');
+      } else {
+        // otherwise remove it
+        $('#sidebar').removeClass('fixed');
+      }
+    });
+  }  
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="index.html">RMS Keyboards<sup>&reg;</sup></a></h1>
+        <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li class="current_page_item"><a href="setup.html">Setup</a></li>
+          <li><a href="interface.html">Interface</a></li>
+          <li><a href="operation.html">Operation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end #header -->
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h2 class="title"><a href="#">Setup</a></h2>
+              <div class="entry">
+                <p>Setting up RMS Keyboards<sup>&reg;</sup> is a very simple process. With your MIDI-enabled keyboard(s) connected to your computer, select &lsquo;Run Setup Wizard&rsquo; from the File menu. This will configure your computer for use with RMS Keyboards<sup>&reg;</sup>. </p>
+                <p><em>Please note, it is important that you have your MIDI keyboard(s) connected to the computer before you launch RMS Keyboards<sup>&reg;</sup> for the program to recognize your device!</em></p>
+                <p><img src="images/SetupWelcome.png" width="507" height="609" alt="setupwelcome" /></p>
+                <h3 class="title"><a name="configurekeyboardinput" id="configurekeyboardinput"></a>Configure keyboard input</h3>
+                <p>In live performance, RMS Keyboards<sup>&reg;</sup> is operated via connected MIDI-enabled keyboards. The specifics of how you connect your keyboard(s) are left up to you, but for suggestions on what you might need, please visit our website at <a href="http://www.rms.biz">www.rms.biz</a> or visit your local music equipment retailer.</p>
+                <p>When you run the keyboard input section of the Wizard, you will see two columns of items. The left column is the list of MIDI-enabled devices connected to your machine. The right column is the list of possible instruments that those devices can be connected to. These instruments correspond to the published piano/synthesizer books for your show.</p>
+                <p><img src="images/SetupConnectMIDI.png" width="517" height="621" alt="configurekeyboardinput" /></p>
+                <p>To connect a MIDI device to an instrument, simply click-and-drag to create a link. You should be aware that is possible to connect a single MIDI device to all instruments in RMS Keyboards<sup>&reg;</sup>. In that situation, only the &ldquo;active&rdquo; instrument (indicated by an orange border in the program window) will be triggered by your connected MIDI device.</p>
+                <p>To remove a connection, simply click on the link so that it is highlighted blue and press <i>Delete</i> on your computer keyboard. </p>
+                <h3 class="title"><a name="configurehotkeyinput" id="configurehotkeyinput"></a>Configure hotkey input</h3>
+                <p>Within a single song, there are often many different sounds called for by the orchestrator. For example, in &quot;Joseph&rsquo;s Dreams&quot; from JOSEPH AND THE AMAZING TECHNICOLOR DREAMCOAT, the keyboard 1 player has to play harpsichord, Hammond organ, &ldquo;sharp brass&rdquo;, a trumpet/trombone split and then back to &ldquo;sharp brass.&quot; Changing between these setups in RMS Keyboards<sup>&reg;</sup> is done using a hotkey. Hotkeys can be assigned to any key on your MIDI device.</p>
+                <p>There are hotkeys for the following actions:</p>
+                <ul>
+                  <li>(go to) Previous setup</li>
+                  <li>(go to) Next setup</li>
+                  <li>(go to) Previous song</li>
+                  <li>(go to) Next song</li>
+                </ul>
+                <p>To assign hotkeys within the Wizard, click within the text field for each hotkey and press the desired control on the associated MIDI keyboard or footswitch.</p>
+                <p><img src="images/HotkeyAssign.png" width="516" height="619" alt="hotkeyassign" /></p>
+                <p>It is also possible to type in the desired key in the text field. For example, if you want middle C (C3) to be assigned to <i>Next song</i> (although this is probably not a good idea!), just click <i>Next song</i> and type C3. <em>Please note: these values follow the American standard, with C3 representing middle C.</em></p>
+                <p>Using this technique, you can assign hotkey values outside the playable range of your keyboard. You can then assign certain pedals or buttons on your MIDI keyboard to play those notes and trigger the hotkey. Alternatively, if your footswitch sends  common MIDI controller messages (i.e. CC4), this too may be used for hotkey control. Not all MIDI keyboards have this capability, however. Check your documentation.</p>
+                <h3 class="title"><a name="configureaudiooutput" id="configureaudiooutput"></a>Configure audio output</h3>
+                <p>The final screen of the Wizard selects which audio interface device you want RMS Keyboards<sup>&reg;</sup> to utilize. For example, if you have an M-Audio FireWire 410 connected to your computer you would select that device on the setup screen.</p>
+                <p><img src="images/DefaultAudioDevice.png" width="513" height="616" alt="defaultaudiodevice" /></p>
+                <p>It is possible to run sound out of your computer’s default audio device (i.e. the headphone jack on a laptop) but you will have fewer options for routing the sound, as well as decreased quality of sound when compared to an external audio device. For suggestions on what audio hardware you might need, please read our <a href="http://www.realtimemusicsolutions.com/haroon/rmskb_whatyouneed.html"><em>What You Need</em></a> article or visit your local music equipment retailer. </p>
+                <h3 class="title"><a name="power" id="power"></a>Power Considerations</h3>
+                <p><b>PLEASE TAKE CAREFUL NOTE. THIS IS VERY IMPORTANT.</b></p>
+                <p>Any computer used in live performance (or other mission critical setting) needs clean, dedicated power. This is absolutely true of RMS Keyboards<sup>&reg;</sup>. </p>
+                <p><strong>Failure to provide clean, dedicated power may compromise performance, cause crashes, or even damage your equipment.</strong></p>
+                <p>&nbsp; </p>
+                <p>Do not, for example, put your computer on a power strip with other electrical devices. Music stand lights, especially ones with dimmers, are  notorious for corrupting electrical signal. Please keep these (and any other devices) on a separate power line. </p>
+                <p>Be aware that it may not be enough just to use an electrical outlet with nothing else plugged into it. If that outlet is on a circuit shared by other devices, you may be in the dangerous position   you need to avoid. If you are unsure about your venue's power setup, please speak to your theatre's electrician or technical director.</p>
+              </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+          </div>
+          <!-- end #content -->
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+              <ul>
+                <!--li>
+                  <div id="search" >
+                    <form method="get" action="#">
+                      <div>
+                        <input type="text" name="s" id="search-text" value="" />
+                        <input type="submit" id="search-submit" value="GO" />
+                      </div>
+                    </form>
+                  </div>
+                  <div style="clear: both;">&nbsp;</div>
+                </li-->
+                <li>
+                  <h2>SETUP</h2>
+                  <ul>
+                    <li><a href="setup.html">The Setup Wizard</a></li>
+                    <li><a href="#configurekeyboardinput">Configure keyboard input</a></li>
+                    <li><a href="#configurehotkeyinput">Configure hotkey input</a></li>
+                    <li><a href="#configureaudiooutput">Configure audio output</a></li>
+                    <li><a href="#power">Power considerations</a></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Contact</h2>
+                  <p> <a href="http://www.rms.biz">Realtime Music Solutions, LLC</a><br />
+                    (212) 620-0774 <br />
+                    <a href="http://www.realtimemusic.biz/contact/">Email us</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end #sidebar -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #page --> 
+</div>
+<div id="footer">
+  <p>Copyright (c) <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Realtime Music Solutions, LLC. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
